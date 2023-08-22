@@ -1,0 +1,117 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>54d34696-f820-44e2-8d1b-20e1627754f6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>CONSOLE_OXDAN_DRAGON_PYTHON.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CONSOLE-OXDAN-DRAGON-PYTHON</Name>
+    <RootNamespace>CONSOLE-OXDAN-DRAGON-PYTHON</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="arkanoid_start.py" />
+    <Compile Include="ascii_code_start.py" />
+    <Compile Include="author_start.py" />
+    <Compile Include="auto_clicker_start.py" />
+    <Compile Include="battle_city.py" />
+    <Compile Include="calculator_start.py" />
+    <Compile Include="calendar_start.py" />
+    <Compile Include="car_racing_start.py" />
+    <Compile Include="chess_2_start.py" />
+    <Compile Include="chess_ai_start.py" />
+    <Compile Include="color_back_start.py" />
+    <Compile Include="color_start.py" />
+    <Compile Include="commands_start.py" />
+    <Compile Include="con_wifi_start.py" />
+    <Compile Include="cor_desk_start.py" />
+    <Compile Include="cuaser_cipher_start.py" />
+    <Compile Include="cur_conv_start.py" />
+    <Compile Include="del_account_start.py" />
+    <Compile Include="dictaphone_start.py" />
+    <Compile Include="donators_start.py" />
+    <Compile Include="doom_start.py" />
+    <Compile Include="dragon_helper_start.py" />
+    <Compile Include="energy_start.py" />
+    <Compile Include="flappybird_start.py" />
+    <Compile Include="gdi_virus_start.py" />
+    <Compile Include="get_ip_site_start67.py" />
+    <Compile Include="guess_number_start.py" />
+    <Compile Include="hangman_start.py" />
+    <Compile Include="helpers_start.py" />
+    <Compile Include="inject_prog_start.py" />
+    <Compile Include="installs_start.py" />
+    <Compile Include="instructions.py" />
+    <Compile Include="ip_search.py" />
+    <Compile Include="i_start.py" />
+    <Compile Include="joke_all_start.py" />
+    <Compile Include="joke_au_start.py" />
+    <Compile Include="joke_ph_start.py" />
+    <Compile Include="joke_start.py" />
+    <Compile Include="joke_v_start.py" />
+    <Compile Include="links_start.py" />
+    <Compile Include="main_start_start.py" />
+    <Compile Include="math_game_start.py" />
+    <Compile Include="matrix_start.py" />
+    <Compile Include="morse_code_start.py" />
+    <Compile Include="my_location_start.py" />
+    <Compile Include="my_volume_level23.py" />
+    <Compile Include="notepad_start.py" />
+    <Compile Include="pas_gen_nw_start.py" />
+    <Compile Include="pas_gen_n_start.py" />
+    <Compile Include="pas_gen_u_start.py" />
+    <Compile Include="pas_gen_w_start.py" />
+    <Compile Include="ping_pong_2_start.py" />
+    <Compile Include="ping_pong_ai_start.py" />
+    <Compile Include="Pranks.py" />
+    <Compile Include="prank_button.py" />
+    <Compile Include="prank_melt_screen_start.py" />
+    <Compile Include="screen_recorder_start.py" />
+    <Compile Include="send_ph_message_start.py" />
+    <Compile Include="set_volume_level_start.py" />
+    <Compile Include="size_start.py" />
+    <Compile Include="snake_1_start.py" />
+    <Compile Include="snake_2_start.py" />
+    <Compile Include="stopwatch_start.py" />
+    <Compile Include="system_info_start.py" />
+    <Compile Include="t2048_start.py" />
+    <Compile Include="checkers_2_start.py" />
+    <Compile Include="checkers_ai_start.py" />
+    <Compile Include="CONSOLE_OXDAN_DRAGON_PYTHON.py" />
+    <Compile Include="pacman_start.py" />
+    <Compile Include="ping_pong_1_start.py" />
+    <Compile Include="snake_ai_start.py" />
+    <Compile Include="space_shooter_start.py" />
+    <Compile Include="tetris_start.py" />
+    <Compile Include="tic_tac_toe_2_start.py" />
+    <Compile Include="tic_tac_toe_ai_start.py" />
+    <Compile Include="timer_start.py" />
+    <Compile Include="time_start.py" />
+    <Compile Include="tips_start.py" />
+    <Compile Include="typing_tutor_start.py" />
+    <Compile Include="ukraine_start.py" />
+    <Compile Include="my_wifi_pas_start.py" />
+    <Compile Include="video_recorder_start.py" />
+    <Compile Include="wifi_hack_start.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
