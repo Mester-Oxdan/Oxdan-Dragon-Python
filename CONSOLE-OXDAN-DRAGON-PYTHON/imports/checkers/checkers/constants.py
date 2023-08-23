@@ -12,4 +12,4 @@ BLACK = (0, 0, 0)
 BLUE = (0, 0, 255)
 GRAY = (128, 128, 128)
 
-CROWN = pygame.transform.scale(pygame.image.load('imports/checkers/checkers/assets/crown.png'), (44, 25))
+CROWN = pygame.transform.scale(pygame.image.load('CONSOLE-OXDAN-DRAGON-PYTHON/imports/checkers/checkers/assets/crown.png'), (44, 25))
