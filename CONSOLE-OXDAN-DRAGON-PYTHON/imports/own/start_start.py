@@ -61,7 +61,7 @@ def update_program(username, repo, branch, local_dir):
 github_username = "Mester-Oxdan"
 repository_name = "Oxdan-Dragon-Python"
 target_branch = "main"  # Update this with the branch you want to update from
-local_directory = ""  # Update this with your local program directory
+local_directory = "../"  # Update this with your local program directory
     
 update_program(github_username, repository_name, target_branch, local_directory)
 
