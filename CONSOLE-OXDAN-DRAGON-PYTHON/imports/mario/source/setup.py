@@ -14,4 +14,4 @@ SCREEN_RECT = SCREEN.get_rect()
 ico = pg.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
 pg.display.set_icon (ico)
 
-GFX = tools.load_all_gfx(os.path.join("imports","mario","resources","graphics"))
+GFX = tools.load_all_gfx(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "imports","mario","resources","graphics")))
