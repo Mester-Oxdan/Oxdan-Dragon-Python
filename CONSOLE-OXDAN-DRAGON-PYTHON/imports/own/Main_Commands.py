@@ -37,8 +37,10 @@ def update_program(username, repo, branch, local_dir):
                             #git.Repo.clone_from(f"https://github.com/{username}/{repo}.git", local_dir)
                             #print()
                             os.system("git pull")
+                            print(" ")
                             print("Program updated " + Fore.GREEN + "successfully." + Fore.WHITE + " Please restart the program.")
                             imports.own.will_go_to_start.main()
+                            
                             #print("Program updated successfully.")
                         else:
                             #print("You have the latest version.")
