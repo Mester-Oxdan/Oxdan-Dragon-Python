@@ -1,4 +1,4 @@
-from imports.doom.settings import *
+from imports.own.imports.doom.settings import *
 import pygame as pg
 import math
 

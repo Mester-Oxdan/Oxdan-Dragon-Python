@@ -24,7 +24,7 @@ except ImportError:
         os.system("pip install builtins")
     except:
         
-        os.system("start " +  + "imports\own\resources\installs\python-3.10.6-amd64.exe")
+        os.system("start " +  + "imports/own/resources/installs/python-3.10.6-amd64.exe")
 
 import msvcrt
 import os
@@ -42,11 +42,6 @@ import time
 from winotify import Notification, audio
 
 start_time = time.time()
-
-files_dir = os.path.dirname(__file__)
-os.environ["OXDAN-DRAGON-PYTHON"] = files_dir 
-
-#path_to_png = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"..","IMAGES","ALL","icon.png")
 
 def get_latest_commit_hash(username, repo, branch):
     url = f"https://api.github.com/repos/{username}/{repo}/branches/{branch}"
@@ -118,6 +113,8 @@ def start_start():
 
     print(colorama.Fore.YELLOW)
     os.system("cls")
+    #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "resources\math_game\kenvector_future.ttf"))
+    #msvcrt.getch()
 
     Menu = ["                                                              REGISTRATION", "                                                              LOGIN", "                                                              INSTRUCTIONS", "                                                              EXIT"]
     active_menu = 0

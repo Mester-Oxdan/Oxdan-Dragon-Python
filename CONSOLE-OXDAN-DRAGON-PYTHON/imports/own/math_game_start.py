@@ -2,8 +2,9 @@
 # -*- coding: utf-8 -*-
 
 import pygame
-from imports.math_game.game import Game
+from imports.own.imports.math_game.game import Game
 import imports.own.will_go_to_start
+import os
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
@@ -16,7 +17,7 @@ def main_rt():
     # Set the current window caption
     pygame.display.set_caption("Math Game")
     # Load the icon image
-    icon_image = pygame.image.load("my_dragon_ico_transformed.png")
+    icon_image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/my_dragon_ico_transformed.png"))
 
     # Set the icon
     pygame.display.set_icon(icon_image)

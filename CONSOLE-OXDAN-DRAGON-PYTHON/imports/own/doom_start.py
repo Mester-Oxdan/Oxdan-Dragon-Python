@@ -1,14 +1,14 @@
 import pygame as pg
-from imports.doom.settings import *
-from imports.doom.map import *
-from imports.doom.player import *
-from imports.doom.raycasting import *
-from imports.doom.object_renderer import *
-from imports.doom.sprite_object import *
-from imports.doom.object_handler import *
-from imports.doom.weapon import *
-from imports.doom.sound import *
-from imports.doom.pathfinding import *
+from imports.own.imports.doom.settings import *
+from imports.own.imports.doom.map import *
+from imports.own.imports.doom.player import *
+from imports.own.imports.doom.raycasting import *
+from imports.own.imports.doom.object_renderer import *
+from imports.own.imports.doom.sprite_object import *
+from imports.own.imports.doom.object_handler import *
+from imports.own.imports.doom.weapon import *
+from imports.own.imports.doom.sound import *
+from imports.own.imports.doom.pathfinding import *
 import imports.own.will_go_to_start
 import pygame
 

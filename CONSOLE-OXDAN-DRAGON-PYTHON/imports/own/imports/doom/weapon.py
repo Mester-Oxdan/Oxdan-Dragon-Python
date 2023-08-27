@@ -1,8 +1,8 @@
-from imports.doom.sprite_object import *
+from imports.own.imports.doom.sprite_object import *
 
 
 class Weapon(AnimatedSprite):
-    def __init__(self, game, path='CONSOLE-OXDAN-DRAGON-PYTHON/imports/own/resources/doom/sprites/weapon/shotgun/0.png', scale=0.4, animation_time=90):
+    def __init__(self, game, path=os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/doom/sprites/weapon/shotgun/0.png'), scale=0.4, animation_time=90):
         super().__init__(game=game, path=path, scale=scale, animation_time=animation_time)
         self.images = deque(
             [pg.transform.smoothscale(img, (self.image.get_width() * scale, self.image.get_height() * scale))

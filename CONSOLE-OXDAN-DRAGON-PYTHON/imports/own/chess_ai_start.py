@@ -9,11 +9,11 @@ from pygame.locals import (
     QUIT,
 )
 
-from imports.chess.modules.board_tools import *
-from imports.chess.modules.drawing_tools import *
-from imports.chess.modules.piece import *
-from imports.chess.engine import is_stable
-from imports.chess.engine import find_depth_move
+from imports.own.imports.chess.modules.board_tools import *
+from imports.own.imports.chess.modules.drawing_tools import *
+from imports.own.imports.chess.modules.piece import *
+from imports.own.imports.chess.engine import is_stable
+from imports.own.imports.chess.engine import find_depth_move
 import imports.own.will_go_to_start
 import os
 from colorama import Fore

@@ -451,7 +451,7 @@ class Level():
 		""" Load specified level
 		@return boolean Whether level was loaded
 		"""
-		filename = "resources\levels/"+str(level_nr)
+		filename = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources\levels/"+str(level_nr))
 		if (not os.path.isfile(filename)):
 			return False
 		level = []

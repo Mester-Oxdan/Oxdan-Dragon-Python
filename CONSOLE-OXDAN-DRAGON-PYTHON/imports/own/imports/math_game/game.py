@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 
 import pygame, random
-from imports.math_game.menu import Menu
+from imports.own.imports.math_game.menu import Menu
+import os
 
 SCREEN_WIDTH = 640
 SCREEN_HEIGHT = 480
@@ -18,7 +19,7 @@ class Game(object):
         # Create a new font obeject
         self.font = pygame.font.Font(None,65)
         # Create font for the score msg
-        self.score_font = pygame.font.Font("resources/math_game/kenvector_future.ttf",20)
+        self.score_font = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "imports/own/resources/math_game/kenvector_future.ttf"),20)
         # Create a dictionary with keys: num1, num2, result
         # These variables will be used for creating the
         # arithmetic problem
@@ -33,7 +34,7 @@ class Game(object):
         self.reset_problem = False
         # Create menu
         items = ("Addition","Subtraction","Multiplication","Division")
-        self.menu = Menu(items,ttf_font="resources/math_game/XpressiveBlack Regular.ttf",font_size=50)
+        self.menu = Menu(items,ttf_font=(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/math_game/XpressiveBlack Regular.ttf")),font_size=50)
         # True: show menu
         self.show_menu = True
         # create the score counter
@@ -41,10 +42,10 @@ class Game(object):
         # Count the number of problems
         self.count = 0
         # load background image
-        self.background_image = pygame.image.load("resources/math_game/background.jpg").convert()
+        self.background_image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/math_game/background.jpg")).convert()
         # load sounds effects
-        self.sound_1 = pygame.mixer.Sound("resources/math_game/item1.ogg")
-        self.sound_2 = pygame.mixer.Sound("resources/math_game/item2.ogg")
+        self.sound_1 = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/math_game/item1.ogg"))
+        self.sound_2 = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/math_game/item2.ogg"))
 
     def get_button_list(self):
         """ Return a list with four buttons """
@@ -100,7 +101,7 @@ class Game(object):
     def get_symbols(self):
         """ Return a dictionary with all the operation symbols """
         symbols = {}
-        sprite_sheet = pygame.image.load("resources/math_game/symbols.png").convert()
+        sprite_sheet = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/math_game/symbols.png")).convert()
         image = self.get_image(sprite_sheet,0,0,64,64)
         symbols["addition"] = image
         image = self.get_image(sprite_sheet,64,0,64,64)

@@ -44,9 +44,9 @@ def login():
     auth_hash = hashlib.md5(auth).hexdigest()
     found_password = False
     
-    #try:
+    try:
 
-    with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"login_data_base.txt"), "r") as f:
+        with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/login_data_base.txt"), "r") as f:
         
             for line in f:
 
@@ -140,7 +140,7 @@ def login():
 
                                              if checkpass1 == False:
 
-                                                 with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"email_data_base.txt"), "r") as f:
+                                                 with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/email_data_base.txt"), "r") as f:
                                                      #f.write(hash1)
                                                      for line in f:
 
@@ -163,7 +163,7 @@ def login():
                                      
                                                      if hash1 != stored_pwd:
 
-                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"email_data_base.txt"), "a") as f:
+                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/email_data_base.txt"), "a") as f:
 
                                                                 f.write(hash1 + "\n")
 
@@ -174,7 +174,7 @@ def login():
 
                                          except:
 
-                                                     with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"email_data_base.txt"), "a") as f:
+                                                     with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/email_data_base.txt"), "a") as f:
 
                                                             f.write(hash1 + "\n")
 
@@ -207,7 +207,7 @@ def login():
 
                                              if check == False:
 
-                                                 with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"phone_number_data_base.txt"), "r") as f:
+                                                 with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/phone_number_data_base.txt"), "r") as f:
 
                                                      #f.write(hash1)
                                                      for line in f:
@@ -229,7 +229,7 @@ def login():
                                      
                                                      if hash1 != stored_pwd:
 
-                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"phone_number_data_base.txt"), "a") as f:
+                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/phone_number_data_base.txt"), "a") as f:
 
                                                              f.write(hash1 + "\n")
 
@@ -240,7 +240,7 @@ def login():
 
                                          except:
 
-                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"phone_number_data_base.txt"), "a") as f:
+                                                         with builtins.open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/phone_number_data_base.txt"), "a") as f:
 
                                                              f.write(hash1 + "\n")
 
@@ -276,20 +276,20 @@ def login():
                      msvcrt.getch()
                      imports.own.start_start.start_start()
 
-    #except:
+    except:
 
-        #if imports.own.will_go_to_start.x == "prank_button" or imports.own.will_go_to_start.x == "exit" or imports.own.will_go_to_start.x == "esc" or imports.own.will_go_to_start.x == "quit" or imports.own.will_go_to_start.x == "admin" or imports.own.will_go_to_start.x == "administrator" or imports.own.will_go_to_start.x == "superuser":
+        if imports.own.will_go_to_start.x == "prank_button" or imports.own.will_go_to_start.x == "exit" or imports.own.will_go_to_start.x == "esc" or imports.own.will_go_to_start.x == "quit" or imports.own.will_go_to_start.x == "admin" or imports.own.will_go_to_start.x == "administrator" or imports.own.will_go_to_start.x == "superuser":
 
-                #quit(0)
+                quit(0)
 
-        #if imports.own.will_go_to_start.x == "author":
+        if imports.own.will_go_to_start.x == "author":
 
             
 
-            #imports.own.will_go_to_start.main()
+            imports.own.will_go_to_start.main()
 
-        #else:
+        else:
 
-                 #print(colorama.Fore.RED + "\n                                                         (!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Account did not found!)\n" + colorama.Fore.WHITE)
-                 #msvcrt.getch()
-                 #imports.own.start_start.start_start()
+                 print(colorama.Fore.RED + "\n                                                         (!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Account did not found!)\n" + colorama.Fore.WHITE)
+                 msvcrt.getch()
+                 imports.own.start_start.start_start()

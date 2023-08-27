@@ -46,7 +46,7 @@ def author_start():
         print(" ")
 
         # Load the MP3 audio file
-        audio_file = AudioSegment.from_mp3('resources/music/undertale.mp3')
+        audio_file = AudioSegment.from_mp3(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/music/undertale.mp3'))
 
         # Play the audio file
         play(audio_file)

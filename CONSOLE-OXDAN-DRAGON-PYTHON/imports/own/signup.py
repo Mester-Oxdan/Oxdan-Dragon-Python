@@ -41,7 +41,7 @@ def signup():
     try:
 
         if checkpas == False:
-            with builtins.open("login_data_base.txt", "r") as f:
+            with builtins.open("imports/own/login_data_base.txt", "r") as f:
 
                     for line in f:
                          tokens = line.split(" ")
@@ -71,7 +71,7 @@ def signup():
                     if hash1 != stored_pwd and email != stored_email:
                             
                                 checkpas == True
-                                with builtins.open("login_data_base.txt", "a") as fa:
+                                with builtins.open("imports/own/login_data_base.txt", "a") as fa:
 
                                     fa.write(email + " " + hash1 + "\n")
 
@@ -83,7 +83,7 @@ def signup():
     except:
 
                                 checkpas == True
-                                with builtins.open("login_data_base.txt", "a") as fa:
+                                with builtins.open("imports/own/login_data_base.txt", "a") as fa:
 
                                     fa.write(email + " " + hash1 + "\n")
 

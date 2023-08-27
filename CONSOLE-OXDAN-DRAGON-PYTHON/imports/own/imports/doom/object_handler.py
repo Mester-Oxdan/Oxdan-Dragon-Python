@@ -1,5 +1,5 @@
-from imports.doom.sprite_object import *
-from imports.doom.npc import *
+from imports.own.imports.doom.sprite_object import *
+from imports.own.imports.doom.npc import *
 from random import choices, randrange
 
 
@@ -8,9 +8,9 @@ class ObjectHandler:
         self.game = game
         self.sprite_list = []
         self.npc_list = []
-        self.npc_sprite_path = 'CONSOLE-OXDAN-DRAGON-PYTHON/imports/own/resources/doom/sprites/npc/'
-        self.static_sprite_path = 'CONSOLE-OXDAN-DRAGON-PYTHON/imports/own/resources/doom/sprites/static_sprites/'
-        self.anim_sprite_path = 'CONSOLE-OXDAN-DRAGON-PYTHON/imports/own/resources/doom/sprites/animated_sprites/'
+        self.npc_sprite_path = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/doom/sprites/npc/')
+        self.static_sprite_path = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/doom/sprites/static_sprites/')
+        self.anim_sprite_path = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/doom/sprites/animated_sprites/')
         add_sprite = self.add_sprite
         add_npc = self.add_npc
         self.npc_positions = {}

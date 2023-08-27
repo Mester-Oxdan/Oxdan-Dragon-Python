@@ -1,6 +1,6 @@
 import os
 import pygame
-import imports.chess.ChessEngine
+import imports.own.imports.chess.ChessEngine
 import imports.own.will_go_to_start
 
 def chess_2_start():
@@ -15,9 +15,9 @@ def chess_2_start():
     PIECES = {}
 
     def loadPieces():
-        files = [f for f in os.listdir(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/chess/chess_2_images/")) if os.path.isfile(os.path.join("resources/chess/chess_2_images/", f))]
+        files = [f for f in os.listdir(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/chess/chess_2_images/")) if os.path.isfile(os.path.join(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/chess/chess_2_images/"), f))]
         for f in files:
-            PIECES[f[:-4]] = pygame.transform.scale(pygame.image.load(f"resources/chess/chess_2_images/{f}"), (SQ_SIZE,SQ_SIZE))
+            PIECES[f[:-4]] = pygame.transform.scale(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], f"resources/chess/chess_2_images/{f}")), (SQ_SIZE,SQ_SIZE))
 
 
     def drawBoard(screen):

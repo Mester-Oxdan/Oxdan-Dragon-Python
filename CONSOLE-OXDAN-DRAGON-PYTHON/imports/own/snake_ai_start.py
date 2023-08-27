@@ -1,8 +1,8 @@
 import os
 import pygame
-from imports.snakes.snake import *
+from imports.own.imports.snakes.snake import *
 import time
-from imports.snakes.AI_snake import hamiltonian_path, get_action
+from imports.own.imports.snakes.AI_snake import hamiltonian_path, get_action
 import imports.own.will_go_to_start
 
 def snake_ai_start():
@@ -30,12 +30,12 @@ def snake_ai_start():
             yellow = (255, 255, 0)
 
             # Fonts
-            largeFont = pygame.font.Font(
-                "resources/fonts/OpenSans-Regular.ttf", int(round(width * 0.023, 0)))
-            mediumFont = pygame.font.Font(
-                "resources/fonts/OpenSans-Regular.ttf", int(round(width * 0.016, 0)))
-            smallFont = pygame.font.Font(
-                "resources/fonts/OpenSans-Regular.ttf", int(round(width * 0.01, 0)))
+            largeFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
+                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.023, 0)))
+            mediumFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
+                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.016, 0)))
+            smallFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
+                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.01, 0)))
 
             # Initialise variables to track height of title and buttons
             titleH = 50

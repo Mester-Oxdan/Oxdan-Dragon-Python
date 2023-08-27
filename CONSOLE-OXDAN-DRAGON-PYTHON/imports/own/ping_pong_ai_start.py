@@ -1,4 +1,4 @@
-from imports.ping_pong import Game
+from imports.own.imports.ping_pong import Game
 import imports.own.will_go_to_start
 import pygame
 import neat

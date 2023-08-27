@@ -31,12 +31,12 @@ def typing_tutor_start():
         
        
             pygame.init()
-            self.open_img = pygame.image.load('resources/images/type-speed-open.png')
+            self.open_img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/type-speed-open.png'))
             self.open_img = pygame.transform.scale(self.open_img, (self.w,self.h))
             #ico = pygame.image.load('my_dragon_ico.jpg').convert()
             #pygame.display.set_icon (ico)
 
-            self.bg = pygame.image.load('resources/images/background_typing_tutor.jpg')
+            self.bg = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/background_typing_tutor.jpg'))
             self.bg = pygame.transform.scale(self.bg, (500,750))
 
             self.screen = pygame.display.set_mode((self.w,self.h))
@@ -52,7 +52,7 @@ def typing_tutor_start():
             pygame.display.update()   
         
         def get_sentence(self):
-            f = open('resources/txt/sentences.txt').read()
+            f = open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/txt/sentences.txt')).read()
             sentences = f.split('\n')
             sentence = random.choice(sentences)
             return sentence
@@ -80,7 +80,7 @@ def typing_tutor_start():
                 self.results = 'Time: '+str(round(self.total_time)) +" secs   Accuracy: "+ str(round(self.accuracy)) + "%" + '   Wpm: ' + str(round(self.wpm))
 
                 # draw icon image
-                self.time_img = pygame.image.load('resources/images/icon.png')
+                self.time_img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/icon.png'))
                 self.time_img = pygame.transform.scale(self.time_img, (150,150))
                 #screen.blit(self.time_img, (80,320))
                 screen.blit(self.time_img, (self.w/2-75,self.h-140))

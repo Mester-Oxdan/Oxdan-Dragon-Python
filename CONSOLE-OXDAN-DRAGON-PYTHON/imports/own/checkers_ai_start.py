@@ -3,9 +3,9 @@ import pygame
 import imports.own.will_go_to_start
 import pygame
 from colorama import Fore
-from imports.checkers.checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE, RED, WHITE
-from imports.checkers.checkers.game import Game
-from imports.checkers.minimax.algorithm import minimax
+from imports.own.imports.checkers.checkers.constants import WIDTH, HEIGHT, SQUARE_SIZE, RED, WHITE
+from imports.own.imports.checkers.checkers.game import Game
+from imports.own.imports.checkers.minimax.algorithm import minimax
 
 def checkers_ai_start():
 
