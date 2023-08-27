@@ -11,12 +11,12 @@ def pacman_start():
             purple = (255,0,255)
             yellow   = ( 255, 255,0)
 
-            Trollicon=pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/Trollman.png'))
+            Trollicon=pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/Trollman.png'))
             pygame.display.set_icon(Trollicon)
 
             #Add music
             pygame.mixer.init()
-            pygame.mixer.music.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/music/pacman.mp3'))
+            pygame.mixer.music.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/pacman.mp3'))
             pygame.mixer.music.play(-1, 0.0)
 
             # This class represents the bar at the bottom that the player controls
@@ -344,7 +344,7 @@ def pacman_start():
 
             # Set the title of the window
             pygame.display.set_caption('Pacman')
-            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
             pygame.display.set_icon (ico)
 
             # Create a surface we can draw on
@@ -398,23 +398,23 @@ def pacman_start():
 
 
               # Create the player paddle object
-              Pacman = Player( w, p_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/Trollman.png") )
+              Pacman = Player( w, p_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/Trollman.png") )
               all_sprites_list.add(Pacman)
               pacman_collide.add(Pacman)
    
-              Blinky=Ghost( w, b_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/Blinky.png") )
+              Blinky=Ghost( w, b_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/Blinky.png") )
               monsta_list.add(Blinky)
               all_sprites_list.add(Blinky)
 
-              Pinky=Ghost( w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/Pinky.png") )
+              Pinky=Ghost( w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/Pinky.png") )
               monsta_list.add(Pinky)
               all_sprites_list.add(Pinky)
    
-              Inky=Ghost( i_w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/Inky.png") )
+              Inky=Ghost( i_w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/Inky.png") )
               monsta_list.add(Inky)
               all_sprites_list.add(Inky)
    
-              Clyde=Ghost( c_w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/Clyde.png") )
+              Clyde=Ghost( c_w, m_h, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/Clyde.png") )
               monsta_list.add(Clyde)
               all_sprites_list.add(Clyde)
 

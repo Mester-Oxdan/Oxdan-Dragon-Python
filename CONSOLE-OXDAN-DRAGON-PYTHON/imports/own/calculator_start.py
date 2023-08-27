@@ -15,7 +15,7 @@ def calculator_start():
 
                 a = tkinter.Tk(className = "calculator")
                 # this is for input display
-                a.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+                a.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                 display = tkinter.Entry(a, bd = 5, bg = 'lightgray', fg = 'black', justify = "right", relief = "solid")
                 display.grid(ipadx = 40, ipady = 15, columnspan = 10)
                 #must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky

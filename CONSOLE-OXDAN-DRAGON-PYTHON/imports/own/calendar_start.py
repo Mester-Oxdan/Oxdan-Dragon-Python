@@ -8,7 +8,7 @@ def calendar_start():
         # Create Object
         root = tkinter.Tk()
         root.title("Calendar!")
-        root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+        root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
         # Set geometry
         root.geometry("400x400")
  
@@ -30,7 +30,7 @@ def calendar_start():
         date = tkinter.Label(root, text = "")
         date.pack(pady = 20)
  
-        root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'dragon.ico'))
+        #root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/dragon.ico'))
         # Execute Tkinter
         root.mainloop()
 

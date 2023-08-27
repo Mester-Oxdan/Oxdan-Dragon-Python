@@ -32,10 +32,10 @@ def flappybird_start():
         surfaceHeight = 500
         surface = pygame.display.set_mode((surfaceWidth, surfaceHeight))
         pygame.display.set_caption('Flappy Bird')
-        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'my_dragon_ico.jpg')).convert()
+        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/my_dragon_ico.jpg')).convert()
         pygame.display.set_icon (ico)
 
-        img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/flap.png'))
+        img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/flap.png'))
         img_width = img.get_size()[0]
         img_height = img.get_size()[1]
 

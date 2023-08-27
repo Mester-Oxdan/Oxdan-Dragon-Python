@@ -1,11 +1,11 @@
 import pygame as pg
-
+import os
 
 class Sound:
     def __init__(self, game):
         self.game = game
         pg.mixer.init()
-        self.path = 'resources/doom/sound/'
+        self.path = os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/doom/sound/')
         self.shotgun = pg.mixer.Sound(self.path + 'shotgun.wav')
         self.npc_pain = pg.mixer.Sound(self.path + 'npc_pain.wav')
         self.npc_death = pg.mixer.Sound(self.path + 'npc_death.wav')

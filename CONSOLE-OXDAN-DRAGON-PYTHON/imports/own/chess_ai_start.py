@@ -42,7 +42,7 @@ def chess_ai_start():
     while running:
 
         pygame.display.set_caption('Chess ai')
-        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
         pygame.display.set_icon (ico)
 
         for event in pygame.event.get():

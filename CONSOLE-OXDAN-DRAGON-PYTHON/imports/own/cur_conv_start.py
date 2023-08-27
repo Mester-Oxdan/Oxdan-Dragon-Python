@@ -5,6 +5,7 @@ import tkinter
 import imports.own.will_go_to_start
 import requests
 import datetime as dt
+import os
 
 def cur_conv_start():
 
@@ -36,7 +37,7 @@ def cur_conv_start():
                 tk.Tk.__init__(self)
                 self.title('Currency Converter')
                 self.geometry('400x400')
-                self.iconbitmap(r'C:\Users\bogda\source\repos\CONSOLE-OXDAN-DRAGON-PYTHON\CONSOLE-OXDAN-DRAGON-PYTHON\my_dragon_ico.ico')
+                self.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], r'imports/own/my_dragon_ico.ico'))
                 self.config(bg='#3A3B3C')
                 self.CurrencyConverter = converter
 

@@ -35,7 +35,7 @@ def start_2048():
                         self.n=4
                         self.window=tkinter.Tk()
                         self.window.title('2048')
-                        self.window.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+                        self.window.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                         self.gameArea=tkinter.Frame(self.window,bg= 'azure3')
                         self.board=[]
                         self.gridCell=[[0]*4 for i in range(4)]

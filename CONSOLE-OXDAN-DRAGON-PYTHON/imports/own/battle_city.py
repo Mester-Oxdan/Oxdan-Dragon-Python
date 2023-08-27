@@ -1278,25 +1278,25 @@ class Game():
 		# load sprites (funky version)
 		#sprites = pygame.transform.scale2x(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"images/sprites.gif")))
 		# load sprites (pixely version)
-		sprites = pygame.transform.scale(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/images/sprites.gif")), [192, 224])
+		sprites = pygame.transform.scale(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/images/sprites.gif")), [192, 224])
 		#screen.set_colorkey((0,138,104))
 
-		ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+		ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
 		pygame.display.set_icon (ico)
 
 		# load sounds
 		if play_sounds:
 			pygame.mixer.init(44100, -16, 1, 512)
 
-			sounds["start"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/gamestart.ogg"))
-			sounds["end"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/gameover.ogg"))
-			sounds["score"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/score.ogg"))
-			sounds["bg"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/background.ogg"))
-			sounds["fire"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/fire.ogg"))
-			sounds["bonus"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/bonus.ogg"))
-			sounds["explosion"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/explosion.ogg"))
-			sounds["brick"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/brick.ogg"))
-			sounds["steel"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/music/steel.ogg"))
+			sounds["start"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/gamestart.ogg"))
+			sounds["end"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/gameover.ogg"))
+			sounds["score"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/score.ogg"))
+			sounds["bg"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/background.ogg"))
+			sounds["fire"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/fire.ogg"))
+			sounds["bonus"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/bonus.ogg"))
+			sounds["explosion"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/explosion.ogg"))
+			sounds["brick"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/brick.ogg"))
+			sounds["steel"] = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/steel.ogg"))
 
 		self.enemy_life_image = sprites.subsurface(81*2, 57*2, 7*2, 7*2)
 		self.player_life_image = sprites.subsurface(89*2, 56*2, 7*2, 8*2)
@@ -1309,7 +1309,7 @@ class Game():
 		self.timefreeze = False
 
 		# load custom font
-		self.font = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/fonts/prstart.ttf"), 16)
+		self.font = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/fonts/prstart.ttf"), 16)
 
 		# pre-render game over text
 		self.im_game_over = pygame.Surface((64, 40))

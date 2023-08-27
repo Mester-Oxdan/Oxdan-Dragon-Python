@@ -40,9 +40,9 @@ class Pawn(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BP.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BP.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WP.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WP.png")).convert_alpha()
 
 class Knight(Piece):
     def __init__(self, color):
@@ -61,9 +61,9 @@ class Knight(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BN.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BN.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WN.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WN.png")).convert_alpha()
 
 
 class Bishop(Piece):
@@ -83,9 +83,9 @@ class Bishop(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BB.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BB.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WB.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WB.png")).convert_alpha()
 
 
 class Rook(Piece):
@@ -105,9 +105,9 @@ class Rook(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BR.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BR.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WR.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WR.png")).convert_alpha()
 
 
 class Queen(Piece):
@@ -127,9 +127,9 @@ class Queen(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BQ.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BQ.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WQ.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WQ.png")).convert_alpha()
 
 
 class King(Piece):
@@ -149,6 +149,6 @@ class King(Piece):
     @property
     def piece_image(self):
         if self.color == "BLACK":
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/BK.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/BK.png")).convert_alpha()
         else:
-            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./resources/chess/chess_images_ai/WK.png")).convert_alpha()
+            return pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"./imports/own/resources/chess/chess_images_ai/WK.png")).convert_alpha()

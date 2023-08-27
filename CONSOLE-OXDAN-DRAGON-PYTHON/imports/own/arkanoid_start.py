@@ -27,8 +27,8 @@ def arkanoid_start():
             sc = pygame.display.set_mode((WIDTH, HEIGHT))
             clock = pygame.time.Clock()
             # background image
-            img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/1.jpg')).convert()
-            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+            img = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/1.jpg')).convert()
+            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
             pygame.display.set_icon (ico)
             pygame.display.set_caption('Arcanoid')
 

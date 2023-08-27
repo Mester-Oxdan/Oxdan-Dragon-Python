@@ -28,7 +28,7 @@ def ping_pong_ai_start():
                                     if event.type == pygame.QUIT:
                                         run = False
                                         pygame.quit()
-                                        will_go_to_start.main()
+                                        imports.own.will_go_to_start.main()
 
                                 keys = pygame.key.get_pressed()
                                 if keys[pygame.K_w]:
@@ -64,7 +64,7 @@ def ping_pong_ai_start():
                                     if event.type == pygame.QUIT:
                                         run = False
                                         pygame.quit()
-                                        will_go_to_start.main()
+                                        imports.own.will_go_to_start.main()
 
                                 output1 = net1.activate(
                                     (self.left_paddle.y, self.ball.y, abs(self.left_paddle.x - self.ball.x)))
@@ -119,12 +119,12 @@ def ping_pong_ai_start():
                         width, height = 700, 500
                         window = pygame.display.set_mode((width, height))
 
-                        ico = pygame.image.load('my_dragon_ico.jpg').convert()
+                        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
                         pygame.display.set_icon (ico)
 
                         pygame.display.set_caption('Ping Pong with ai')
 
-                        with open("best.pickle", "rb") as f:
+                        with open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/best.pickle"), "rb") as f:
                             winner = pickle.load(f)
 
                         game = PongGame(window, width, height)
@@ -132,7 +132,7 @@ def ping_pong_ai_start():
 
                 #try:
                     local_dir = os.path.dirname(__file__)
-                    config_path = os.path.join(local_dir, "config.txt")
+                    config_path = os.path.join(local_dir, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/config.txt"))
 
                     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                                              neat.DefaultSpeciesSet, neat.DefaultStagnation,
@@ -143,14 +143,14 @@ def ping_pong_ai_start():
                     if test_ai1(config) == True:
                         test_ai1(config)
 
-                    if test_ai1(config) == False:
-                        pygame.quit()
-                        imports.own.will_go_to_start.main()
+                    #if test_ai1(config) == False:
+                        #pygame.quit()
+                        #imports.own.will_go_to_start.main()
 
-                    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+                    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
                     pygame.display.set_icon (ico)
 
-                    imports.own.will_go_to_start.main()
+                    #imports.own.will_go_to_start.main()
 
                 #except:
                     #pygame.quit()

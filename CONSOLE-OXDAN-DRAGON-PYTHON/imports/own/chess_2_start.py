@@ -15,9 +15,9 @@ def chess_2_start():
     PIECES = {}
 
     def loadPieces():
-        files = [f for f in os.listdir(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/chess/chess_2_images/")) if os.path.isfile(os.path.join(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/chess/chess_2_images/"), f))]
+        files = [f for f in os.listdir(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/chess/chess_2_images/")) if os.path.isfile(os.path.join(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/chess/chess_2_images/"), f))]
         for f in files:
-            PIECES[f[:-4]] = pygame.transform.scale(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], f"resources/chess/chess_2_images/{f}")), (SQ_SIZE,SQ_SIZE))
+            PIECES[f[:-4]] = pygame.transform.scale(pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], f"imports/own/resources/chess/chess_2_images/{f}")), (SQ_SIZE,SQ_SIZE))
 
 
     def drawBoard(screen):
@@ -111,7 +111,7 @@ def chess_2_start():
     screen = pygame.display.set_mode((WIDTH, HEIGHT))
     clock = pygame.time.Clock()
     screen.fill(pygame.Color("white"))
-    gs = imports.chess.ChessEngine.GameState()
+    gs = imports.own.imports.chess.ChessEngine.GameState()
     validMoves = gs.getValidMoves()
     moveMade = False
     loadPieces()
@@ -122,7 +122,7 @@ def chess_2_start():
     StaleMate = False
     while running:
 
-            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
             pygame.display.set_icon (ico)
             pygame.display.set_caption('Chess 2')
 
@@ -145,7 +145,7 @@ def chess_2_start():
                             print(sqSelected)
                             mouseClick.append(sqSelected)
                         if len(mouseClick) == 2:
-                            move = imports.chess.ChessEngine.Move(mouseClick[0], mouseClick[1], gs.board)
+                            move = imports.own.imports.chess.ChessEngine.Move(mouseClick[0], mouseClick[1], gs.board)
                             for i in range(len(validMoves)):
                                 if move == validMoves[i]:
                                     gs.makeMove(validMoves[i])

@@ -200,7 +200,7 @@ def ping_pong_2_start():
                         pygame.draw.rect(screen, B_color, B_rect, 0)
                         pygame.draw.circle(screen, ball_color, (int(round(ball_x, 0)), int(round(ball_y,0))), ball_radius)
                         pygame.display.flip()
-                        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+                        ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
                         pygame.display.set_icon (ico)
 
                     ### -----QUIT EVENT-----

@@ -12,7 +12,7 @@ def space_shooter_start():
 	screen_size = (game_width, game_height)
 	game_window = pygame.display.set_mode(screen_size)
 	pygame.display.set_caption('Space Shooter')
-	ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+	ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
 	pygame.display.set_icon (ico)
 
 	# colors
@@ -30,7 +30,7 @@ def space_shooter_start():
 			self.score = 0
 		
 			# spaceship image
-			image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'resources/images/spaceship.png'))
+			image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/resources/images/spaceship.png'))
 			image_scale = 40 / image.get_rect().width
 			new_width = image.get_rect().width * image_scale
 			new_height = image.get_rect().height * image_scale
@@ -41,7 +41,7 @@ def space_shooter_start():
 		
 			# for displaying damage
 			self.invincibility_frames = 0
-			damage_image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'resources/images/damage.png'))
+			damage_image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/resources/images/damage.png'))
 			image_scale = 80 / damage_image.get_rect().width
 			new_width = damage_image.get_rect().width * image_scale
 			new_height = damage_image.get_rect().height * image_scale
@@ -74,7 +74,7 @@ def space_shooter_start():
 			color = random.choice(['brown', 'grey'])
 			size = random.choice(['big', 'medium', 'small', 'tiny'])
 			num = random.randint(1, 2)
-			self.image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], f'resources/images/meteors/{color}_{size}_{num}.png'))
+			self.image = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], f'imports/own/resources/images/meteors/{color}_{size}_{num}.png'))
 		
 			# set number of hits required to destroy meteor
 			# and the points added to score if destroyed
@@ -154,7 +154,7 @@ def space_shooter_start():
 	missile_group = pygame.sprite.Group()
 
 	# load background image
-	bg = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'resources/images/background.png'))
+	bg = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/resources/images/background.png'))
 
 	# create the player
 	player_x = 250

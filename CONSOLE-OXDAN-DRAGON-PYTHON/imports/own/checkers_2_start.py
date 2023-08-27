@@ -29,7 +29,7 @@ def checkers_2():
                     def InitUI(self):
 
                         self.parent.title("Checkers!")
-                        self.parent.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'my_dragon_ico.ico'))
+                        self.parent.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/my_dragon_ico.ico'))
                         self.pack(fill=BOTH, expand=1)
 
                         canvas = Canvas(self,bg="CadetBlue1")

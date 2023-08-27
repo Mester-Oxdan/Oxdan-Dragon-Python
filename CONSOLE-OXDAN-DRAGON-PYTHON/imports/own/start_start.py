@@ -65,7 +65,7 @@ def update_program(username, repo, branch, local_dir):
                                    title="New Update!",
                                    msg="New update available. After login use 'update' command.",
                                    duration="short",
-                                   icon=os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"my_dragon_ico.jpg"))
+                                   icon=os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/my_dragon_ico.jpg"))
             
             message.set_audio(audio.Default, loop=False)
 
@@ -113,7 +113,9 @@ def start_start():
 
     print(colorama.Fore.YELLOW)
     os.system("cls")
+    #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/music/steel.ogg"))
     #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "resources\math_game\kenvector_future.ttf"))
+    #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/config.txt"))
     #msvcrt.getch()
 
     Menu = ["                                                              REGISTRATION", "                                                              LOGIN", "                                                              INSTRUCTIONS", "                                                              EXIT"]

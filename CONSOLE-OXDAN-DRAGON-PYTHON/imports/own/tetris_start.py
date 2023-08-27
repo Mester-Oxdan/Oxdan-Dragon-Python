@@ -38,7 +38,7 @@ def tetrisstart23():
 		fontGAMEOVER = pygame.font.SysFont('agencyfb', GAMEOVER_FONT_SIZE)
 		fontTitle = pygame.font.SysFont('agencyfb', TITLE_FONT_SIZE)
 		fontVersion = pygame.font.SysFont('agencyfb', VERSION_FONT_SIZE)
-		ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+		ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
 		pygame.display.set_icon (ico)
 
 		ROW = (0)

@@ -23,7 +23,7 @@ def ping_pong_1_start():
             root.title('Ping Pong for 1')
             root.wm_attributes('-topmost', 1)
             root.resizable(0, 0)
-            root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+            root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
 
             string, column = 2, 3
             bricks_zone = 0.2

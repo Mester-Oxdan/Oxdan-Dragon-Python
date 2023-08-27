@@ -57,22 +57,22 @@ def car_racing_start():
     font = pygame.font.SysFont(None, 30)
 
     # sounds
-    gameOverSound = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/music/crash.wav'))
-    pygame.mixer.music.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'resources/music/car.wav'))
-    laugh = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/music/laugh.wav'))
+    gameOverSound = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/crash.wav'))
+    pygame.mixer.music.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/resources/music/car.wav'))
+    laugh = pygame.mixer.Sound(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/laugh.wav'))
 
 
     # images
-    playerImage = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/car1.png'))
-    car3 = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/car3.png'))
-    car4 = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/car4.png'))
+    playerImage = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/car1.png'))
+    car3 = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/car3.png'))
+    car4 = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/car4.png'))
     playerRect = playerImage.get_rect()
-    baddieImage = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/car2.png'))
+    baddieImage = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/car2.png'))
     sample = [car3,car4,baddieImage]
-    wallLeft = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/left.png'))
-    wallRight = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'resources/images/right.png'))
+    wallLeft = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/left.png'))
+    wallRight = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/images/right.png'))
 
-    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
     pygame.display.set_icon (ico)
 
     # "Start" screen
@@ -80,11 +80,11 @@ def car_racing_start():
     pygame.display.update()
     waitForPlayerToPressKey()
     zero=0
-    if not os.path.exists(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/data/save.dat")):
-        f=open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/data/save.dat"),'w')
+    if not os.path.exists(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/data/save.dat")):
+        f=open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/data/save.dat"),'w')
         f.write(str(zero))
         f.close()   
-    v=open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"resources/data/save.dat"),'r')
+    v=open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/resources/data/save.dat"),'r')
     topScore = int(v.readline())
     v.close()
     while (count>0):

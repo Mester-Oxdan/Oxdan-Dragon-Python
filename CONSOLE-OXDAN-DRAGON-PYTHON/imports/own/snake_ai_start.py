@@ -12,7 +12,7 @@ def snake_ai_start():
             
             size = width, height = 1220, 720 #1220, 820
             screen = pygame.display.set_mode(size)
-            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+            ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
             pygame.display.set_icon (ico)
             pygame.display.set_caption("Snake ai")
             # Initialise board width, height and tile size
@@ -31,11 +31,11 @@ def snake_ai_start():
 
             # Fonts
             largeFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
-                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.023, 0)))
+                "imports/own/resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.023, 0)))
             mediumFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
-                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.016, 0)))
+                "imports/own/resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.016, 0)))
             smallFont = pygame.font.Font(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],
-                "resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.01, 0)))
+                "imports/own/resources/fonts/OpenSans-Regular.ttf"), int(round(width * 0.01, 0)))
 
             # Initialise variables to track height of title and buttons
             titleH = 50
@@ -65,7 +65,7 @@ def snake_ai_start():
                     if event.type == pygame.QUIT:
 
                         pygame.quit()
-                        will_go_to_start.main()
+                        imports.own.will_go_to_start.main()
 
                 screen.fill(black)
 

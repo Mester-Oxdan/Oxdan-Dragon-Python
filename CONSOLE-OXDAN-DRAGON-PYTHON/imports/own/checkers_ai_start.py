@@ -19,7 +19,7 @@ def checkers_ai_start():
     # set caption for display here: shows up in top title bar
     pygame.display.set_caption('Checkers with ai')
 
-    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.jpg')).convert()
+    ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
     pygame.display.set_icon (ico)
 
     def get_row_col_from_mouse(pos):

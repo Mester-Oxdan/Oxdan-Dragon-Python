@@ -3,6 +3,7 @@ import tkinter
 import random
 import time
 import os
+from colorama import Fore
 
 def snake_2_start():
 
@@ -230,7 +231,7 @@ def snake_2_start():
                     """
                     Method to print out the final message and declare the winner based on player scores
                     """
-                    print("\nGame Over!")
+                    print(Fore.RED + "\nGame Over!" + Fore.WHITE)
                     #main()
                     if self.snake1.score_counter > self.snake2.score_counter:
                         result_msg = self.snake1.snake_color.title() + ' Snake wins!'
@@ -317,7 +318,7 @@ def snake_2_start():
                         time.sleep(1/SPEED)  # Time to hold each frame; reducing this time gives a notion of increased snake speed
 
             top = tkinter.Tk()
-            top.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+            top.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
             TkinkerCanvas(top)
             top.mainloop()
             imports.own.will_go_to_start.main()

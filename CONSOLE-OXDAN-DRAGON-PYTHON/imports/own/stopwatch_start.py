@@ -55,7 +55,7 @@ def stopwatch_start():
                             self.root.after(1000,self.timer)     
                 def __init__(self):
                     self.root=tkinter.Tk()
-                    self.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+                    self.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                     self.root.title("Stopwatch")
                     self.root.geometry("600x200")
                     self.t = tkinter.StringVar()
