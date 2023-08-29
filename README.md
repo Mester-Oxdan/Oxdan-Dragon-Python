@@ -5,11 +5,6 @@ Python Oxdan Dragon Console - It's own console command line on Python.
 
 PLEASE READ ME FIRST!!!!!!!
 
-To install program you can use:
-1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
-or
-2)download from main website ... (working on it)
-
 (Notes):
 
 *YouTube: https://www.youtube.com/@Oxdan_products
