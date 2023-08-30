@@ -1,6 +1,6 @@
 import pygame as pg
 import math
-from imports.own.imports.doom.settings import *
+from doom.settings import *
 
 
 class RayCasting:

@@ -235,7 +235,7 @@ def Games():
         try:
 
             import pygame as pg
-            from imports.mario.source.main import main
+            from imports.own.imports.mario.source.main import main
             #from source.main import main
 
             main()
@@ -261,14 +261,14 @@ def Games():
 
     elif imports.own.will_go_to_start.x.lower() == "doom": # doom (+)
                 
-            #try:
+            try:
                 
                 doom_start()
 
-            #except:
+            except:
 
-                #pygame.quit()
-                #imports.own.will_go_to_start.main()
+                pygame.quit()
+                imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "ping_pong": # ping_pong (+)
 
