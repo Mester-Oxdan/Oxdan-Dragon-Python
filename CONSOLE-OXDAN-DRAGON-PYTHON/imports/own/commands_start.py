@@ -22,6 +22,8 @@ def commands_start():
             sleep(0.01)
             print("conda - using conda commands") # conda (+)
             sleep(0.01)
+            print("cmd - using cmd commands") # cmd (+)
+            sleep(0.01)
             print("cls " + Fore.CYAN + "or " + Fore.WHITE + "clear" + " - clear your screen ") # cls (+)
             sleep(0.01)
             print("go_to - go to entered directory " + Fore.YELLOW + "( " + Fore.WHITE + "path" + Fore.YELLOW + " )" + Fore.WHITE) # go_to (+)

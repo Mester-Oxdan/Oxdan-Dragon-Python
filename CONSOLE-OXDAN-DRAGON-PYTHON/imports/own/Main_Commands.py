@@ -80,6 +80,39 @@ def Main_Commands():
         except:
 
             imports.own.will_go_to_start.main()
+            
+    if imports.own.will_go_to_start.writex.lower().startswith("cmd"): # cmd (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("cmd")
+                separetor = " "
+                right_command = separetor.join(command)
+                if right_command == "cmd":
+                   
+                    print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!We so sorry about that only cmd command can't be runed!)" + colorama.Fore.WHITE)
+                    imports.own.will_go_to_start.main()
+
+                else:
+                     
+                    os.system(right_command)
+                    #print(command)
+                    # Execute the pip command
+                    #result = subprocess.run(right_command, capture_output=True, text=True)
+
+                    # Print the output of the command
+                    #print(result.stdout)
+                    print(" ")
+                    imports.own.will_go_to_start.main()
+                    #command.clear()
+
+        except:
+
+           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Check your system. (should be windows)!)" + colorama.Fore.WHITE)
+           imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.writex.lower().startswith("pip"): # pip (+)
 

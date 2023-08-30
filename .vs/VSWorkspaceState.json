@@ -2,16 +2,15 @@
   "ExpandedNodes": [
     "",
     "\\CONSOLE-OXDAN-DRAGON-PYTHON",
+    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\doom",
     "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports",
     "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own",
+    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\doom",
     "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\checkers",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\checkers\\checkers",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\chess",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\chess\\modules",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\doom",
-    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\ping_pong"
+    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\mario",
+    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\mario\\source",
+    "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\mario\\source\\components"
   ],
-  "SelectedNode": "\\CONSOLE-OXDAN-DRAGON-PYTHON\\imports\\own\\imports\\doom\\npc.py",
+  "SelectedNode": "\\CONSOLE-OXDAN-DRAGON-PYTHON\\CONSOLE_OXDAN_DRAGON_PYTHON.py",
   "PreviewInSolutionExplorer": false
 }
