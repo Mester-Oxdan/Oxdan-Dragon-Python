@@ -93,7 +93,7 @@ def Main_Commands():
                 right_command = separetor.join(command)
                 if right_command == "cmd":
                    
-                    print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!We so sorry about that only cmd command can't be runed!)" + colorama.Fore.WHITE)
+                    print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!We're so sorry about that, only cmd command can't be run!)" + colorama.Fore.WHITE)
                     imports.own.will_go_to_start.main()
 
                 else:
