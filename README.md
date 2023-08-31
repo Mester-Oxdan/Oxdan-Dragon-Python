@@ -43,19 +43,19 @@ C/C++, so Python likely have lettle bit more commands than C/C++. This console j
 
 systems. Thanks!
 
-Photos 2022:
+Photos 2023:
 
 Console_start_menu.
-![screen_console_menu](https://github.com/Mester-Oxdan/Oxdan-Dragon-Python/assets/106891875/be559d94-295a-4b14-9850-af3fe231979e)
+![screen_console_menu](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/3814fedb-1398-45f1-998b-df9ffb6f0425)
 
 Console_start.
-![screen_console_start](https://github.com/Mester-Oxdan/Oxdan-Dragon-Python/assets/106891875/522a07e0-ff73-4905-b219-419185593e8e)
+![screen_console_start](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/18cf470b-f84d-405b-8939-2ca13a740295)
 
 Console_after_entered_command_author.
-![screen_console_author](https://github.com/Mester-Oxdan/Oxdan-Dragon-Python/assets/106891875/0ef8c4ce-9da4-4c36-969d-5af24d4c0959)
+![screen_console_author](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/11d6e073-a2ce-4b63-978d-70c75c43f45d)
 
 Console_rules.
-![screen_console_rules](https://github.com/Mester-Oxdan/Oxdan-Dragon-Python/assets/106891875/6f63f8b7-2c0a-47e3-ae17-645cc206a754)
+![screen_console_rules](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/22c66e40-47f1-4c5c-80c9-ce10696fcb28)
 
 Console_commands.
-![screen_console_commands](https://github.com/Mester-Oxdan/Oxdan-Dragon-Python/assets/106891875/2d264017-bedd-4dbb-ab33-0b9a025dfd92)
+![screen_console_commands](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/744c26b6-e868-4185-b373-492f0c752316)
