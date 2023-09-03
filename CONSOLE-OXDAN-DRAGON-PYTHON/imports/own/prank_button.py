@@ -15,7 +15,7 @@ def prank_button_no():
 
     root = Tk()
 
-    root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+    root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
 
     def no(event):
 
@@ -27,12 +27,12 @@ def prank_button_no():
         
         if messageboxid_no == True:
 
-            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "CONSOLE_OXDAN_DRAGON_PYTHON.py")
+            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "/CONSOLE_OXDAN_DRAGON_PYTHON.py")
             quit(0)
 
         else:
             
-            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "CONSOLE_OXDAN_DRAGON_PYTHON.py")
+            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "/CONSOLE_OXDAN_DRAGON_PYTHON.py")
             quit(0)
 
     def disable_event():
@@ -56,7 +56,7 @@ def prank_button_no():
 
     if imports.own.will_go_to_start.yes_or_no == False:
 
-        os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "CONSOLE_OXDAN_DRAGON_PYTHON.py")
+        os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "/CONSOLE_OXDAN_DRAGON_PYTHON.py")
         quit(0)
 
     root.mainloop()
@@ -71,7 +71,7 @@ def prank_button_yes():
 
     root = Tk()
 
-    root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'my_dragon_ico.ico'))
+    root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/my_dragon_ico.ico'))
 
     def no(event):
 
@@ -83,12 +83,12 @@ def prank_button_yes():
 
         if messageboxid_yes == True:
 
-            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "CONSOLE_OXDAN_DRAGON_PYTHON.py")
+            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "/CONSOLE_OXDAN_DRAGON_PYTHON.py")
             quit(0)
 
         else:
 
-            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "CONSOLE_OXDAN_DRAGON_PYTHON.py")
+            os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"]) + "/CONSOLE_OXDAN_DRAGON_PYTHON.py")
             quit(0)
 
     def disable_event():
@@ -112,7 +112,7 @@ def prank_button_yes():
 
     if imports.own.will_go_to_start.yes_or_no == False:
 
-        os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "CONSOLE_OXDAN_DRAGON_PYTHON.py"))
+        os.system(r"start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "/CONSOLE_OXDAN_DRAGON_PYTHON.py"))
         quit(0)
 
     root.mainloop()
