@@ -21,6 +21,8 @@ PLEASE READ ME FIRST!!!!!!!
 
 *For sponsoring/donations: 4403 9352 3234 1307
 
+*Website: https://oxdan.com
+
 (About/Main info):
 
 !REMEMBER! Author don't care and don't responsible what are you doing. This console created for learning programing and how it is working. You
