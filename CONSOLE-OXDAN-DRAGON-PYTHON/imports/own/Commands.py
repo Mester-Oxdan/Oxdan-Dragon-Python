@@ -215,8 +215,6 @@ def Commands():
             sleep(0.01)
             print("color_back - set color background console " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color_back (+)
             sleep(0.01)
-            print("joke - shows random jokes " + Fore.YELLOW + "(" + Fore.WHITE + " all, ph, v, au " + Fore.YELLOW + ")" + Fore.WHITE) # joke (+)
-            sleep(0.01)
             print("i? - shows you are admin or user") # i? (+)
             sleep(0.01)
             print("administrator " + Fore.CYAN + "or " + Fore.WHITE + "admin " + Fore.CYAN + "or " + Fore.WHITE + "superuser" + " - open Dragon console as administrator") # administrator (+)

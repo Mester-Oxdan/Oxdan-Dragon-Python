@@ -537,13 +537,3 @@ def Own():
                     print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter path to photo!)\n" + Fore.WHITE)
                     #getch()
                     imports.own.will_go_to_start.main()
-
-    elif imports.own.will_go_to_start.x.lower() == "joke":
-
-        try:
-
-            joke_start()
-
-        except:
-
-            imports.own.will_go_to_start.main()
