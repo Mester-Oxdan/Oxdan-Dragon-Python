@@ -23,7 +23,6 @@ from imports.own.system_info_start import system_info_start
 from imports.own.my_location_start import my_location_start
 from imports.own.energy_start import energy_start
 from imports.own.send_ph_message_start import send_ph_message_start
-from imports.own.joke_start import joke_start
 from imports.own.my_volume_level23 import my_volume_level
 from imports.own.commands_start import commands_start
 from imports.own.tips_start import tips_start
@@ -150,7 +149,7 @@ def Own():
                 #os.system("start " + path + "\CONSOLE_OXDAN_DRAGON_PYTHON.py")
 
                 # Перезапускаем скрипт с правами админа
-                ctypes.windll.shell32.ShellExecuteW( None, "runas", sys.executable, path + "\CONSOLE_OXDAN_DRAGON_PYTHON.py", None, 1)
+                ctypes.windll.shell32.ShellExecuteW( None, "runas", sys.executable, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\CONSOLE_OXDAN_DRAGON_PYTHON.py"), None, 1)
                 exit(0)  # выходим из старой версии скрипта
                 #will_go_to_start.main()
 

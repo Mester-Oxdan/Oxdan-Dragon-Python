@@ -38,7 +38,7 @@ def Commands():
             sleep(0.01)
             print("del " + Fore.CYAN + "or " + Fore.WHITE + "delete" + " - delete entered file " + Fore.YELLOW + "( " + Fore.WHITE + "file name" + Fore.YELLOW + " )" + Fore.WHITE) # del (+)
             sleep(0.01)
-            print("install - install entered option " + Fore.YELLOW + "(" + Fore.WHITE + " 7-zip,\n                                   google_chrome, git, desktop_git, miniconda, opencv, python-2.7,\n                                   python-3.10.6, torrent, virtualbox, visual_studio, vlc, vscode,\n                                   winsdk, wireshark, zeal, zoom, blue_stacks, steam, unity, epic_games,\n                                   mechvibes, custom_cursor, skype, viber, lively_wallpaper, telegram,\n                                   tor_browser, npm " + Fore.YELLOW + ")" + Fore.WHITE) # install (+)
+            print("install - install entered option \033[0;33m(\033[0;37m 7-zip, google_chrome, git, miniconda, python-3.10.6, torrent, virtualbox,\n                                   visual_studio, vlc, vscode, winsdk, wireshark, zeal, zoom, blue_stacks,\n                                   steam, unity, epic_games, custom_cursor, skype, viber, telegram, npm \033[0;33m)\n" + Fore.WHITE) # install (+)
             sleep(0.01)
             print("update - update Dragon console to last version") # update (+)
             sleep(0.01)
