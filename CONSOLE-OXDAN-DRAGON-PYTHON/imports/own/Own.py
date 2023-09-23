@@ -440,10 +440,10 @@ def Own():
 
             try:
 
-                path = os.getcwd()
+                #path = os.getcwd()
                 #os.chdir("..")
 
-                os.system("start " + path + "\CONSOLE_OXDAN_DRAGON_PYTHON.py")
+                os.system("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\CONSOLE_OXDAN_DRAGON_PYTHON.py"))
 
                 #os.system(r"start C:\Users\bogda\source\repos\CONSOLE-OXDAN-DRAGON-PYTHON\CONSOLE-OXDAN-DRAGON-PYTHON\CONSOLE_OXDAN_DRAGON_PYTHON.py")
                 imports.own.will_go_to_start.main()

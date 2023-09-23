@@ -24,7 +24,7 @@ except ImportError:
         os.system("pip install builtins")
     except:
         
-        os.system("start " +  + "imports/own/resources/installs/python-3.10.6-amd64.exe")
+        os.system("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own/resources/installs/python-3.10.6-amd64.exe"))
 
 import msvcrt
 import os
@@ -71,6 +71,7 @@ def start_start():
     #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "resources\math_game\kenvector_future.ttf"))
     #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/config.txt"))
     #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/my_dragon_ico.jpg"))
+    #print("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "imports/own/resources/installs/python-3.10.6-amd64.exe"))
     #msvcrt.getch()
 
     Menu = ["                                                              REGISTRATION", "                                                              LOGIN", "                                                              INSTRUCTIONS", "                                                              EXIT"]
