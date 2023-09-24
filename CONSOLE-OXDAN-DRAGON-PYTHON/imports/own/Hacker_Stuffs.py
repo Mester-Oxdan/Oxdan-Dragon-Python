@@ -3,6 +3,7 @@ import imports.own.will_go_to_start
 from colorama import Fore
 import colorama
 import ctypes
+import os
 from imports.own.my_wifi_pas_start import my_wifi_pas_start
 from imports.own.inject_prog_start import inject_prog_start
 from imports.own.cor_desk_start import cor_desk_start
@@ -40,6 +41,32 @@ def Hacker_Stuffs():
         try:
 
             my_wifi_pas_start()
+
+        except:
+
+            imports.own.will_go_to_start.main()
+            
+    if imports.own.will_go_to_start.x.lower() == "mimikatz": # my_wifi_pas (+)
+
+        try:
+
+            print("\n")
+            os.system(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
+            #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
+            imports.own.will_go_to_start.main()
+
+        except:
+
+            imports.own.will_go_to_start.main()
+            
+    if imports.own.will_go_to_start.x.lower() == "john_the_ripper": # john_the_ripper (+)
+
+        try:
+
+            print("\n")
+            os.system(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe"))
+            #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
+            imports.own.will_go_to_start.main()
 
         except:
 
