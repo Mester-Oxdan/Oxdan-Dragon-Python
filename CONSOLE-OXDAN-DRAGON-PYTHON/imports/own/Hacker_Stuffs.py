@@ -160,6 +160,30 @@ def Hacker_Stuffs():
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter network ip address!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
             
+    if imports.own.will_go_to_start.x.lower() == "stealer": # stealer (+)
+
+        try:
+            try:
+                is_admin = os.getuid() == 0
+            except AttributeError:
+                is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
+
+            if is_admin == False:
+                
+                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Run console as admin!)" + Fore.WHITE)
+                imports.own.will_go_to_start.main()
+
+            elif is_admin == True:
+
+                print(" ")
+                os.system("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\imports\own\imports\importnt_folder\start_2.bat"));
+                print("Copying files was " + Fore.GREEN + "successfully" + Fore.WHITE + " finished in Oxdan-Dragon-Python dir.")
+                imports.own.will_go_to_start.main()
+            
+        except:
+
+            imports.own.will_go_to_start.main()
+            
     if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
 
         try:

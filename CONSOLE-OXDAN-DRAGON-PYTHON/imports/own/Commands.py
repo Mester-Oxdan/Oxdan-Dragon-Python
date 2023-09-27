@@ -38,8 +38,8 @@ def Commands():
             sleep(0.01)
             print("del " + Fore.CYAN + "or " + Fore.WHITE + "delete" + " - delete entered file " + Fore.YELLOW + "( " + Fore.WHITE + "file name" + Fore.YELLOW + " )" + Fore.WHITE) # del (+)
             sleep(0.01)
-            print("install - install entered option \033[0;33m(\033[0;37m 7-zip, google_chrome, git, miniconda, python-3.10.6, torrent, virtualbox,\n                                   visual_studio, vlc, vscode, winsdk, wireshark, zeal, zoom, blue_stacks,\n                                   steam, unity, epic_games, custom_cursor, skype, viber, telegram, npm \033[0;33m)\n" + Fore.WHITE) # install (+)
-            sleep(0.01)
+            #print("install - install entered option \033[0;33m(\033[0;37m 7-zip, google_chrome, git, miniconda, python-3.10.6, torrent, virtualbox,\n                                   visual_studio, vlc, vscode, winsdk, wireshark, zeal, zoom, blue_stacks,\n                                   steam, unity, epic_games, custom_cursor, skype, viber, telegram, npm \033[0;33m)\n" + Fore.WHITE) # install (+)
+            #sleep(0.01)
             print("update - update Dragon console to last version") # update (+)
             sleep(0.01)
             print(" ")
@@ -69,8 +69,8 @@ def Commands():
             sleep(0.01)
             print("wifi_hack - shows tool for hacking wifi password") # wifi_hack (+)
             sleep(0.01)
-            #print("stealer - copy importent files windows in target_files_dis folder") # stealer (+) 
-            #sleep(0.01) 
+            print("stealer - copy importent files windows in target_files_dis folder") # stealer (+) 
+            sleep(0.01)  
             print("get_ip_website - shows ip address entered site " + Fore.YELLOW + "( " + Fore.WHITE + "website name" + Fore.YELLOW + " )" + Fore.WHITE) # get_ip_website (+)
             sleep(0.01)
             print("auto_clicker - auto clicking, for exit press 'Esc'") # auto_clicker (+)
@@ -219,8 +219,8 @@ def Commands():
             p = Fore.MAGENTA + " p"
             wb = Fore.CYAN + " wb "
 
-            print("color - set color text " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color (+)
-            sleep(0.01)
+            #print("color - set color text " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color (+)
+            #sleep(0.01)
             print("color_back - set color background console " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color_back (+)
             sleep(0.01)
             print("i? - shows you are admin or user") # i? (+)
@@ -245,8 +245,8 @@ def Commands():
             sleep(0.01)
             print("links - shows just links") # links (+)
             sleep(0.01)
-            print("dragon_helper - will enter commands by your saying while did not say 'exit'") # dargon_helper (+) need add to c/c++
-            sleep(0.01)
+            #print("dragon_helper - will enter commands by your saying while did not say 'exit'") # dargon_helper (+) need add to c/c++
+            #sleep(0.01)
             print("my_volume_level - shows windows volume level") # my_volume_level (+)
             sleep(0.01)
             print("set_volume_level - set windows volume level " + Fore.YELLOW + "( " + Fore.WHITE + "number" + Fore.YELLOW + " )" + Fore.WHITE) # set_volume_level (+)

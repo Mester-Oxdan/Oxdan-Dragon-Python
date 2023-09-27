@@ -47,7 +47,7 @@ def Own():
 
                 imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "color": # color (+)
+    '''if imports.own.will_go_to_start.x.lower() == "color": # color (+)
             
             try:
 
@@ -55,7 +55,7 @@ def Own():
 
             except:
 
-                imports.own.will_go_to_start.main()
+                imports.own.will_go_to_start.main()'''
 
     if imports.own.will_go_to_start.x.lower() == "color_back": # colorback (+)
             
@@ -266,7 +266,7 @@ def Own():
 
             imports.own.ill_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "dragon_helper": # dragon_helper (+)
+    '''if imports.own.will_go_to_start.x.lower() == "dragon_helper": # dragon_helper (+)
 
         try:
 
@@ -274,7 +274,7 @@ def Own():
 
         except:
 
-            imports.own.will_go_to_start.main()
+            imports.own.will_go_to_start.main()'''
 
     if imports.own.will_go_to_start.x.lower() == "history": # history (+)
 
