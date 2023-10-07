@@ -10,6 +10,7 @@ import imports.own.Games
 import imports.own.Own
 import imports.own.Pranks
 import imports.own.Elses
+import imports.own.joke_start
 import imports.own.color_start
 import imports.own.color_back_start
 from ctypes import cast, POINTER
@@ -670,6 +671,15 @@ def dragon_helper_start():
                         list_MyText.remove("back")
                         a_tit_278 = (''.join(list_MyText))
                         imports.own.color_back_start.a_tit_278 = a_tit_278
+                        imports.own.Own.Own()
+
+                    if list_MyText[0].lower() == "joke":
+
+                        global x
+                        imports.own.will_go_to_start.x = "joke"
+                        list_MyText.remove("joke")
+                        a_tit_2789 = (''.join(list_MyText))
+                        imports.own.joke_start.a_tit_2789 = a_tit_2789
                         imports.own.Own.Own()
 
                     if list_MyText[0].lower() == "i?" or list_MyText[0].lower() == "i":

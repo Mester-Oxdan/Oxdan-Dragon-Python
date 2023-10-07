@@ -3,7 +3,6 @@ import imports.own.will_go_to_start
 from colorama import Fore
 import colorama
 import ctypes
-import os
 from imports.own.my_wifi_pas_start import my_wifi_pas_start
 from imports.own.inject_prog_start import inject_prog_start
 from imports.own.cor_desk_start import cor_desk_start
@@ -19,22 +18,6 @@ from imports.own.get_ip_site_start67 import get_ip_site_start
 from imports.own.morse_code_start import morse_code_start
 from imports.own.cuaser_cipher_start import cuaser_cipher_start
 from imports.own.con_wifi_start import con_wifi_start
-from msvcrt import getche
-from time import sleep
-import phonenumbers
-from phonenumbers import timezone
-from phonenumbers import geocoder
-from phonenumbers import carrier
- 
-import folium
- 
-from opencage.geocoder import OpenCageGeocode
-from phonenumbers.util import u
-import pycountry , phonenumbers
-from phonenumbers.phonenumberutil import region_code_for_number
-from geopy.geocoders import Nominatim
-from uszipcode import SearchEngine
-from colorama import Fore
 
 STD_OUTPUT_HANDLE = -11
 hStdOut = ctypes.windll.kernel32.GetStdHandle(STD_OUTPUT_HANDLE)
@@ -57,32 +40,6 @@ def Hacker_Stuffs():
         try:
 
             my_wifi_pas_start()
-
-        except:
-
-            imports.own.will_go_to_start.main()
-            
-    if imports.own.will_go_to_start.x.lower() == "mimikatz": # my_wifi_pas (+)
-
-        try:
-
-            print("\n")
-            os.system(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
-            #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
-            imports.own.will_go_to_start.main()
-
-        except:
-
-            imports.own.will_go_to_start.main()
-            
-    if imports.own.will_go_to_start.x.lower() == "john_the_ripper": # john_the_ripper (+)
-
-        try:
-
-            print("\n")
-            os.system(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe"))
-            #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe"))
-            imports.own.will_go_to_start.main()
 
         except:
 
@@ -158,81 +115,6 @@ def Hacker_Stuffs():
         except:
 
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter network ip address!)" + Fore.WHITE)
-            imports.own.will_go_to_start.main()
-            
-    if imports.own.will_go_to_start.x.lower() == "stealer": # stealer (+)
-
-        try:
-            try:
-                is_admin = os.getuid() == 0
-            except AttributeError:
-                is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
-
-            if is_admin == False:
-                
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Run console as admin!)" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-            elif is_admin == True:
-
-                print(" ")
-                os.system("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\imports\own\imports\importnt_folder\start_2.bat"));
-                print("Copying files was " + Fore.GREEN + "successfully" + Fore.WHITE + " finished in Oxdan-Dragon-Python dir.")
-                imports.own.will_go_to_start.main()
-            
-        except:
-
-            imports.own.will_go_to_start.main()
-            
-    if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
-
-        try:
-
-            #ip_search()
-            # taking input the phonenumber along with the country code
-            print(" ")
-            print(Fore.RED + "Write 'esc' (for exit)")
-            number = input(Fore.YELLOW + "Enter Phone Number with country code like (+14129089359): ")
-
-            print(Fore.WHITE)
-
-            if number == "esc":
-    
-                imports.own.will_go_to_start.main()
-
-            # Parsing the phonenumber string to convert it into phonenumber format
-            phoneNumber = phonenumbers.parse(number)
- 
-            # Storing the API Key in the Key variable
-            Key = "4ce6fc5fb55a4e0883a37f1513389bf2" #generate your api https://opencagedata.com/api
- 
-            # Using the geocoder module of phonenumbers to print the Location in console
-            yourLocation = geocoder.description_for_number(phoneNumber,"en")
-            region = yourLocation
-            country = pycountry.countries.get(alpha_2 = region_code_for_number(phoneNumber))
-            city = "test"
-            zip_cor = "test"
-            not_sure = "(No info)"
-
-            print(" ") 
-            print("Country: " + country.name)
-            sleep(0.01)
-            print("Region: " + region)
-            sleep(0.01)
-            print("City: " + not_sure)
-            sleep(0.01)
-            print("Zip: " + not_sure)
-            sleep(0.01)
-            print("Y: " + not_sure)
-            sleep(0.01)
-            print("X: " + not_sure)
-            sleep(0.01)
-            #print(" ")
-            imports.own.will_go_to_start.main()
-
-        except:
-
-            print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter Phone number with country code!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.x.lower() == "wifi_hack": # wifi_hack (+)

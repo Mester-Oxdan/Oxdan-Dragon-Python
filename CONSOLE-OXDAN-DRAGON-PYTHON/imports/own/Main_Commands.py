@@ -37,13 +37,12 @@ def update_program(username, repo, branch, local_dir):
                             #git.Repo.clone_from(f"https://github.com/{username}/{repo}.git", local_dir)
                             #print()
 
-                            #os.system("git pull")
+                            os.system("git pull")
                             #os.system("start " + os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], "update_python.py"))
                             print(" ")
-                            #print("Program updated " + Fore.GREEN + "successfully." + Fore.WHITE + " Please restart program.")
-                            #print("We try to update all files, but if you still have notification about update,")
+                            print("Program updated " + Fore.GREEN + "successfully." + Fore.WHITE + " Please restart program.")
+                            print("We try to update all files, but if you still have notification about update,")
                             print("Please go on my github, delete your old console, and download new one.")
-                            print("Thanks.")
                             print(" ")
                             #time.sleep(5)
                             #quit(0)
@@ -247,29 +246,32 @@ def Main_Commands():
     elif imports.own.will_go_to_start.x.lower() == "update": # update (+)
         
         try:
+            try:
+                is_admin = os.getuid() == 0
+            except AttributeError:
+                is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
+
+            if is_admin == True:
+                
+                
+        
+                github_username = "Mester-Oxdan"
+                repository_name = "Oxdan-Dragon-Python"
+                target_branch = "main"  # Update this with the branch you want to update from
+                local_directory = "../"  # Update this with your local program directory
+    
+                update_program(github_username, repository_name, target_branch, local_directory)
             
-            #import requests
-
-            # Replace with the URL of the raw file on GitHub
-            raw_file_url = "https://raw.githubusercontent.com/Mester-Oxdan/Oxdan-Dragon-Python/main/version"
-
-            # Make the GET request to fetch the file content
-            response = requests.get(raw_file_url)
-
-            if response.status_code == 200:
-                version_content = response.text.strip()  # The file content as a string, with leading/trailing whitespace removed
-                if (version_content == '1.2023'):  # Use '==' for comparison, and '2.2024' instead of '1.2023'
-                    #print(Fore.RED + "You're not using the latest version." + Fore.WHITE)
-                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Program already updated to last version!)" + Fore.WHITE)
-                    imports.own.will_go_to_start.main()
-                else:
-                    print(Fore.YELLOW + "You're right!" + Fore.WHITE)
-                    print("We have a new version for you: 2.2024")
-                    print("If you want to " + Fore.GREEN + "download" + Fore.WHITE + " it, just go to our website or GitHub.")
-                    imports.own.will_go_to_start.main()
-            else:
-                print(f"Failed to fetch file content. Status code: {response.status_code}")
+            elif is_admin == False:
+                print(" ")
+                print("To update program you should be " + Fore.RED + "admin.")
+                time.sleep(0.01)
+                print(Fore.YELLOW + "Hint:" + Fore.WHITE + " to run console as admin you can use 'admin' command")
+                time.sleep(0.01)
+                print("then you can check your self who you are by 'i?' command.")
                 imports.own.will_go_to_start.main()
+            
+            
 
         except:
 
@@ -314,7 +316,6 @@ def Main_Commands():
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter name for folder!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
 
-    '''
     elif imports.own.will_go_to_start.x.lower() == "install": # install (+) ?
 
         try:
@@ -336,9 +337,9 @@ def Main_Commands():
         except:
 
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter install option!)\n" + Fore.WHITE)
-            imports.own.will_go_to_start.main()'''
+            imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "del" or imports.own.will_go_to_start.x.lower == "delete": # del (+)
+    elif imports.own.will_go_to_start.x.lower() == "del" or imports.own.will_go_to_start.x.lower == "delete": # del (+)
         
         try:
 

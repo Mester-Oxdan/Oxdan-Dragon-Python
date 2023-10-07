@@ -27,8 +27,8 @@ def ip_search():
                             "REGION": response65.get("region"),
                             "CITY": response65.get("city"),
                             "ZIP": response65.get("postal"),
-                            "Y": response65.get("latitude") -0.0138,
-                            "X": response65.get("longitude") +0.0646,
+                            "Y": response65.get("latitude") - 0.0033,
+                            "X": response65.get("longitude") + 0.0505 - 0.00304,
                         }
                         #return location_data
                         print(" ")
