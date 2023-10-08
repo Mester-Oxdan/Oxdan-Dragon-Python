@@ -2,6 +2,6 @@ READ ME FIRST!!!!!!
 
 To install this program you can use this options only:
 
-1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-C.git (should have git commands for it).
+1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
 OR
 2)download from website ... (working on it).
