@@ -1,4 +1,5 @@
 from msvcrt import getch
+import subprocess
 import imports.own.will_go_to_start
 from colorama import Fore
 import colorama
@@ -71,29 +72,48 @@ def Hacker_Stuffs():
 
             imports.own.will_go_to_start.main()
             
-    if imports.own.will_go_to_start.x.lower() == "john_the_ripper": # john_the_ripper (+)
+    if imports.own.will_go_to_start.writex.lower().startswith("john"): # john (+)
 
         try:
 
-            os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            #print(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            imports.own.will_go_to_start.main()
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("john")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                result = os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe " + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                imports.own.will_go_to_start.main()
 
         except:
 
-            imports.own.will_go_to_start.main()
-            
-    if imports.own.will_go_to_start.x.lower() == "john_the_ripper": # john_the_ripper (+)
+           #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python-3.10.6!)" + colorama.Fore.WHITE)
+           imports.own.will_go_to_start.main()
+           
+    if imports.own.will_go_to_start.writex.lower().startswith("nmap"): # nmap (+)
 
         try:
 
-            os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            #print(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            imports.own.will_go_to_start.main()
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                #command.remove("nmap")
+                # Execute the pip command
+                os.system(' '.join(command))
+                #result = subprocess.run(command, capture_output=True, text=True)
+                #result = os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe " + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                imports.own.will_go_to_start.main()
 
         except:
 
-            imports.own.will_go_to_start.main()
+           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install nmap-7.94-setup!)" + colorama.Fore.WHITE)
+           imports.own.will_go_to_start.main()
             
     if imports.own.will_go_to_start.x.lower() == "stealer": # stealer (+)
 

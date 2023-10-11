@@ -313,7 +313,7 @@ def Main_Commands():
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter name for folder!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
 
-    '''elif imports.own.will_go_to_start.x.lower() == "install": # install (+) ?
+    elif imports.own.will_go_to_start.x.lower() == "install": # install (+)
 
         try:
 
@@ -334,7 +334,7 @@ def Main_Commands():
         except:
 
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter install option!)\n" + Fore.WHITE)
-            imports.own.will_go_to_start.main()'''
+            imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.x.lower() == "del" or imports.own.will_go_to_start.x.lower == "delete": # del (+)
         
