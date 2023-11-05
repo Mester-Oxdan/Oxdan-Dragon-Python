@@ -60,16 +60,16 @@ def system_info_start():
 
             if platform == "linux" or platform == "linux2":
                 # linux
-                print("Version: 1.2023 [ENGLISH] (PYTHON) [LINUX]")
+                print("Version: 2.2024 [ENGLISH] (PYTHON) [LINUX]")
                 sleep(0.01)
 
             elif platform == "win32":
                 # Windows...
-                print("Version: 1.2023 [ENGLISH] (PYTHON) [WINDOWS]")
+                print("Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS]")
                 sleep(0.01)
 
             else:
-                print("Version: 1.2023 [ENGLISH] (PYTHON) [WINDOWS]")
+                print("Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS]")
                 sleep(0.01)
 
             imports.own.will_go_to_start.main()

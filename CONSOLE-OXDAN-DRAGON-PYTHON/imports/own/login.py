@@ -255,7 +255,7 @@ def login():
 
                                                             # Windows...
                                                             os.system("cls")
-                                                            print(colorama.Fore.YELLOW + "Oxdan" + colorama.Fore.RED + " Dragon" + colorama.Fore.WHITE + " [ Version: 1.2023 [ENGLISH] (PYTHON) [WINDOWS] ] ") # intro cmd (+)
+                                                            print(colorama.Fore.YELLOW + "Oxdan" + colorama.Fore.RED + " Dragon" + colorama.Fore.WHITE + " [ Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS] ] ") # intro cmd (+)
                                                             time.sleep(0.01)
                                                             print("(p) Oxdan Praduction. ")
                                                             time.sleep(0.01)

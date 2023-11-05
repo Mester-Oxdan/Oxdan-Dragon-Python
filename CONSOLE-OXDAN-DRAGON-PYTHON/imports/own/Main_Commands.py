@@ -73,7 +73,7 @@ def Main_Commands():
 
         try:
 
-            print("\n" + Fore.YELLOW + " Oxdan" + Fore.RED + " Dragon" + Fore.WHITE + " [ Version: 1.2023 [ENGLISH] (PYTHON) [WINDOWS] ] ")
+            print("\n" + Fore.YELLOW + " Oxdan" + Fore.RED + " Dragon" + Fore.WHITE + " [ Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS] ] ")
             time.sleep(0.01)
             print("(c) Oxdan Praduction. ")
             time.sleep(0.01)
@@ -258,10 +258,10 @@ def Main_Commands():
             async def main():
                 response = await fetch_data()
                 #print (response)
-                if response != "1.2023\n":
+                if response != "2.2024\n":
                     print(" ")
                     print("\033[0;33mYou're right!\033[0;37m")
-                    print("We have a new version for you: 2.2024")
+                    print("We have a new version for you: 3.2025")
                     print("If you want to \033[0;32mdownload\033[0;37m it, just go to our website or GitHub.")
                     imports.own.will_go_to_start.main()
                 else:
