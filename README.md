@@ -50,7 +50,7 @@ C/C++, so Python likely have lettle bit more commands than C/C++. This console j
 
 systems. Thanks!
 
-Photos 2023:
+Photos 2024:
 
 Console_start_menu.
 ![screen_console_menu](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/3814fedb-1398-45f1-998b-df9ffb6f0425)
