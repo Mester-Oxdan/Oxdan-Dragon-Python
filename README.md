@@ -10,23 +10,38 @@ To install program you can use:
 or 
 2)download from main website https://oxdan.com
 
-(Notes):
+*For social media: ⤵️
+*YouTube: @Oxdan_Praduction /OR/ https://www.youtube.com/@Oxdan_Praduction
 
-*YouTube: https://www.youtube.com/@Oxdan_products
+*Github: @Mester-Oxdan /OR/ https://github.com/Mester-Oxdan
 
-*Github: https://github.com/Mester-Oxdan
+*Tiktok: @oxdan_praduction /OR/ www.tiktok.com/@oxdan_praduction
 
-*Tiktok: www.tiktok.com/@oxdan_products.
+*Instagram: @oxdanpraduction /OR/ https://instagram.com/oxdanpraduction
 
-*Instagram: https://instagram.com/oxdanpraduction
+*Facebook: @Mariia Sierova /OR/ https://www.facebook.com/profile.php?id=100087125340188&mibextid=LQQJ4d
 
-*Kwork: https://kwork.com/user/jecob
+*Kwork: @jecob /OR/ https://kwork.com/user/jecob
 
-*Fiverr: https://www.fiverr.com/jecob_567
+*Fiverr: @jecob_567 /OR/ https://www.fiverr.com/jecob_567
 
-*For sponsoring/donations: 4403 9352 3234 1307
+*Upwork: https://www.upwork.com/freelancers/~01e296384cd379e73e?viewMode=1&mp_source=share
 
+*Reddit: https://www.reddit.com/u/detektive-void/s/JyYykvbe9o
+
+*For Sponsoring/Donations: ⤵️
+*Cash App: $BoHladii /OR/ 4403 9352 3234 1307
+
+*Buy Me A Coffee: https://www.buymeacoffee.com/oxdan
+
+*Ebay: https://www.ebay.com/usr/oxdan_praduction
+
+*Etsy: https://oxdanpraduction3dart.etsy.com
+
+*For Other: ⤵️
 *Website: https://oxdan.com
+
+*Thanks: 🙏😊
 
 (About/Main info):
 
