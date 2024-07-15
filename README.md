@@ -5,11 +5,12 @@ Python Oxdan Dragon Console - It's own console command line on Python.
 
 PLEASE READ ME FIRST!!!!!!!
 
-To install program you can use only:
+(Installation):
 1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
 OR
 2)Download from main Oxdan Praduction website https://oxdan.com
 
+(Bio):
 *For social media: ⤵️
 *YouTube: @Oxdan_Praduction /OR/ https://www.youtube.com/@Oxdan_Praduction
 
@@ -45,25 +46,25 @@ OR
 
 (About):
 
-!REMEMBER! Author don't care and he is not responsible for your deals in this console. This console created for learning programing and testing security. You
+!REMEMBER! Author don't care and he is not responsible for your deals in this console. This console was created for learning programing and testing security. You
 
-can find code of this console on Author github(https://github.com/Mester-Oxdan). This console have so much advantages for example 1) so many
+can find code of this console on Author github (https://github.com/Mester-Oxdan). This console has so many advantages for example 1) so many
 
-commands! This console have 9 classes of different command types it is MAINS, HACKER_STUFFS, PICTURES, ACCOUNTS, SIRIOUS, GAMES, OWNS, PRANKS and ELSES.
+commands! This console has 9 classes of different command types: MAINS, HACKER_STUFFS, PICTURES, ACCOUNTS, SERIOUS, GAMES, OWNS, PRANKS
 
-Author advises testing all this utilities just on your devices. If you find some were bugs or errors please let Author know. You can send message on Author
+and ELSES. Author advises testing all these utilities just on your devices. If you find some bugs or errors please let Author know. You can send a message on Author
 
-gmail(bogerter4521de@gmail.com) it will be better if you will take some pictures or video of problem. Please don't send some bull shit on Author gmail.
+email (bogerter4521de@gmail.com). It will be better if you will take some pictures or videos of the problem. Please don't send some bullshit on the Author email.
 
-Because Author respect you and trust in your help. Author just want to do this console perfect with your help. If you have ideas it is also can be helpful
+Because Author respects you and trusts in your help. Author just wants to make this console perfect with your help. If you have ideas it can also be helpful
 
 for Author. Author will check email 1 time per week. Also your name could be on the leaders board in the lists section. Difference between OXDAN DRAGON C/C++
 
 and OXDAN DRAGON PYTHON is almost the same but Python better because for Author was easier programing on Python than on C/C++, so Python likely have
 
-lettle bit more commands than C/C++. This console was maded just for Windows! Author still did't this console for linux, phones and another systems. Author start
+little bit more commands than C/C++. This console was made for Windows! Author still didn't create this console for linux, phones and other systems. Author started
 
-creating this console only because of studing coding but then it became a project where Author create his first program. Thanks!
+creating this console only because of studying coding in 2023, but then it became a project where Author created his first program. Thanks!
 
 Photos 2024:
 
@@ -88,3 +89,7 @@ Console_rules.
 
 Console_commands.
 ![screen_console_commands](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/744c26b6-e868-4185-b373-492f0c752316)
+
+Video 2024:
+
+Comming Soon...
