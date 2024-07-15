@@ -8,7 +8,9 @@ PLEASE READ ME FIRST!!!!!!!
 (Installation):
 
 1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
+
 OR
+
 2)Download from main Oxdan Praduction website https://oxdan.com
 
 (Bio):
@@ -33,6 +35,7 @@ OR
 
 *Reddit: https://www.reddit.com/u/detektive-void/s/JyYykvbe9o
 
+
 *For Sponsoring/Donations: ⤵️
 
 *Cash App: $BoHladii /OR/ 4403 9352 3234 1307
@@ -42,6 +45,7 @@ OR
 *Ebay: https://www.ebay.com/usr/oxdan_praduction
 
 *Etsy: https://oxdanpraduction3dart.etsy.com
+
 
 *For Other: ⤵️
 
