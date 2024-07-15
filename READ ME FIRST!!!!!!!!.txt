@@ -1,12 +1,17 @@
 PLEASE READ ME FIRST!!!!!!!
 
 (Installation):
+
 1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
+
 OR
+
 2)Download from main Oxdan Praduction website https://oxdan.com
 
 (Bio):
+
 *For social media: ⤵️
+
 *YouTube: @Oxdan_Praduction /OR/ https://www.youtube.com/@Oxdan_Praduction
 
 *Github: @Mester-Oxdan /OR/ https://github.com/Mester-Oxdan
@@ -25,7 +30,9 @@ OR
 
 *Reddit: https://www.reddit.com/u/detektive-void/s/JyYykvbe9o
 
+
 *For Sponsoring/Donations: ⤵️
+
 *Cash App: $BoHladii /OR/ 4403 9352 3234 1307
 
 *Buy Me A Coffee: https://www.buymeacoffee.com/oxdan
@@ -34,12 +41,15 @@ OR
 
 *Etsy: https://oxdanpraduction3dart.etsy.com
 
+
 *For Other: ⤵️
+
 *Website: https://oxdan.com
 
 *Thanks: 🙏😊
 
 (About):
+
 !REMEMBER! Author don't care and he is not responsible for your deals in this console. This console was created for learning programing and testing security. You
 
 can find code of this console on Author github (https://github.com/Mester-Oxdan). This console has so many advantages for example 1) so many
