@@ -45,7 +45,6 @@ OR
 *Thanks: 🙏😊
 
 (About):
-
 !REMEMBER! Author don't care and he is not responsible for your deals in this console. This console was created for learning programing and testing security. You
 
 can find code of this console on Author github (https://github.com/Mester-Oxdan). This console has so many advantages for example 1) so many
