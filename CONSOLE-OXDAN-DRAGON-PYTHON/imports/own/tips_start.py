@@ -11,7 +11,7 @@ def tips_start():
             sleep(0.01)
             print(Fore.WHITE + "1) in " + Fore.YELLOW + "(" + Fore.WHITE + " " + Fore.YELLOW + ")" + Fore.WHITE + " shows options") # 1) tip (+)
             sleep(0.01)
-            print("2) best size for console it is " + Fore.YELLOW + "141" + Fore.WHITE + ", " + Fore.YELLOW + "29" + Fore.WHITE) # 2) tip (+)
+            print("2) best size for console is " + Fore.YELLOW + "141" + Fore.WHITE + ", " + Fore.YELLOW + "29" + Fore.WHITE) # 2) tip (+)
             sleep(0.01)
             print("3) ") # 3) tip (+)
             sleep(0.01)

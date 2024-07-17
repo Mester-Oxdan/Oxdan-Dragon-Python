@@ -14,7 +14,7 @@ def donators_start():
     sleep(0.01)
     print(" ")
     sleep(0.01)
-    print("                                                                 1) no body")
+    print("                                                                 1) Cinderella - $10")
     sleep(0.01)
     print("                                                                 2) no body")
     sleep(0.01)
