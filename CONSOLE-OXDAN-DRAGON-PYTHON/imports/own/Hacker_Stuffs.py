@@ -277,7 +277,7 @@ def Hacker_Stuffs():
 
             imports.own.will_go_to_start.main()
 
-    elif imports.own.will_go_to_start.x.lower() == "inject_prog": # inject_prog (+)
+    elif imports.own.will_go_to_start.x.lower() == "injector_dll": # injector_dll (+)
 
         try:
 

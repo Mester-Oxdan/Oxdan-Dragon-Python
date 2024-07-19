@@ -30,15 +30,15 @@ def Commands():
             sleep(0.01)
             print("cls " + Fore.CYAN + "or " + Fore.WHITE + "clear" + " - clear your screen ") # cls (+)
             sleep(0.01)
-            print("go_to - go to entered directory " + Fore.YELLOW + "( " + Fore.WHITE + "path" + Fore.YELLOW + " )" + Fore.WHITE) # go_to (+)
+            print("go_to" + Fore.CYAN + "or " + Fore.WHITE + "cd" + " - go to entered directory " + Fore.YELLOW + "( " + Fore.WHITE + "path" + Fore.YELLOW + " )" + Fore.WHITE) # go_to (+)
             sleep(0.01)
-            print("dir " + Fore.CYAN + "or " + Fore.WHITE + "ls" + " - shows all files of current directory ") # dir (+)
+            print("dir " + Fore.CYAN + "or " + Fore.WHITE + "ls" + " - shows all files and folders of current directory ") # dir (+)
             sleep(0.01)
             print("mkdir - create new folder with entered name " + Fore.YELLOW + "( " + Fore.WHITE + "folder name" + Fore.YELLOW + " )" + Fore.WHITE) # mkdir (+)
             sleep(0.01)
             print("create - create new file with entered name.type " + Fore.YELLOW + "( " + Fore.WHITE + "name.type" + Fore.YELLOW + " )" + Fore.WHITE) # create (+)
             sleep(0.01)
-            print("del " + Fore.CYAN + "or " + Fore.WHITE + "delete" + " - delete entered file " + Fore.YELLOW + "( " + Fore.WHITE + "file name" + Fore.YELLOW + " )" + Fore.WHITE) # del (+)
+            print("del " + Fore.CYAN + "or " + Fore.WHITE + "delete" + " - delete entered file name or directory " + Fore.YELLOW + "( " + Fore.WHITE + "file name" + Fore.YELLOW + " )" + Fore.WHITE) # del (+)
             sleep(0.01)
             print("install - install entered option " + Fore.YELLOW + "(" + Fore.WHITE + " python-3.10.6, nmap-7.94-setup, git, miniconda3 " + Fore.YELLOW + ")" + Fore.WHITE) # install (+)
             sleep(0.01)
@@ -231,8 +231,8 @@ def Commands():
             p = Fore.MAGENTA + " p"
             wb = Fore.CYAN + " wb "
 
-            print("color - set color text " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color (+)
-            sleep(0.01)
+            #print("color - set color text " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color (+)
+            #sleep(0.01)
             print("color_back - set background color for console " + Fore.YELLOW + "(" + Fore.WHITE + color + koma + g + koma + b + koma + r + koma + y + koma + bl + koma + w + koma + p + koma + wb + Fore.YELLOW + ")" + Fore.WHITE) # color_back (+)
             sleep(0.01)
             print("i? - shows you are admin or user") # i? (+)
@@ -257,8 +257,8 @@ def Commands():
             sleep(0.01)
             print("links - shows links only") # links (+)
             sleep(0.01)
-            print("dragon_helper - will enter commands that you said, while you did't say 'exit'") # dargon_helper (+) need add to c/c++
-            sleep(0.01)
+            #print("dragon_helper - will enter commands that you said, while you did't say 'exit'") # dargon_helper (+) need add to c/c++
+            #sleep(0.01)
             print("my_volume_level - shows windows volume level") # my_volume_level (+)
             sleep(0.01)
             print("set_volume_level - set windows volume level " + Fore.YELLOW + "( " + Fore.WHITE + "number" + Fore.YELLOW + " )" + Fore.WHITE) # set_volume_level (+)
