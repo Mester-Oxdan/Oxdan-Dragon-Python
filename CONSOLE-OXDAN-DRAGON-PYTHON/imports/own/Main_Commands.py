@@ -25,7 +25,7 @@ def handle_directory_or_file(path):
         if files:
             # There are files in the directory, ask user for confirmation
             #print(f"The directory '{path}' contains files: {files}")
-            print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+            print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
             confirmation = input(Fore.YELLOW + f"Path '{path}' is a Directory. Are you sure you want to delete this directory and its contents? (yes/no): " + Fore.WHITE).strip().lower()
             
             if confirmation.lower() == 'yes' or confirmation.lower() == 'y':
@@ -44,7 +44,7 @@ def handle_directory_or_file(path):
         else:
             # Directory is empty
             #print(f"The directory '{path}' is empty.")
-            print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+            print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
             confirmation = input(Fore.YELLOW + f"Path '{path}' is a Empty Directory. Do you want to delete this empty directory? (yes/no): " + Fore.WHITE).strip().lower()
             
             if confirmation.lower() == 'yes' or confirmation.lower() == 'y':
@@ -63,7 +63,7 @@ def handle_directory_or_file(path):
     
     # If the path is not a directory, check if it's a file
     elif os.path.isfile(path):
-        print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+        print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
         confirmation = input(Fore.YELLOW + f"Path '{path}' is a file. Are you sure you want to delete this file? (yes/no): " + Fore.WHITE).strip().lower()
         
         if confirmation == 'yes' or confirmation.lower() == 'y':
@@ -138,7 +138,7 @@ def update_program(username, repo, branch, local_dir):
                         msvcrt.getch()
 def Main_Commands():
     
-    if imports.own.will_go_to_start.x.lower() == "--version" or imports.own.will_go_to_start.x == "-version" or imports.own.will_go_to_start.x == "version" or imports.own.will_go_to_start.x == "-v": # --version (+)
+    if imports.own.will_go_to_start.x.lower() == "--version" or imports.own.will_go_to_start.x.lower() == "-version" or imports.own.will_go_to_start.x.lower() == "version" or imports.own.will_go_to_start.x.lower() == "-v": # --version (+)
 
         try:
 

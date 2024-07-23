@@ -9,7 +9,7 @@ from imports.own.del_account_start import del_account_start
 
 def Accounts():
 
-            if imports.own.will_go_to_start.x.lower() == "login": # login (+)
+            if imports.own.will_go_to_start.x.lower() == "login" or imports.own.will_go_to_start.x.lower() == "signin": # login (+)
 
                  try:
 
@@ -19,7 +19,7 @@ def Accounts():
 
                         imports.own.will_go_to_start.main()
 
-            if imports.own.will_go_to_start.x.lower() == "registration": # registration (+)
+            if imports.own.will_go_to_start.x.lower() == "registration" or imports.own.will_go_to_start.x.lower() == "signup": # registration (+)
 
                     try:
 
@@ -33,7 +33,7 @@ def Accounts():
 
                     try:
 
-                       instructions.instructions()
+                       imports.own.instructions.instructions()
 
                     except:
 

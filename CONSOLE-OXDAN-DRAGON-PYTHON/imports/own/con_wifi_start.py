@@ -48,20 +48,23 @@ def crack_4(password):
 
                 time.sleep(4)
                 if iface.status() == const.IFACE_CONNECTED:
-                    print("\nConnection was " + Fore.GREEN + "successful!" + Fore.WHITE)
+                    #print("\nConnection was " + Fore.GREEN + "successful!" + Fore.WHITE)
+                    print(Fore.GREEN + "\n(!SUCCESS!) " + Fore.WHITE + "=" + Fore.YELLOW + " (!Wifi connection successful!)\n" + Fore.WHITE)
                     imports.own.will_go_to_start.main()
                 else:
-                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Wifi password or ssid was wrong!)\n" + Fore.WHITE)
+                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Wifi password or ssid is incorrect!)\n" + Fore.WHITE)
                     imports.own.will_go_to_start.main()
 
 def con_wifi_start():
 
-    print(Fore.RED + "Write 'esc' (for exit)")
+    print(Fore.RED + "\nEnter 'esc' (for exit)")
     ferd = input(Fore.YELLOW + "Enter wifi name: " + Fore.WHITE)
-    if ferd.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(ferd.lower()) == "esc":
         imports.own.will_go_to_start.main()
+        
+    print(Fore.RED + "\nEnter 'esc' (for exit)")
     ferd_2 = input(Fore.YELLOW + "Enter wifi password: " + Fore.WHITE)
-    if ferd_2.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(ferd_2.lower()) == "esc":
         imports.own.will_go_to_start.main()
     try:
         

@@ -6,17 +6,17 @@ import ctypes
 import os
 
 def inject_prog_start():
-    print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+    print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
     dll_path = input(Fore.YELLOW + "Enter path to DLL file: " + Fore.WHITE)
 
-    if dll_path.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(dll_path.lower()) == "esc":
         imports.own.will_go_to_start.main()
         return
 
-    print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+    print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
     process_id_input = input(Fore.YELLOW + "Enter PID to target process: " + Fore.WHITE)
 
-    if process_id_input.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(process_id_input.lower()) == "esc":
         imports.own.will_go_to_start.main()
         return
 
@@ -32,6 +32,7 @@ def inject_prog_start():
         if dll_path_address == 0:
             #raise RuntimeError(".")
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Failed to allocate memory in target process!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
         pymem.process.write_process_memory(pymem_process.process_handle, dll_path_address, dll_path_bytes)
 
@@ -42,6 +43,7 @@ def inject_prog_start():
         if load_library_address == 0:
             #raise RuntimeError(".")
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Failed to get address of LoadLibraryA!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
         # Create a remote thread in the target process to load the DLL
         thread_handle = pymem.process.create_remote_thread(pymem_process.process_handle, load_library_address, dll_path_address)
@@ -49,6 +51,7 @@ def inject_prog_start():
         if thread_handle == 0:
             #raise RuntimeError("")
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Failed to create remote thread!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
         # Wait for the thread to finish
         ctypes.windll.kernel32.WaitForSingleObject(thread_handle, -1)  # INFINITE
@@ -57,12 +60,14 @@ def inject_prog_start():
         pymem.process.virtual_free(pymem_process.process_handle, dll_path_address, len(dll_path_bytes) + 1, process.MEM_RELEASE)
 
         if ctypes.windll.kernel32.CloseHandle(thread_handle) == 0:
-            raise RuntimeError("")
+            #raise RuntimeError("")
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Failed to close handle to remote thread!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
         if ctypes.windll.kernel32.CloseHandle(pymem_process.process_handle) == 0:
             #raise RuntimeError("")
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Failed to close handle to target process!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
         #print(Fore.GREEN + "DLL injected successfully!" + Fore.WHITE)
         print(Fore.GREEN + "\n(!SUCCESS!) " + Fore.WHITE + "=" + Fore.YELLOW + " (!Process opened successfully!)" + Fore.WHITE)

@@ -27,6 +27,9 @@ input_list = []
 #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],r"my_dragon_ico_transformed.png"))
 #msvcrt.getch()
 
+def remove_098(string):
+    return string.replace(" ", "")
+
 def update_program():
     try:
 

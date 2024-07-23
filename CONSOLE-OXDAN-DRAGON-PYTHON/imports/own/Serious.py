@@ -11,13 +11,14 @@ from imports.own.dictaphone_start import dictaphone_start
 from imports.own.video_recorder_start import webcam_recorder_start
 from imports.own.screen_recorder_start import screen_recorder_start
 from imports.own.notepad_start import notepad_start
+import os
 
 def Serious():
 
     if imports.own.will_go_to_start.x.lower() == "tim" or imports.own.will_go_to_start.x.lower() == "time": # tim (-)
 
         try:
-
+            #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] +"\imports\own" ,"\my_dragon_ico.ico"))
             time_start()
 
         except:
@@ -29,18 +30,21 @@ def Serious():
         try:
 
             print(" ")
-            print(Fore.RED + "Write 'esc' (for exit)")
+            print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
             x = input(Fore.YELLOW + "\nEnter language from: " + Fore.WHITE)
-            if x == "esc":
+            if imports.own.will_go_to_start.remove_098(x.lower()) == "esc":
 
                 imports.own.will_go_to_start.main()
 
+            print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
             y = input(Fore.YELLOW + "Enter language to: " + Fore.WHITE)
-            if y == "esc":
+            if imports.own.will_go_to_start.remove_098(y.lower()) == "esc":
 
                 imports.own.will_go_to_start.main()
+                
+            print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
             z = input(Fore.YELLOW + "Enter text to translate from " + x + " to " + y + ": " + Fore.WHITE)
-            if z == "esc":
+            if imports.own.will_go_to_start.remove_098(z.lower()) == "esc":
 
                 imports.own.will_go_to_start.main()
             translator = Translator(from_lang = str(x), to_lang = str(y))

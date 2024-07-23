@@ -7,13 +7,13 @@ from colorama import Fore
 
 def askPas()->int:
 
-    print(Fore.RED + "Write 'esc' (for exit)" + Fore.WHITE)
+    print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
 
     while True:
 
         input_str = input(Fore.YELLOW + "Enter number of passwords: " + Fore.WHITE)
 
-        if input_str.lower() == "esc":
+        if imports.own.will_go_to_start.remove_098(input_str.lower()) == "esc":
 
             imports.own.will_go_to_start.main()
 
@@ -31,11 +31,13 @@ def askPas()->int:
 
 def askChar()->int:
 
+    print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
+
     while True:
 
         input_str45 = input(Fore.YELLOW + "Enter number of chars in passwords: " + Fore.WHITE)
 
-        if input_str45.lower() == "esc":
+        if imports.own.will_go_to_start.remove_098(input_str45.lower()) == "esc":
 
             imports.own.will_go_to_start.main()
 
@@ -52,22 +54,19 @@ def askChar()->int:
         return Char
 
 def pas_gen_w_start():
-
-                        print(" ")
-
-                        Pas = askPas()
-                        
+            
                         print(" ")
 
                         Char = askChar()
 
                         saveChar = Char
-    
+                        
+                        
                         words = ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "A", "S", "D", "F", "G", "H", "J", "K", "L", "Z", "X", "C", "V", "B", "N", "M", "q", "w", "e", 
                          "r", "t", "y", "u", "i", "o", "p", "a", "s", "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m", " "]
                         size = len(words)
                         random.seed(time.time())
-
+                        Pas = size ** Char
                         with builtins.open("Pass_Gen_W.txt", "w") as outFile:
                                 for _ in range(Pas):
                                     print(" ")

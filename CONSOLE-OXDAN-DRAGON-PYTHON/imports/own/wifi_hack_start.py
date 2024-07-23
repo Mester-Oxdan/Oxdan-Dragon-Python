@@ -93,9 +93,9 @@ def read_password():
 def wifi_hack_start():
 
     print(" ")
-    print(Fore.RED + "Write 'esc' (for exit)")
+    print(Fore.RED + "Enter 'esc' (for exit)")
     ferd = input(Fore.YELLOW + "Enter wifi name: " + Fore.WHITE)
-    if ferd.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(ferd.lower()) == "esc":
         imports.own.will_go_to_start.main()
     try:
         
@@ -106,8 +106,9 @@ def wifi_hack_start():
         print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Wifi name was not found!)\n" + Fore.WHITE)
         imports.own.will_go_to_start.main()
 
+    print(Fore.RED + "\nEnter 'esc' (for exit)")
     ferdtxt = input(Fore.YELLOW + "Enter path to txt file: " + Fore.WHITE)
-    if ferdtxt.lower() == "esc":
+    if imports.own.will_go_to_start.remove_098(ferdtxt.lower()) == "esc":
         imports.own.will_go_to_start.main()
     try:
         

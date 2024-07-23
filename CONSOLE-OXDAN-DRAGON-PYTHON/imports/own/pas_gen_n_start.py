@@ -12,7 +12,7 @@ def askPas()->int:
     while(True):
         input_str = input(Fore.YELLOW + "Enter number of passwords: " + Fore.WHITE)
 
-        if input_str.lower() == "esc":
+        if imports.own.will_go_to_start.remove_098(input_str.lower()) == "esc":
             print(" ")
             imports.own.will_go_to_start.main()
 
@@ -34,7 +34,7 @@ def askChar()->int:
 
         input_str45 = input(Fore.YELLOW + "Enter number of chars in passwords: " + Fore.WHITE)
 
-        if input_str45.lower() == "esc":
+        if imports.own.will_go_to_start.remove_098(input_str45.lower()) == "esc":
             print(" ")
             imports.own.will_go_to_start.main()
 
@@ -54,9 +54,9 @@ def pas_gen_n_start():
 
     while True:
 
-                                    print(" ")
+                                    #print(" ")
 
-                                    Pas = askPas()
+                                    #Pas = askPas()
 
                                     print(" ")
 
@@ -67,7 +67,7 @@ def pas_gen_n_start():
                                     words = ['1','2','3','4','5','6','7','8','9','0']
                                     size = len(words)
                                     random.seed(time.time())
-
+                                    Pas = size ** Char
                                     with builtins.open("Pass_Gen_N.txt", "w") as outFile:
 
                                             for _ in range(Pas):

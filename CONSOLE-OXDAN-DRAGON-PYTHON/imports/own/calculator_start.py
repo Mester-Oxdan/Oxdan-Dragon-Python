@@ -13,7 +13,7 @@ def calculator_start():
 
                 error = "Syntax Error"
 
-                a = tkinter.Tk(className = "calculator")
+                a = tkinter.Tk(className = "Calculator")
                 # this is for input display
                 a.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                 display = tkinter.Entry(a, bd = 5, bg = 'lightgray', fg = 'black', justify = "right", relief = "solid")

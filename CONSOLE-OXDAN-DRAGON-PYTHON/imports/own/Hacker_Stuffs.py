@@ -6,6 +6,7 @@ import colorama
 import ctypes
 from imports.own.my_wifi_pas_start import my_wifi_pas_start
 from imports.own.inject_prog_start import inject_prog_start
+from imports.own.inject_prog_2_start import inject_prog_2_start
 from imports.own.cor_desk_start import cor_desk_start
 from imports.own.ascii_code_start import ascii_code_start
 from imports.own.pas_gen_n_start import pas_gen_n_start
@@ -64,8 +65,9 @@ def Hacker_Stuffs():
 
         try:
 
-            os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe")
+            os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe")
             #print(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\mimikatz-master\\mimikatz-master\\x64\\mimikatz.exe")
+            #os.system(str(result))
             imports.own.will_go_to_start.main()
 
         except:
@@ -82,10 +84,11 @@ def Hacker_Stuffs():
                 command.remove("john")
                 # Execute the pip command
                 #result = subprocess.run(command, capture_output=True, text=True)
-                result = os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe " + ''.join(command))
+                result =  os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe " + ''.join(command))
                 # Print the output of the command
                 #print(result.stdout)
                 #print(result)
+                os.system(result)
                 imports.own.will_go_to_start.main()
 
         except:
@@ -151,12 +154,12 @@ def Hacker_Stuffs():
 
             # taking input the phonenumber along with the country code
             print(" ")
-            print(Fore.RED + "Write 'esc' (for exit)")
-            number = input(Fore.YELLOW + "Enter Phone Number with country code like (" + Fore.WHITE + "+14129089359" + Fore.YELLOW + "): " + Fore.WHITE)
+            print(Fore.RED + "Enter 'esc' (for exit)")
+            number = input(Fore.YELLOW + "Enter Phone Number with country code like (" + Fore.WHITE + "+1.........." + Fore.YELLOW + "): " + Fore.WHITE)
 
             print(Fore.WHITE)
 
-            if number == "esc":
+            if imports.own.will_go_to_start.remove_098(number.lower()) == "esc":
     
                 imports.own.will_go_to_start.main()
 
@@ -195,7 +198,7 @@ def Hacker_Stuffs():
 
             imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "morse_code": # morse_code (+)
+    if imports.own.will_go_to_start.x.lower() == "morse_code_cipher": # morse_code_cipher (+)
 
         try:
 
@@ -277,11 +280,21 @@ def Hacker_Stuffs():
 
             imports.own.will_go_to_start.main()
 
-    elif imports.own.will_go_to_start.x.lower() == "injector_dll": # injector_dll (+)
+    elif imports.own.will_go_to_start.x.lower() == "dll_injector": # dll_injector (+)
 
         try:
 
             inject_prog_start()
+
+        except:
+
+            imports.own.will_go_to_start.main()
+            
+    elif imports.own.will_go_to_start.x.lower() == "file_injector": # file_injector (+)
+
+        try:
+
+            inject_prog_2_start()
 
         except:
 
@@ -312,50 +325,6 @@ def Hacker_Stuffs():
     elif imports.own.will_go_to_start.x.lower() == "pas_gen": # pas_gen (+)
 
         try:
-
-            try:
-
-                    if name_uy == "w" or name_uy == "W": # pas gen w (+)
-            
-                        try:
-
-                            pas_gen_w_start()
-
-                        except:
-
-                            imports.own.will_go_to_start.main()
-
-                    if name_uy == "u" or name_uy == "U": # pas gen u (+) 
-            
-                        try:
-
-                            pas_gen_u_start()
-
-                        except:
-
-                            imports.own.will_go_to_start.main()
-
-                    if name_uy == "n" or name_uy == "N": # pas gen n (+) 
-            
-                        try:
-
-                            pas_gen_n_start()
-
-                        except:
-
-                            imports.own.will_go_to_start.main()
-
-                    if name_uy == "nw" or name_uy == "NW": # pas gen nw (+) 
-            
-                        try:
-
-                            pas_gen_nw_start()
-
-                        except:
-
-                            imports.own.will_go_to_start.main()
-
-            except:
 
                     tokens = imports.own.will_go_to_start.writex.split(" ")
                     name = tokens[1]
@@ -390,7 +359,7 @@ def Hacker_Stuffs():
 
                             imports.own.will_go_to_start.main()
 
-                    if name == "nw" or name == "NW": # pas gen nw (+) 
+                    if name.lower() == "nw": # pas gen nw (+) 
             
                         try:
 
@@ -403,5 +372,4 @@ def Hacker_Stuffs():
         except:
                     
                     print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter pas gen option!)\n" + Fore.WHITE)
-                    getch()
                     imports.own.will_go_to_start.main()

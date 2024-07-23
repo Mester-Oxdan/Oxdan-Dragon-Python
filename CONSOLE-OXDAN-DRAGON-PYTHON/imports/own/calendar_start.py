@@ -7,7 +7,7 @@ def calendar_start():
 
         # Create Object
         root = tkinter.Tk()
-        root.title("Calendar!")
+        root.title("Calendar")
         root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
         # Set geometry
         root.geometry("400x400")
@@ -15,8 +15,8 @@ def calendar_start():
         # Add Calendar
         
         cal = Calendar(root, selectmode = 'day',
-               year = 2023, month = 2,
-               day = 4)
+               year = 2025, month = 1,
+               day = 7)
  
         cal.pack(pady = 20)
  

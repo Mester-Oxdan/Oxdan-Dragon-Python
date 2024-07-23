@@ -12,7 +12,7 @@ class Clock():
             def __init__(self):
                 
                 self.root = tk.Tk()
-                self.root.title("Timer!")
+                self.root.title("Timer")
                 self.style = ttk.Style()
                 self.style.configure("BW.TLabel", font=(
                     'Helvetica', 25),  foreground="black")
@@ -90,6 +90,6 @@ class Clock():
 def timer_start():
 
         app = Clock()
-        app.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'my_dragon_ico.ico'))
+        app.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\imports\own",'my_dragon_ico.ico'))
         app.root.mainloop()
         imports.own.will_go_to_start.main()

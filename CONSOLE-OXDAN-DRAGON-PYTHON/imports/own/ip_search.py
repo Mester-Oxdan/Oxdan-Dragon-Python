@@ -7,10 +7,10 @@ def ip_search():
             def search_net(ip='127.0.0.1'):
 
                     response = requests.get(url=f'http://ip-api.com/json/{ip}').json()
-                    print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+                    print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
                     netw_ip = input(Fore.YELLOW + "Enter Network Ip Address like (" + Fore.WHITE + response.get('query') + Fore.YELLOW + "): " + Fore.WHITE)
                     
-                    if netw_ip.lower() == "esc":
+                    if imports.own.will_go_to_start.remove_098(netw_ip.lower()) == "esc":
 
                         imports.own.will_go_to_start.main()
 
@@ -27,8 +27,8 @@ def ip_search():
                             "REGION": response65.get("region"),
                             "CITY": response65.get("city"),
                             "ZIP": response65.get("postal"),
-                            "Y": response65.get("latitude") - 0.0033,
-                            "X": response65.get("longitude") + 0.0505 - 0.00304,
+                            "Y": response65.get("latitude") + 0.2522987,
+                            "X": response65.get("longitude") + 0.32427346,
                         }
                         #return location_data
                         print(" ")

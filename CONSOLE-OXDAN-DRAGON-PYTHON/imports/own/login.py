@@ -24,17 +24,17 @@ def login():
     print("                                                              ")
     print("                                                              ")
     print("                                                              ")
-    print(colorama.Fore.RED + "                                                          Write 'esc' (for exit)")
+    print(colorama.Fore.RED + "                                                          Enter 'esc' (for exit)")
     print(colorama.Fore.RED + "                                                               LOGIN:" + colorama.Fore.WHITE)
     email = input(colorama.Fore.YELLOW + "\n                                                              USERNAME: " + colorama.Fore.RED)
 
-    if email == "esc":
+    if imports.own.will_go_to_start.remove_098(email.lower()) == "esc":
 
         imports.own.start_start.start_start()
 
     pwd = input(colorama.Fore.YELLOW + "                                                              PASSWORD: " + colorama.Fore.RED)
     
-    if pwd == "esc":
+    if imports.own.will_go_to_start.remove_098(pwd.lower()) == "esc":
 
         imports.own.start_start.start_start()
 

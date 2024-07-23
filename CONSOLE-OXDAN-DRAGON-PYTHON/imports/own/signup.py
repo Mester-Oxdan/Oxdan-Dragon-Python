@@ -4,6 +4,7 @@ from colorama import Fore
 import builtins
 import hashlib
 import imports.own.start_start
+import imports.own.will_go_to_start
 
 def signup():
 
@@ -19,18 +20,18 @@ def signup():
     print("                                                              ")
     print("                                                              ")
     print("                                                              ")
-    print(Fore.RED + "                                                          Write 'esc' (for exit)")
+    print(Fore.RED + "                                                          Enter 'esc' (for exit)")
     print(Fore.RED + "                                                             REGISTRATION:" + Fore.WHITE)
     #print(" ")
     email = input(Fore.YELLOW + "\n                                                              USERNAME: " + Fore.RED)
 
-    if email == "esc":
+    if imports.own.will_go_to_start.remove_098(email.lower()) == "esc":
 
         imports.own.start_start.start_start()
 
     pwd = input(Fore.YELLOW + "                                                              PASSWORD: " + Fore.RED)
 
-    if pwd == "esc":
+    if imports.own.will_go_to_start.remove_098(pwd.lower()) == "esc":
 
         imports.own.start_start.start_start()
 
