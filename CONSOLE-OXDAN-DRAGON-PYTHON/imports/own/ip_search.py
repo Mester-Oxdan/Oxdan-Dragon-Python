@@ -1,5 +1,6 @@
 import requests
 from colorama import Fore
+from time import sleep
 import imports.own.will_go_to_start
 
 def ip_search():
@@ -21,19 +22,19 @@ def ip_search():
                     def get_location():
                         ip_address = get_ip()
                         response65 = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
-                        location_data = {
-
-                            "COUNTRY": response65.get("country_name"),
-                            "REGION": response65.get("region"),
-                            "CITY": response65.get("city"),
-                            "ZIP": response65.get("postal"),
-                            "Y": response65.get("latitude") + 0.2522987,
-                            "X": response65.get("longitude") + 0.32427346,
-                        }
-                        #return location_data
                         print(" ")
-                        for k, v in location_data.items():
-                            print(f'{k} : {v}')
+                        print("COUNTRY: " + response65.get("country_name") + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        sleep(0.01)
+                        print("REGION: " + response65.get("region") + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        sleep(0.01)
+                        print("CITY: " + response65.get("city") + Fore.YELLOW + " (80% right)" + Fore.WHITE)
+                        sleep(0.01)
+                        print("ZIP: " + response65.get("postal") + Fore.YELLOW + " (80% right)" + Fore.WHITE)
+                        sleep(0.01)
+                        print("Y: " + str(response65.get("latitude") + 0.2522987) + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        sleep(0.01)
+                        print("X: " + str(response65.get("longitude") + 0.32427346) + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        sleep(0.01)
 
                     get_location()
                     imports.own.will_go_to_start.main()

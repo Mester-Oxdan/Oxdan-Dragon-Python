@@ -9,7 +9,7 @@ def notepad_start():
         class Notepad:
  
             __root = Tk()
-            __root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'my_dragon_ico.ico'))
+            __root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own", 'my_dragon_ico.ico'))
             # default window width and height
             __thisWidth = 300
             __thisHeight = 300
@@ -150,7 +150,7 @@ def notepad_start():
  
          
             def __newFile(self):
-                self.__root.title("!Notepad!")
+                self.__root.title("Notepad")
                 self.__file = None
                 self.__thisTextArea.delete(1.0,END)
  
@@ -158,7 +158,7 @@ def notepad_start():
  
                 if self.__file == None:
                     # Save as new file
-                    self.__file = asksaveasfilename(initialfile='Untitled.txt',
+                    self.__file = asksaveasfilename(initialfile='notepad.txt',
                                                     defaultextension=".txt",
                                                     filetypes=[("All Files","*.*"),
                                                         ("Text Documents","*.txt")])

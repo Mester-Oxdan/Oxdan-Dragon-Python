@@ -457,23 +457,23 @@ def pacman_start():
                           pygame.quit()
                           imports.own.will_go_to_start.main()
                       if event.type == pygame.KEYDOWN:
-                          if event.key == pygame.K_LEFT:
+                          if event.key == pygame.K_LEFT or event.key == pygame.K_a:
                               Pacman.changespeed(-30,0)
-                          if event.key == pygame.K_RIGHT:
+                          if event.key == pygame.K_RIGHT or event.key == pygame.K_d:
                               Pacman.changespeed(30,0)
-                          if event.key == pygame.K_UP:
+                          if event.key == pygame.K_UP or event.key == pygame.K_w:
                               Pacman.changespeed(0,-30)
-                          if event.key == pygame.K_DOWN:
+                          if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                               Pacman.changespeed(0,30)
 
                       if event.type == pygame.KEYUP:
-                          if event.key == pygame.K_LEFT:
+                          if event.key == pygame.K_LEFT or event.key == pygame.K_a:
                               Pacman.changespeed(30,0)
-                          if event.key == pygame.K_RIGHT:
+                          if event.key == pygame.K_RIGHT or event.key == pygame.K_d:
                               Pacman.changespeed(-30,0)
-                          if event.key == pygame.K_UP:
+                          if event.key == pygame.K_UP or event.key == pygame.K_w:
                               Pacman.changespeed(0,30)
-                          if event.key == pygame.K_DOWN:
+                          if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                               Pacman.changespeed(0,-30)
           
                   # ALL EVENT PROCESSING SHOULD GO ABOVE THIS COMMENT
@@ -548,7 +548,7 @@ def pacman_start():
                       pygame.quit()
                       imports.own.will_go_to_start.main()
 
-                    if event.type == pygame.KEYDOWN:
+                    if event.type == pygame.KEYDOWN or event.type == pygame.K_s:
 
                       if event.key == pygame.K_ESCAPE:
 

@@ -101,9 +101,9 @@ def arkanoid_start():
 
                 # control
                 key = pygame.key.get_pressed()
-                if key[pygame.K_LEFT] and paddle.left > 0:
+                if key[pygame.K_LEFT] and paddle.left > 0 or key[pygame.K_a] and paddle.left > 0:
                     paddle.left -= paddle_speed
-                if key[pygame.K_RIGHT] and paddle.right < WIDTH:
+                if key[pygame.K_RIGHT] and paddle.right < WIDTH or key[pygame.K_d] and paddle.right < WIDTH:
                     paddle.right += paddle_speed
 
                 # update screen

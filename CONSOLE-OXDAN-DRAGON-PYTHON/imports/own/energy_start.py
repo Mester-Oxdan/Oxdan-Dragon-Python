@@ -30,5 +30,5 @@ def energy_start():
                 print(Fore.WHITE + "Power plugged in: " + Fore.RED + "no")
   
             # converting seconds to hh:mm:ss
-            print(Fore.WHITE + "Battery left:", convertTime(battery.secsleft))
+            #print(Fore.WHITE + "Battery left:", convertTime(battery.secsleft))
             imports.own.will_go_to_start.main()

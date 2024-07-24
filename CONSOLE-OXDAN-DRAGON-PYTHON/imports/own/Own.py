@@ -354,34 +354,6 @@ def Own():
 
             try:
 
-                try:
-
-                  devices = AudioUtilities.GetSpeakers()
-                  interface = devices.Activate(
-                                   IAudioEndpointVolume._iid_, CLSCTX_ALL, None)
-                  volume = cast(interface, POINTER(IAudioEndpointVolume))
- 
-                  # Control volume
-                  ##volume.SetMasterVolumeLevel(-0.0, None) #max
-                  ##volume.SetMasterVolumeLevel(-5.0, None) #72%
-
-                  if a_tit_2788 == "on":
-
-                        volume.SetMute(0, None)
-                        imports.own.will_go_to_start.main()
-
-                  if a_tit_2788 == "off":
-
-                        volume.SetMute(1, None)
-                        imports.own.will_go_to_start.main()
-
-                  else:
-
-                      print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter set_mute option!)" + Fore.WHITE)
-                      imports.own.will_go_to_start.main()
-
-                except:
-
                   tokens = imports.own.will_go_to_start.writex.split(" ")
                   a = tokens[1]
 
@@ -394,12 +366,12 @@ def Own():
                   ##volume.SetMasterVolumeLevel(-0.0, None) #max
                   ##volume.SetMasterVolumeLevel(-5.0, None) #72%
 
-                  if a == "on":
+                  if a == "off":
 
                         volume.SetMute(0, None)
                         imports.own.will_go_to_start.main()
 
-                  if a == "off":
+                  if a == "on":
 
                         volume.SetMute(1, None)
                         imports.own.will_go_to_start.main()
@@ -476,7 +448,7 @@ def Own():
                 path = os.getcwd()
                 #os.chdir("..")
 
-                os.system("start " + path + "\CONSOLE_OXDAN_DRAGON_PYTHON.py")
+                os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\CONSOLE_OXDAN_DRAGON_PYTHON.py")
 
                 #os.system(r"start C:\Users\bogda\source\repos\CONSOLE-OXDAN-DRAGON-PYTHON\CONSOLE-OXDAN-DRAGON-PYTHON\CONSOLE_OXDAN_DRAGON_PYTHON.py")
                 imports.own.will_go_to_start.main()

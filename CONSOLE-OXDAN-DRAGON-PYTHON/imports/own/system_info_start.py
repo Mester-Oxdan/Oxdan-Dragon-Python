@@ -36,7 +36,7 @@ def system_info_start():
                 sleep(0.01)
 
             else:
-                print("System: 'Windows'")
+                print("System: 'Unknown'")
                 sleep(0.01)
 
             print("Hostname: " + socket.gethostname())
@@ -69,7 +69,7 @@ def system_info_start():
                 sleep(0.01)
 
             else:
-                print("Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS]")
+                print("Version: 2.2024 [ENGLISH] (PYTHON) [UNKNOWN]")
                 sleep(0.01)
 
             imports.own.will_go_to_start.main()
