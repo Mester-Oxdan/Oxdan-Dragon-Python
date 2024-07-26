@@ -20,7 +20,7 @@ def ping_pong_1_start():
             interval = 30
             points = 0
             root = tkinter.Tk()
-            root.title('Ping Pong for 1')
+            root.title('Ping Pong 1')
             root.wm_attributes('-topmost', 1)
             root.resizable(0, 0)
             root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
@@ -81,9 +81,9 @@ def ping_pong_1_start():
 
             def control(event):
                 global carriage_x
-                if event.keysym == 'Left' and carriage_x > 100:
+                if event.keysym == 'Left' and carriage_x > 100 or event.keysym == 'a' and carriage_x > 100:
                     carriage_x -= 50
-                if event.keysym == 'Right' and carriage_x < 600 - 100:
+                if event.keysym == 'Right' and carriage_x < 600 - 100 or event.keysym == 'd' and carriage_x < 600 - 100:
                     carriage_x += 50
                 if carriage_stop:
                     canvas.coords(carriage, carriage_x - carriage_w // 2, size_h, carriage_x + carriage_w // 2, size_h - carriage_h)

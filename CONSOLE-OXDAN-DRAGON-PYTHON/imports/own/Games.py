@@ -51,34 +51,6 @@ def Games():
 
     elif imports.own.will_go_to_start.x.lower() == "tic_tac_toe": # tic_tac_toe (+)
 
-        try:
-
-            if zxd_8 == "2" or zxd_8 == "two":
-
-                try:
-
-                    tic_tac_toe_2_start()
-                    imports.own.will_go_to_start.main()
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            elif zxd_8 == "ai":
-
-                try:
-                    tic_tac_toe_ai_start()
-                    imports.own.will_go_to_start.main()
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            else:
-
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter tic_tac_toe option!)" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-        except:
-
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take654 = tokens[1]
 
@@ -107,36 +79,6 @@ def Games():
                 imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "checkers": # checkers (+)
-
-        try:
-
-            if zxd_9 == "2" or zxd_9 == "two": # (+)
-
-                try:
-              
-                    checkers_2_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            if zxd_9 == "ai": # (+)
-                
-
-                try:
-              
-                    checkers_ai_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            else:
-
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter checkers option!)\n" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-        except:
 
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take = tokens[1]
@@ -168,37 +110,6 @@ def Games():
                 imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "chess": # chess (+)
-
-        try:
-
-            if zxd_10 == "2" or zxd_10 == "two": # (+)
-
-                try:
-              
-                    chess_2_start()
-
-                except:
-
-                    pygame.quit()
-                    imports.own.will_go_to_start.main()
-
-            if zxd_10 == "ai": # (+)
-
-                try:
-              
-                    chess_ai_start()
-
-                except:
-
-                    pygame.quit()
-                    imports.own.will_go_to_start.main()
-
-            else:
-
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter chess option!)\n" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-        except:
 
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take = tokens[1]
@@ -271,45 +182,6 @@ def Games():
                 imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "ping_pong": # ping_pong (+)
-
-        try:
-
-            if zxd_7 == "1" or zxd_7 == "one": # (-)
-
-                try:
-              
-                    ping_pong_1_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            if zxd_7 == "2" or zxd_7 == "two": # (+)
-                    
-                try:
-              
-                    ping_pong_2_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            if zxd_7 == "ai": # (+)
-
-                try:
-              
-                    ping_pong_ai_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            else:
-            
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter ping_pong option!)\n" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-        except:
 
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take = tokens[1]
@@ -390,45 +262,6 @@ def Games():
             imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "snake": # snake (+)
-
-        try:
-
-            if zxd_6 == "ai":
-            
-                try:
-
-                    snake_ai_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            if zxd_6 == "1" or zxd_6 == "one":
-
-                try:
-
-                    snake_1_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            if zxd_6 == "2" or zxd_6 == "two":
-            
-                try:
-
-                    snake_2_start()
-
-                except:
-
-                    imports.own.will_go_to_start.main()
-
-            else:
-            
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter snake option!)\n" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-        except:
 
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take23 = tokens[1]

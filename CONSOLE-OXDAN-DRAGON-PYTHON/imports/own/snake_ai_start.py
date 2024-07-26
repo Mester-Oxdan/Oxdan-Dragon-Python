@@ -14,7 +14,7 @@ def snake_ai_start():
             screen = pygame.display.set_mode(size)
             ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
             pygame.display.set_icon (ico)
-            pygame.display.set_caption("Snake ai")
+            pygame.display.set_caption("Snake Ai")
             # Initialise board width, height and tile size
             tile_size = 10
             leftover = 20
@@ -459,22 +459,22 @@ def snake_ai_start():
                         comp_board.food_cell = new_board.food_cell
                         key_states = pygame.key.get_pressed()
                         if snake.length == 1:
-                            if key_states[pygame.K_UP]:
+                            if key_states[pygame.K_UP] or key_states[pygame.K_w]:
                                 snake.direction = snake.up
-                            if key_states[pygame.K_DOWN]:
+                            if key_states[pygame.K_DOWN] or key_states[pygame.K_s]:
                                 snake.direction = snake.down
-                            if key_states[pygame.K_RIGHT]:
+                            if key_states[pygame.K_RIGHT] or key_states[pygame.K_d]:
                                 snake.direction = snake.right
-                            if key_states[pygame.K_LEFT]:
+                            if key_states[pygame.K_LEFT] or key_states[pygame.K_a]:
                                 snake.direction = snake.left
                         else:
-                            if key_states[pygame.K_UP] and snake.direction != snake.down:
+                            if key_states[pygame.K_UP] and snake.direction != snake.down or key_states[pygame.K_w] and snake.direction != snake.down:
                                 snake.direction = snake.up
-                            elif key_states[pygame.K_DOWN] and snake.direction != snake.up:
+                            elif key_states[pygame.K_DOWN] and snake.direction != snake.up or key_states[pygame.K_s] and snake.direction != snake.up:
                                 snake.direction = snake.down
-                            elif key_states[pygame.K_RIGHT] and snake.direction != snake.left:
+                            elif key_states[pygame.K_RIGHT] and snake.direction != snake.left or key_states[pygame.K_d] and snake.direction != snake.left:
                                 snake.direction = snake.right
-                            elif key_states[pygame.K_LEFT] and snake.direction != snake.right:
+                            elif key_states[pygame.K_LEFT] and snake.direction != snake.right or key_states[pygame.K_a] and snake.direction != snake.right:
                                 snake.direction = snake.left
                         snake.move_snake(new_board, eaten)
 

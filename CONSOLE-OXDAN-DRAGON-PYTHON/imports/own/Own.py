@@ -31,6 +31,7 @@ from imports.own.dragon_helper_start import dragon_helper_start
 from imports.own.helpers_start import helpers_start
 from imports.own.donators_start import donators_start
 from imports.own.set_volume_level_start import set_volume_level_start
+import psutil
 
 def Own():
     
@@ -127,11 +128,11 @@ def Own():
 
                 imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "data": # data (+)
+    if imports.own.will_go_to_start.x.lower() == "date": # date (+)
 
             try:
 
-                print("\n" + time.ctime())
+                print("\n" + Fore.YELLOW + "Date: " + Fore.WHITE + time.ctime())
                 imports.own.will_go_to_start.main()
 
             except:
@@ -160,13 +161,6 @@ def Own():
     elif imports.own.will_go_to_start.x.lower() == "title": # title (+)
 
                 try:
-                    
-                    try:
-
-                        win32console.SetConsoleTitle(a_tit)
-                        imports.own.will_go_to_start.main()
-
-                    except:
 
                         tokens = imports.own.will_go_to_start.writex.split(" ")
                         a = tokens[1]
@@ -221,7 +215,7 @@ def Own():
 
                 imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.x.lower() == "send_ph_message": # send_ph_message (+)
+    """if imports.own.will_go_to_start.x.lower() == "send_ph_message": # send_ph_message (+)
 
         try:
 
@@ -229,7 +223,7 @@ def Own():
 
         except:
 
-            imports.own.will_go_to_start.main()
+            imports.own.will_go_to_start.main()"""
             
     if imports.own.will_go_to_start.x.lower() == "donate": # donate (+)
 
@@ -314,6 +308,8 @@ def Own():
         try:
             input_list = imports.own.will_go_to_start.input_list  # Assuming you have a list called input_list
 
+            print(" ")
+            print(Fore.YELLOW + "HISTORY: " + Fore.WHITE)
             print(" ")
             for num, item in enumerate(input_list, 1):
                 print(str(num) + ") " + item)
@@ -425,11 +421,6 @@ def Own():
     elif imports.own.will_go_to_start.x.lower() == "set_volume_level": # set_volume_level (+)
 
             try:
-                try:
-
-                    set_volume_level_start(a_iuy)
-
-                except:
 
                     tokens = imports.own.will_go_to_start.writex.split(" ")
                     a = tokens[1]
@@ -471,7 +462,7 @@ def Own():
 
         try:
 
-            print("\n\033[0;33mTime spent: \033[0;37m %s seconds, %s minutes, %s hours, %s days" % (round(time.time() - imports.own.start_start.start_time), round((time.time() - start_start.start_time)/60), round(((time.time() - start_start.start_time)/60)/60), round((((time.time() - start_start.start_time)/60)/60)/24)))
+            print("\n\033[0;33mTime spent: \033[0;37m %s seconds, %s minutes, %s hours, %s days" % (round(time.time() - imports.own.start_start.start_time), round((time.time() - imports.own.start_start.start_time)/60), round(((time.time() - imports.own.start_start.start_time)/60)/60), round((((time.time() - imports.own.start_start.start_time)/60)/60)/24)))
             imports.own.will_go_to_start.main()
 
         except:
@@ -482,11 +473,47 @@ def Own():
 
             try:
 
+                # Function to get disk type
+                def get_disk_type(drive):
+                    drive_type = ctypes.windll.kernel32.GetDriveTypeW(drive)
+                    types = {
+                        0: "UNKNOWN",
+                        1: "NO ROOT DIR",
+                        2: "REMOVABLE",
+                        3: "FIXED",
+                        4: "REMOTE",
+                        5: "CDROM",
+                        6: "RAMDISK"
+                    }
+                    return types.get(drive_type, "UNKNOWN")
+
+                # Get disk usage information
                 total, used, free = shutil.disk_usage("/")
 
-                print(Fore.YELLOW + "\nTotal space: " + Fore.WHITE + "%d GB"  % (total // (2**30)) )
-                print(Fore.GREEN + "Free space: " + Fore.WHITE + "%d GB"  % (free // (2**30)) )
-                print(Fore.RED + "Used space: " + Fore.WHITE + "%d GB"  % (used // (2**30)) )
+                # Get disk partition and file system information
+                partitions = psutil.disk_partitions()
+                disk_info = {}
+                for partition in partitions:
+                    usage = psutil.disk_usage(partition.mountpoint)
+                    disk_type = get_disk_type(partition.device + '\\')
+                    disk_info[partition.device] = {
+                        'file_system': partition.fstype,
+                        'total': usage.total // (2**30),
+                        'used': usage.used // (2**30),
+                        'free': usage.free // (2**30),
+                        'type': disk_type
+                    }
+
+                # Print disk usage information
+                print(" ")    
+                for device, info in disk_info.items():
+                    #print(Fore.YELLOW + f"\nDisk Device: {device}")
+                    print(Fore.YELLOW + "Total space: " + Fore.WHITE + "%d GB" % info['total'])
+                    print(Fore.GREEN + "Free space: " + Fore.WHITE + "%d GB" % info['free'])
+                    print(Fore.RED + "Used space: " + Fore.WHITE + "%d GB" % info['used'])
+                    print(Fore.MAGENTA + "Disk type: " + Fore.WHITE + info['type'])
+                    print(Fore.CYAN + "File system: " + Fore.WHITE + info['file_system'])
+                    
                 
                 imports.own.will_go_to_start.main()
 
@@ -497,14 +524,6 @@ def Own():
     elif imports.own.will_go_to_start.x.lower() == "open": # open (+)
 
             try:
-
-                try:
-
-                        os.system(r"start " + a_tit_1)
-
-                        imports.own.will_go_to_start.main()
-
-                except:
 
                         tokens = imports.own.will_go_to_start.writex.split(" ")
                         keyt = tokens[1]

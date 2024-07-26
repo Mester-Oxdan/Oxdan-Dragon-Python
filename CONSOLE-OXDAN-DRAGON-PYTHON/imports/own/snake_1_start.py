@@ -21,7 +21,7 @@ def replay_or_quit():
 def snake_1_start():
 
                 os.system('cls')
-                levelplayer = input("Enter number of speed [10,25,40,60,120]: ")
+                levelplayer = input(Fore.YELLOW + "Enter number of speed [10,25,40,60,120]: " + Fore.WHITE)
 
                 # Difficulty settings
                 # Easy      ->  10

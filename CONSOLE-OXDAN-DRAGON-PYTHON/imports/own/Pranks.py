@@ -11,20 +11,6 @@ def Pranks():
 
                 try:
 
-                    try:
-
-                        if zxd_5 == "no":
-
-                            prank_button_no()
-
-                        if zxd_5 == "yes":
-
-                            prank_button_yes()
-
-                        imports.own.will_go_to_start.main()
-
-                    except:
-
                         tokens_prank_button = imports.own.will_go_to_start.writex.split(" ")
                         global a_prank_button
                         a_prank_button = tokens_prank_button[1]
@@ -36,7 +22,10 @@ def Pranks():
                         if a_prank_button == "yes":
 
                             prank_button_yes()
-
+                            
+                        else:
+                            print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter prank_button option!)" + Fore.WHITE + "\n")
+                            imports.own.will_go_to_start.main()
                         imports.own.will_go_to_start.main()
 
                 except:

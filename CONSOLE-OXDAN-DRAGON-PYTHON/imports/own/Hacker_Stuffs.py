@@ -118,36 +118,6 @@ def Hacker_Stuffs():
            print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install nmap-7.94-setup!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
             
-    if imports.own.will_go_to_start.x.lower() == "stealer": # stealer (+)
-
-        try:
-
-            #os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            #print(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe")
-            try:
-                is_admin = os.getuid() == 0
-            except AttributeError:
-                is_admin = ctypes.windll.shell32.IsUserAnAdmin() != 0
-
-            if is_admin == False:
-                
-                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Run console as admin!)" + Fore.WHITE)
-                imports.own.will_go_to_start.main()
-
-            elif is_admin == True:
-                
-                os.system(os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\importnt_folder\\start_2.bat")
-                print(" ")
-                print("Copying files was \033[0;32msuccessfuly\033[0;37m finished in CONSOLE-OXDAN-DRAGON-PYTHON dir.")
-                
-                imports.own.will_go_to_start.main()
-                
-            #imports.own.will_go_to_start.main()
-
-        except:
-
-            imports.own.will_go_to_start.main()
-            
     if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
 
         try:
@@ -368,7 +338,9 @@ def Hacker_Stuffs():
                         except:
 
                             imports.own.will_go_to_start.main()
-
+                    else:
+                        print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter pas gen option!)\n" + Fore.WHITE)
+                        imports.own.will_go_to_start.main()
         except:
                     
                     print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter pas gen option!)\n" + Fore.WHITE)

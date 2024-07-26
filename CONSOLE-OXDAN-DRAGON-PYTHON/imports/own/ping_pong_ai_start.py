@@ -35,7 +35,14 @@ def ping_pong_ai_start():
                                     self.game.move_paddle(left=True, up=True)
                                 if keys[pygame.K_s]:
                                     self.game.move_paddle(left=True, up=False)
-
+                                if keys[pygame.K_UP]:
+                                    self.game.move_paddle(left=True, up=True)
+                                if keys[pygame.K_DOWN]:
+                                    self.game.move_paddle(left=True, up=False)
+                                if keys[pygame.K_ESCAPE]:
+                                    run = False
+                                    pygame.quit()
+                                    imports.own.will_go_to_start.main() 
                                 output = net.activate(
                                     (self.right_paddle.y, self.ball.y, abs(self.right_paddle.x - self.ball.x)))
                                 decision = output.index(max(output))
@@ -122,7 +129,7 @@ def ping_pong_ai_start():
                         ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
                         pygame.display.set_icon (ico)
 
-                        pygame.display.set_caption('Ping Pong with ai')
+                        pygame.display.set_caption('Ping Pong Ai')
 
                         with open(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/best.pickle"), "rb") as f:
                             winner = pickle.load(f)
@@ -132,7 +139,7 @@ def ping_pong_ai_start():
 
                 #try:
                     local_dir = os.path.dirname(__file__)
-                    config_path = os.path.join(local_dir, os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/config.txt"))
+                    config_path = os.path.join(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/config.txt"))
 
                     config = neat.Config(neat.DefaultGenome, neat.DefaultReproduction,
                                              neat.DefaultSpeciesSet, neat.DefaultStagnation,

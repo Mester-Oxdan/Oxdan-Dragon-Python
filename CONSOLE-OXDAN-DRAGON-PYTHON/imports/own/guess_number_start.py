@@ -17,7 +17,7 @@ def guess_number_start():
             attempts = 0
 
             print(" ")
-            print(Fore.RED + "Write 'esc' (for exit)" + Fore.WHITE)
+            print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
 
             while guessCheck=="wrong":
 
@@ -31,7 +31,7 @@ def guess_number_start():
 
                         except ValueError:
 
-                            if response.lower() == "esc":
+                            if imports.own.will_go_to_start.remove_098(response.lower()) == "esc":
                                 imports.own.will_go_to_start.main()
 
                             else:

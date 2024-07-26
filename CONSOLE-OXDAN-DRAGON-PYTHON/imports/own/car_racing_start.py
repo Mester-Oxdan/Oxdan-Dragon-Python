@@ -50,7 +50,7 @@ def car_racing_start():
     pygame.init()
     mainClock = pygame.time.Clock()
     windowSurface = pygame.display.set_mode((WINDOWWIDTH, WINDOWHEIGHT))
-    pygame.display.set_caption('Car_raicing!')
+    pygame.display.set_caption('Car Raicing')
     pygame.mouse.set_visible(False)
 
     # fonts

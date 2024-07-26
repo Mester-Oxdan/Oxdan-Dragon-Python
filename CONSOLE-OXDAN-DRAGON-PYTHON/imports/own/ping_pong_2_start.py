@@ -132,7 +132,7 @@ def ping_pong_2_start():
                             if event.type == pygame.QUIT:
                                 running = False
 
-                        pygame.display.set_caption("FPS: %.2f PLAYTIME: %.2f Ping Pong for 2" % (clock.get_fps(), playtime))
+                        pygame.display.set_caption("Ping Pong 2")
 
                         # --PADDLE EVENTS--
                         keys = pygame.key.get_pressed()
