@@ -32,6 +32,11 @@ def calendar_start():
  
         #root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/dragon.ico'))
         # Execute Tkinter
+        def on_escape(event):
+                root.destroy()
+                imports.own.will_go_to_start.main()
+                
+        root.bind('<Escape>', on_escape)
         root.mainloop()
 
         imports.own.will_go_to_start.main()

@@ -456,6 +456,7 @@ def pacman_start():
                           done=True
                           pygame.quit()
                           imports.own.will_go_to_start.main()
+
                       if event.type == pygame.KEYDOWN:
                           if event.key == pygame.K_LEFT or event.key == pygame.K_a:
                               Pacman.changespeed(-30,0)
@@ -465,6 +466,10 @@ def pacman_start():
                               Pacman.changespeed(0,-30)
                           if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                               Pacman.changespeed(0,30)
+                          if event.key == pygame.K_ESCAPE:
+                              done=True
+                              pygame.quit()
+                              imports.own.will_go_to_start.main()
 
                       if event.type == pygame.KEYUP:
                           if event.key == pygame.K_LEFT or event.key == pygame.K_a:
@@ -475,6 +480,10 @@ def pacman_start():
                               Pacman.changespeed(0,30)
                           if event.key == pygame.K_DOWN or event.key == pygame.K_s:
                               Pacman.changespeed(0,-30)
+                          if event.key == pygame.K_ESCAPE:
+                              done=True
+                              pygame.quit()
+                              imports.own.will_go_to_start.main()
           
                   # ALL EVENT PROCESSING SHOULD GO ABOVE THIS COMMENT
    

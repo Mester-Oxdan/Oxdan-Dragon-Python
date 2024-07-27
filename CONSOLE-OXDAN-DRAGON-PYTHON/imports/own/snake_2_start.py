@@ -149,7 +149,7 @@ def snake_2_start():
                 """
                 def __init__(self, top):
                     self.top = top
-                    self.canvas = self.make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Snake Game')
+                    self.canvas = self.make_canvas(CANVAS_WIDTH, CANVAS_HEIGHT, 'Snake 2')
                     self.player1_controls = ['<Up>', '<Down>', '<Left>', '<Right>']
                     self.player2_controls = ['w', 's', 'a', 'd']
                     self.snake1 = Snake(1, self.canvas, 'brown')
@@ -318,6 +318,11 @@ def snake_2_start():
                         time.sleep(1/SPEED)  # Time to hold each frame; reducing this time gives a notion of increased snake speed
 
             top = tkinter.Tk()
+            def on_escape(event):
+                top.destroy()
+                imports.own.will_go_to_start.main()
+                
+            top.bind('<Escape>', on_escape)
             top.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
             TkinkerCanvas(top)
             top.mainloop()

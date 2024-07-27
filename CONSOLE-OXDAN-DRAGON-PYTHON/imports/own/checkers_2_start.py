@@ -5,6 +5,7 @@ from tkinter import Label
 from tkinter import Canvas
 from tkinter import messagebox
 from tkinter import Tk
+import imports.own.will_go_to_start
 
 def checkers_2():
     
@@ -28,7 +29,7 @@ def checkers_2():
 
                     def InitUI(self):
 
-                        self.parent.title("Checkers!")
+                        self.parent.title("Checkers 2")
                         self.parent.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"], 'imports/own/my_dragon_ico.ico'))
                         self.pack(fill=BOTH, expand=1)
 
@@ -405,7 +406,7 @@ def checkers_2():
                                 if item == item_below and len(itm_tuple) == 2 and row_diff > 0 and col_diff > 0:
                                     sq_dims = RectDims(final_coord)
                                     self.moves += 1
-                                    print ("/nMoves: "), self.moves
+                                    
                                     if final_coord[0] == 1 and cur_itm > 76 and same_colour != True:
                                         canvas.itemconfig(cur_itm,fill="OrangeRed4",outline="OrangeRed4")
                                         self.ocrowns.append(cur_itm)
@@ -421,8 +422,8 @@ def checkers_2():
                                             gcrn_itm = i
                                             break
 
-                                    print
-                                    print ("gcrn_itm: "), gcrn_itm
+                                    #print
+                                    #print ("gcrn_itm: "), gcrn_itm
 
                                     ocrn_itm = 0
                                     for i in self.ocrowns:
@@ -430,8 +431,8 @@ def checkers_2():
                                             ocrn_itm = i
                                             break
 
-                                    print
-                                    print ("ocrn_itm: "), ocrn_itm
+                                    #print
+                                    #print ("ocrn_itm: "), ocrn_itm
 
                                     if col_diff == 2 and row_diff == 2 and self.moves > 1:
                                         dpiece_coord = []
@@ -543,6 +544,19 @@ def checkers_2():
                         canvas.pack(fill=BOTH, expand=1)
 
     root = Tk()
+    def on_closing():
+                global are_we_running
+                are_we_running = False
+                root.destroy()
+                imports.own.will_go_to_start.main()
+    def on_escape(event):
+                global are_we_running
+                are_we_running = False
+                root.destroy()
+                imports.own.will_go_to_start.main()
+                
+    root.bind('<Escape>', on_escape)
+    root.protocol("WM_DELETE_WINDOW", on_closing)
     rturn = False
     gturn = False
     gcount = 0

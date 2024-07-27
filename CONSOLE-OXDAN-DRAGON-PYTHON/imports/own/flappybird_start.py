@@ -115,10 +115,18 @@ def flappybird_start():
                     if event.type == pygame.KEYDOWN:
                         if event.key == pygame.K_UP or pygame.K_SPACE:
                             y_move = -5
+                        if event.key == pygame.K_ESCAPE:
+                            game_over = True
+                            pygame.quit()
+                            imports.own.will_go_to_start.main()
 
                     if event.type == pygame.KEYUP:
                         if event.key == pygame.K_UP or pygame.K_SPACE:
                             y_move = 5
+                        if event.key == pygame.K_ESCAPE:
+                            game_over = True
+                            pygame.quit()
+                            imports.own.will_go_to_start.main()
 
                 y = y + y_move
 

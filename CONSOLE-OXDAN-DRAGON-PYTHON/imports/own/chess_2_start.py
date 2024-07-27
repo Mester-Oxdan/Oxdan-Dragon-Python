@@ -167,6 +167,10 @@ def chess_2_start():
                         moveMade = False
                         CheckMate = False
                         StaleMate = False
+                    if event.key == pygame.K_ESCAPE:
+                        running = False
+                        pygame.quit()
+                        imports.own.will_go_to_start.main()
         
             if moveMade:
                 animate(screen, gs.board, gs.moveLog[-1], clock)

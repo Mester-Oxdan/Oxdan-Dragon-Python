@@ -19,7 +19,11 @@ def calculator_start():
                 display = tkinter.Entry(a, bd = 5, bg = 'lightgray', fg = 'black', justify = "right", relief = "solid")
                 display.grid(ipadx = 40, ipady = 15, columnspan = 10)
                 #must be -column, -columnspan, -in, -ipadx, -ipady, -padx, -pady, -row, -rowspan, or -sticky
-
+                def on_escape(event):
+                    a.destroy()
+                    imports.own.will_go_to_start.main()
+                
+                a.bind('<Escape>', on_escape)
 
                 ###############################################
                 #I am gonna make text record

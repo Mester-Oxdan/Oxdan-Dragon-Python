@@ -17,7 +17,7 @@ def checkers_ai_start():
     WINDOW = pygame.display.set_mode((WIDTH, HEIGHT))
 
     # set caption for display here: shows up in top title bar
-    pygame.display.set_caption('Checkers with ai')
+    pygame.display.set_caption('Checkers Ai')
 
     ico = pygame.image.load(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.jpg')).convert()
     pygame.display.set_icon (ico)
@@ -50,11 +50,15 @@ def checkers_ai_start():
                     pygame.quit()
                     imports.own.will_go_to_start.main()
 
-                if event.type == pygame.MOUSEBUTTONDOWN: # Select game piece with mouse
+                elif event.type == pygame.MOUSEBUTTONDOWN: # Select game piece with mouse
                     pos = pygame.mouse.get_pos()
                     row, col = get_row_col_from_mouse(pos)
                     game.select(row, col)
-
+                elif event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
+                    if event.key == pygame.K_ESCAPE:
+                        run = False # Teminate Game
+                        pygame.quit()
+                        imports.own.will_go_to_start.main()
             game.update()
 
         pygame.quit()

@@ -203,7 +203,8 @@ def space_shooter_start():
 		for event in pygame.event.get():
 			if event.type == pygame.locals.QUIT:
 				running = False
-			
+				pygame.quit()
+				imports.own.will_go_to_start.main()
 		keys = pygame.key.get_pressed()
 	
 		# move the spaceship using the left/right arrow keys
@@ -211,7 +212,10 @@ def space_shooter_start():
 			player.x -= 2
 		elif keys[pygame.locals.K_RIGHT] and player.rect.right < game_width:
 			player.x += 2
-		
+		elif keys[pygame.locals.K_ESCAPE]:
+			running = False
+			pygame.quit()
+			imports.own.will_go_to_start.main()
 		# shoot missile with space bar
 		if keys[pygame.locals.K_SPACE]:
 		

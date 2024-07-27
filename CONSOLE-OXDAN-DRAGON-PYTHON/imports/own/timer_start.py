@@ -91,5 +91,10 @@ def timer_start():
 
         app = Clock()
         app.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "\imports\own",'my_dragon_ico.ico'))
+        def on_escape(event):
+                app.root.destroy()
+                imports.own.will_go_to_start.main()
+                
+        app.root.bind('<Escape>', on_escape)
         app.root.mainloop()
         imports.own.will_go_to_start.main()

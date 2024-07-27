@@ -66,7 +66,10 @@ def snake_ai_start():
 
                         pygame.quit()
                         imports.own.will_go_to_start.main()
-
+                    elif event.type == pygame.KEYDOWN or event.type == pygame.KEYUP:
+                        if event.key == pygame.K_ESCAPE:
+                            pygame.quit()
+                            imports.own.will_go_to_start.main()
                 screen.fill(black)
 
                 # Common buttons
@@ -461,11 +464,11 @@ def snake_ai_start():
                         if snake.length == 1:
                             if key_states[pygame.K_UP] or key_states[pygame.K_w]:
                                 snake.direction = snake.up
-                            if key_states[pygame.K_DOWN] or key_states[pygame.K_s]:
+                            elif key_states[pygame.K_DOWN] or key_states[pygame.K_s]:
                                 snake.direction = snake.down
-                            if key_states[pygame.K_RIGHT] or key_states[pygame.K_d]:
+                            elif key_states[pygame.K_RIGHT] or key_states[pygame.K_d]:
                                 snake.direction = snake.right
-                            if key_states[pygame.K_LEFT] or key_states[pygame.K_a]:
+                            elif key_states[pygame.K_LEFT] or key_states[pygame.K_a]:
                                 snake.direction = snake.left
                         else:
                             if key_states[pygame.K_UP] and snake.direction != snake.down or key_states[pygame.K_w] and snake.direction != snake.down:
@@ -476,6 +479,7 @@ def snake_ai_start():
                                 snake.direction = snake.right
                             elif key_states[pygame.K_LEFT] and snake.direction != snake.right or key_states[pygame.K_a] and snake.direction != snake.right:
                                 snake.direction = snake.left
+                            
                         snake.move_snake(new_board, eaten)
 
                 pygame.display.flip()

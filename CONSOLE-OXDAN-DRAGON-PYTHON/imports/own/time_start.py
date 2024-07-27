@@ -15,7 +15,11 @@ def time_start():
                 my_w.geometry("518x335")
                 my_w.title("Time")
 
+                def on_escape(event):
+                    my_w.destroy()
+                    imports.own.will_go_to_start.main()
                 
+                my_w.bind('<Escape>', on_escape)
 
                 def my_time():
                     time_string = strftime('%H:%M:%S %p \n %A \n %x')

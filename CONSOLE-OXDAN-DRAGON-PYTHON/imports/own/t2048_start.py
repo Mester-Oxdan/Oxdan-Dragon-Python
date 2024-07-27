@@ -31,9 +31,15 @@ def start_2048():
                         '1024': '#f9f6f2',
                         '2048': '#f9f6f2',
                     }
+                    
+                    def on_escape(self, event):
+                        self.window.destroy()
+                        imports.own.will_go_to_start.main()  
+
                     def __init__(self):
                         self.n=4
                         self.window=tkinter.Tk()
+                        self.window.bind('<Escape>', self.on_escape)
                         self.window.title('2048')
                         self.window.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                         self.gameArea=tkinter.Frame(self.window,bg= 'azure3')
@@ -175,7 +181,7 @@ def start_2048():
                         if(flag==1): #found 2048
                             self.won=True
                             
-                            tkinter.messagebox.showinfo('2048', message='You Wonnn!!')
+                            tkinter.messagebox.showinfo('2048', message='You Won!')
                             gamepanel.window.destroy()
                             imports.own.will_go_to_start.main()
                             return
@@ -186,7 +192,7 @@ def start_2048():
                                     break
                         if not (flag or self.gamepanel.can_merge()):
                             self.end=True
-                            tkinter.messagebox.showinfo('2048','Game Over!!!')
+                            tkinter.messagebox.showinfo('2048','Game Over!')
                             gamepanel.window.destroy()
                             imports.own.will_go_to_start.main()
                         if self.gamepanel.moved:

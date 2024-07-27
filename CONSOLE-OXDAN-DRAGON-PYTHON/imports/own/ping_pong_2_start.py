@@ -131,7 +131,8 @@ def ping_pong_2_start():
                         for event in pygame.event.get():
                             if event.type == pygame.QUIT:
                                 running = False
-
+                                imports.own.will_go_to_start.main()
+                                
                         pygame.display.set_caption("Ping Pong 2")
 
                         # --PADDLE EVENTS--
@@ -149,6 +150,11 @@ def ping_pong_2_start():
                             B_pos['y'] -= paddle_speed
                         elif keys[pygame.K_DOWN] and B_pos['y']<=480-paddle_height-paddle_speed:
                             B_pos['y'] += paddle_speed
+                            
+                        elif keys[pygame.K_ESCAPE]:
+                             running = False
+                             pygame.quit()
+                             imports.own.will_go_to_start.main()
                     ##    if keys[pygame.K_LEFT]:
                     ##        B_pos['x'] -= paddle_speed
                     ##    elif keys[pygame.K_RIGHT]:

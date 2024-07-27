@@ -743,10 +743,15 @@ def tetrisstart23():
 				for event in pygame.event.get():	
 					if event.type == pygame.QUIT: #Looks for quitting event in every iteration (Meaning closing the game window)
 						gameExit = True
-				
+						pygame.quit()
+						imports.own.will_go_to_start.main()
 					if event.type == pygame.KEYDOWN: #Keyboard keys press events
 						if event.key == pygame.K_LEFT:
 							xChange += -1
+						if event.key == pygame.K_ESCAPE:
+							gameExit = True
+							pygame.quit()
+							imports.own.will_go_to_start.main()
 						if event.key == pygame.K_RIGHT:
 							xChange += 1
 						if event.key == pygame.K_DOWN:
@@ -773,6 +778,10 @@ def tetrisstart23():
 					if event.type == pygame.KEYUP: #Keyboard keys release events
 						if event.key == pygame.K_LEFT:
 							xChange += 1
+						if event.key == pygame.K_ESCAPE:
+							gameExit = True
+							pygame.quit()
+							imports.own.will_go_to_start.main()
 						if event.key == pygame.K_RIGHT:
 							xChange += -1
 						if event.key == pygame.K_DOWN:

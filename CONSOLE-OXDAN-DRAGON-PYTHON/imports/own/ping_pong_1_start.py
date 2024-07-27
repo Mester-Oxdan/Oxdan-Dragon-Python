@@ -3,7 +3,7 @@ import imports.own.will_go_to_start
 import tkinter
 
 def ping_pong_1_start():
-
+            
             global ball_x, ball_y, ball_vx, ball_vy, carriage_stop, points
             size_w = 600
             size_h = 600
@@ -24,7 +24,7 @@ def ping_pong_1_start():
             root.wm_attributes('-topmost', 1)
             root.resizable(0, 0)
             root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
-
+            are_we_running = True
             string, column = 2, 3
             bricks_zone = 0.2
 
@@ -47,46 +47,49 @@ def ping_pong_1_start():
 
 
             def ball_movement():
-                global ball_x, ball_y, ball_vx, ball_vy, carriage_stop, points
-                ball_x, ball_y = ball_x + ball_vx, ball_y + ball_vy
-                canvas.coords(ball, ball_x - radius, ball_y - radius, ball_x + radius, ball_y + radius)
-                if ball_y <= radius:
-                    ball_vy = abs(ball_vy)
-                if ball_x <= radius or ball_x >= size_w - radius:
-                    ball_vx = -ball_vx
-                if carriage_x - carriage_w // 2 <= ball_x <= carriage_x + carriage_w // 2 and \
-                        ball_y == size_h - (radius + carriage_h):
-                    ball_vy = -ball_vy
-                    update_point()
+                if are_we_running:
+                     
+                    global ball_x, ball_y, ball_vx, ball_vy, carriage_stop, points
+                    ball_x, ball_y = ball_x + ball_vx, ball_y + ball_vy
+                    canvas.coords(ball, ball_x - radius, ball_y - radius, ball_x + radius, ball_y + radius)
+                    if ball_y <= radius:
+                        ball_vy = abs(ball_vy)
+                    if ball_x <= radius or ball_x >= size_w - radius:
+                        ball_vx = -ball_vx
+                    if carriage_x - carriage_w // 2 <= ball_x <= carriage_x + carriage_w // 2 and \
+                            ball_y == size_h - (radius + carriage_h):
+                        ball_vy = -ball_vy
+                        update_point()
 
-                #if 70 < ball_x < 230 and 300 < ball_y < 350:
-                    #ball_vy = -ball_vy
+                    #if 70 < ball_x < 230 and 300 < ball_y < 350:
+                        #ball_vy = -ball_vy
 
-                #if 420 < ball_x < 520 and 340 < ball_y < 400:
-                    #ball_vy = -ball_vy
+                    #if 420 < ball_x < 520 and 340 < ball_y < 400:
+                        #ball_vy = -ball_vy
 
-                #brick = crash_a_brick()
-                #if brick:
-                    #ball_vy = -ball_vy
-                    #canvas.delete(brick)
-                    #bricks.pop(bricks.index(brick))
-                    #update_point()
-                root.update()
-                if ball_y < (size_h - radius):
-                    root.after(interval, ball_movement)
-                else:
-                    canvas.create_text(size_w // 2, size_h // 2, text='GAME OVER', fill='red', font=(None, 50))
-                    carriage_stop = False
+                    #brick = crash_a_brick()
+                    #if brick:
+                        #ball_vy = -ball_vy
+                        #canvas.delete(brick)
+                        #bricks.pop(bricks.index(brick))
+                        #update_point()
+                    root.update()
+                    if ball_y < (size_h - radius):
+                        root.after(interval, ball_movement)
+                    else:
+                        canvas.create_text(size_w // 2, size_h // 2, text='GAME OVER', fill='red', font=(None, 50))
+                        carriage_stop = False
 
 
             def control(event):
-                global carriage_x
-                if event.keysym == 'Left' and carriage_x > 100 or event.keysym == 'a' and carriage_x > 100:
-                    carriage_x -= 50
-                if event.keysym == 'Right' and carriage_x < 600 - 100 or event.keysym == 'd' and carriage_x < 600 - 100:
-                    carriage_x += 50
-                if carriage_stop:
-                    canvas.coords(carriage, carriage_x - carriage_w // 2, size_h, carriage_x + carriage_w // 2, size_h - carriage_h)
+                if are_we_running:
+                    global carriage_x
+                    if event.keysym == 'Left' and carriage_x > 100 or event.keysym == 'a' and carriage_x > 100:
+                        carriage_x -= 50
+                    if event.keysym == 'Right' and carriage_x < 600 - 100 or event.keysym == 'd' and carriage_x < 600 - 100:
+                        carriage_x += 50
+                    if carriage_stop:
+                        canvas.coords(carriage, carriage_x - carriage_w // 2, size_h, carriage_x + carriage_w // 2, size_h - carriage_h)
 
 
             #def crash_a_brick():
@@ -97,12 +100,27 @@ def ping_pong_1_start():
 
 
             def update_point():
-                global points
-                points += 1
-                canvas.itemconfig(scorer, text=str(points))
+                if are_we_running:
+                     
+                    global points
+                    points += 1
+                    canvas.itemconfig(scorer, text=str(points))
 
 
             ball_movement()
             canvas.bind('<Key>', control)
+            def on_closing():
+                global are_we_running
+                are_we_running = False
+                root.destroy()
+                imports.own.will_go_to_start.main()
+            def on_escape(event):
+                global are_we_running
+                are_we_running = False
+                root.destroy()
+                imports.own.will_go_to_start.main()
+                
+            root.bind('<Escape>', on_escape)
+            root.protocol("WM_DELETE_WINDOW", on_closing)
             root.mainloop()
             imports.own.will_go_to_start.main()

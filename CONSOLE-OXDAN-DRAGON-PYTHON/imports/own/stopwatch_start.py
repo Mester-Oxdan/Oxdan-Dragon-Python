@@ -52,9 +52,16 @@ def stopwatch_start():
                         self.d=h+":"+m+":"+s           
                         self.t.set(self.d)
                         if(count==0):
-                            self.root.after(1000,self.timer)     
+                            self.root.after(1000,self.timer)
+                def on_escape(self, event):
+                        self.root.destroy()
+                        imports.own.will_go_to_start.main()  
+                        
                 def __init__(self):
                     self.root=tkinter.Tk()
+                    
+                
+                    self.root.bind('<Escape>', self.on_escape)
                     self.root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                     self.root.title("Stopwatch")
                     self.root.geometry("600x200")

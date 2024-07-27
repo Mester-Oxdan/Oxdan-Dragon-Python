@@ -4,11 +4,16 @@ from tkinter.messagebox import *
 from tkinter.filedialog import *
 import os
 from colorama import *
- 
+import imports.own.will_go_to_start
+import tkinter
+
 def notepad_start():
         class Notepad:
  
             __root = Tk()
+            
+                
+            
             __root.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own", 'my_dragon_ico.ico'))
             # default window width and height
             __thisWidth = 300
@@ -22,10 +27,11 @@ def notepad_start():
             # To add scrollbar
             __thisScrollBar = Scrollbar(__thisTextArea)    
             __file = None
- 
+
             def __init__(self,**kwargs):
  
                 # Set icon
+                self.__root.bind('<Escape>', self.on_escape)
                 try:
                         self.__root.wm_iconbitmap("my_dragon_ico.ico")
                 except:
@@ -117,7 +123,9 @@ def notepad_start():
                 self.__thisScrollBar.config(command=self.__thisTextArea.yview)    
                 self.__thisTextArea.config(yscrollcommand=self.__thisScrollBar.set)
      
-         
+            def on_escape(self, event):
+                self.__root.destroy()
+                imports.own.will_go_to_start.main()
             def __quitApplication(self):
                 self.__root.destroy()
                 # exit()

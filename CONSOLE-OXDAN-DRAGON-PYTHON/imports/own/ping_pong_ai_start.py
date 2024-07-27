@@ -31,13 +31,10 @@ def ping_pong_ai_start():
                                         imports.own.will_go_to_start.main()
 
                                 keys = pygame.key.get_pressed()
-                                if keys[pygame.K_w]:
+                                
+                                if keys[pygame.K_UP] or keys[pygame.K_w]:
                                     self.game.move_paddle(left=True, up=True)
-                                if keys[pygame.K_s]:
-                                    self.game.move_paddle(left=True, up=False)
-                                if keys[pygame.K_UP]:
-                                    self.game.move_paddle(left=True, up=True)
-                                if keys[pygame.K_DOWN]:
+                                if keys[pygame.K_DOWN] or keys[pygame.K_s]:
                                     self.game.move_paddle(left=True, up=False)
                                 if keys[pygame.K_ESCAPE]:
                                     run = False

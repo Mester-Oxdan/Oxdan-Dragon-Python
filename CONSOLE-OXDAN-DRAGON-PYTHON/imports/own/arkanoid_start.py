@@ -105,6 +105,9 @@ def arkanoid_start():
                     paddle.left -= paddle_speed
                 if key[pygame.K_RIGHT] and paddle.right < WIDTH or key[pygame.K_d] and paddle.right < WIDTH:
                     paddle.right += paddle_speed
+                if key[pygame.K_ESCAPE]:
+                    pygame.quit()
+                    imports.own.will_go_to_start.main()
 
                 # update screen
                 pygame.display.flip()
