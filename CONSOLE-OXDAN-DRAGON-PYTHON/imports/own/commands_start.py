@@ -38,7 +38,7 @@ def commands_start():
             sleep(0.01)
             print("del " + Fore.CYAN + "or " + Fore.WHITE + "delete" + " - delete entered file name or directory " + Fore.YELLOW + "( " + Fore.WHITE + "file name" + Fore.YELLOW + " )" + Fore.WHITE) # del (+)
             sleep(0.01)
-            print("install - install entered option " + Fore.YELLOW + "(" + Fore.WHITE + " python, nmap, git, miniconda, virtualbox, wireshark, protonvpn, tor, torrent, vscode, vs, steam, ea, zip " + Fore.YELLOW + ")" + Fore.WHITE) # install (+)
+            print("install - install entered option " + Fore.YELLOW + "(" + Fore.WHITE + " python, nmap, git, miniconda, virtualbox, wireshark, protonvpn, tor, torrent, vscode, vs, steam, ea, 7_zip " + Fore.YELLOW + ")" + Fore.WHITE) # install (+)
             sleep(0.01)
             print("update - update Dragon console to last version") # update (+)
             sleep(0.01)
