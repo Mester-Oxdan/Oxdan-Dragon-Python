@@ -11,6 +11,7 @@ from imports.own.dictaphone_start import dictaphone_start
 from imports.own.video_recorder_start import webcam_recorder_start
 from imports.own.screen_recorder_start import screen_recorder_start
 from imports.own.notepad_start import notepad_start
+from imports.own.d_price_calc_start import d_price_calc_start
 import os
 
 def Serious():
@@ -66,6 +67,16 @@ def Serious():
         try:
 
             stopwatch_start()
+
+        except:
+
+            imports.own.will_go_to_start.main()
+            
+    if imports.own.will_go_to_start.x.lower() == "3d_price_calc": # 3d_price_calc (+)
+
+        try:
+
+            d_price_calc_start()
 
         except:
 

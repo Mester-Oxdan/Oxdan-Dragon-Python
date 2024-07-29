@@ -6,6 +6,8 @@ import pygame as pg
 from .. import setup, tools
 from .. import constants as c
 from ..components import powerup
+import pygame
+import imports.own.will_go_to_start
 
 class Player(pg.sprite.Sprite):
     def __init__(self, player_name):
@@ -171,7 +173,7 @@ class Player(pg.sprite.Sprite):
                 self.state = c.STAND
 
     def check_to_allow_jump(self, keys):
-        if not keys[tools.keybinding['jump']]:
+        if not keys[tools.keybinding['jump']] :
             self.allow_jump = True
     
     def check_to_allow_fireball(self, keys):
@@ -193,15 +195,15 @@ class Player(pg.sprite.Sprite):
         if keys[tools.keybinding['down']]:
             self.update_crouch_or_not(True)
 
-        if keys[tools.keybinding['left']]:
+        if keys[tools.keybinding['left']] or keys[tools.keybinding['left_1']]:
             self.facing_right = False
             self.update_crouch_or_not()
             self.state = c.WALK
-        elif keys[tools.keybinding['right']]:
+        elif keys[tools.keybinding['right']] or keys[tools.keybinding['right_1']]:
             self.facing_right = True
             self.update_crouch_or_not()
             self.state = c.WALK
-        elif keys[tools.keybinding['jump']]:
+        elif keys[tools.keybinding['jump']] :
             if self.allow_jump:
                 self.state = c.JUMP
                 self.y_vel = self.jump_vel
@@ -253,7 +255,7 @@ class Player(pg.sprite.Sprite):
             self.max_x_vel = self.max_walk_vel
             self.x_accel = self.walk_accel
         
-        if keys[tools.keybinding['jump']]:
+        if keys[tools.keybinding['jump']] :
             if self.allow_jump:
                 self.state = c.JUMP
                 if abs(self.x_vel) > 4:
@@ -262,14 +264,14 @@ class Player(pg.sprite.Sprite):
                     self.y_vel = self.jump_vel
                 
 
-        if keys[tools.keybinding['left']]:
+        if keys[tools.keybinding['left']] or keys[tools.keybinding['left_1']]:
             self.facing_right = False
             if self.x_vel > 0:
                 self.frame_index = 5
                 self.x_accel = c.SMALL_TURNAROUND
             
             self.x_vel = self.cal_vel(self.x_vel, self.max_x_vel, self.x_accel, True)
-        elif keys[tools.keybinding['right']]:
+        elif keys[tools.keybinding['right']] or keys[tools.keybinding['right_1']]:
             self.facing_right = True
             if self.x_vel < 0:
                 self.frame_index = 5
@@ -303,9 +305,9 @@ class Player(pg.sprite.Sprite):
             self.gravity = c.GRAVITY
             self.state = c.FALL
 
-        if keys[tools.keybinding['right']]:
+        if keys[tools.keybinding['right']] or keys[tools.keybinding['right_1']]:
             self.x_vel = self.cal_vel(self.x_vel, self.max_x_vel, self.x_accel)
-        elif keys[tools.keybinding['left']]:
+        elif keys[tools.keybinding['left']] or keys[tools.keybinding['left_1']]:
             self.x_vel = self.cal_vel(self.x_vel, self.max_x_vel, self.x_accel, True)
         
         if not keys[tools.keybinding['jump']]:
@@ -320,9 +322,9 @@ class Player(pg.sprite.Sprite):
         self.check_to_allow_fireball(keys)
         self.y_vel = self.cal_vel(self.y_vel, self.max_y_vel, self.gravity)
         
-        if keys[tools.keybinding['right']]:
+        if keys[tools.keybinding['right']] or keys[tools.keybinding['right_1']]:
             self.x_vel = self.cal_vel(self.x_vel, self.max_x_vel, self.x_accel)
-        elif keys[tools.keybinding['left']]:
+        elif keys[tools.keybinding['left']] or keys[tools.keybinding['left_1']]:
             self.x_vel = self.cal_vel(self.x_vel, self.max_x_vel, self.x_accel, True)
         
         if keys[tools.keybinding['action']]:

@@ -106,7 +106,11 @@ def typing_tutor_start():
                         self.running = False
                         pygame.quit()
                         imports.own.will_go_to_start.main()
-
+                    elif event.type == pygame.KEYDOWN:
+                        if event.key == pygame.K_ESCAPE:
+                            self.running = False
+                            pygame.quit()
+                            imports.own.will_go_to_start.main()
                     elif event.type == pygame.MOUSEBUTTONUP:
                         x,y = pygame.mouse.get_pos()
                         # position of input box

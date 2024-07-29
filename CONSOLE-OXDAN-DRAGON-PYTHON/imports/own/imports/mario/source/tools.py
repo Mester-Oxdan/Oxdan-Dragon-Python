@@ -3,13 +3,20 @@ __author__ = 'marble_xu'
 import os
 import pygame as pg
 from abc import ABC, abstractmethod
+import pygame
+import imports.own.will_go_to_start
 
 keybinding = {
-    'action':pg.K_s,
+    'action':pg.K_SPACE,
     'jump':pg.K_UP,
+    'jump_1':pg.K_w,
     'left':pg.K_LEFT,
+    'left_1':pg.K_a,
     'right':pg.K_RIGHT,
-    'down':pg.K_DOWN
+    'right_1':pg.K_d,
+    'down':pg.K_DOWN,
+    'down_1':pg.K_s,
+    'escape': pg.K_ESCAPE
 }
 
 class State():
@@ -34,7 +41,8 @@ class State():
 
 class Control():
     def __init__(self):
-        self.screen = pg.display.get_surface()
+        pg.init()
+        self.screen = pg.display.set_mode((800, 600))  # Set the screen size as needed
         self.done = False
         self.clock = pg.time.Clock()
         self.fps = 60
@@ -66,9 +74,9 @@ class Control():
             if event.type == pg.QUIT:
                 self.done = True
             elif event.type == pg.KEYDOWN:
-                self.keys = pg.key.get_pressed()
-            elif event.type == pg.KEYUP:
-                self.keys = pg.key.get_pressed()
+                if event.key == pg.K_ESCAPE:
+                    self.done = True
+            self.keys = pg.key.get_pressed()
     
     def main(self):
         while not self.done:
@@ -76,6 +84,7 @@ class Control():
             self.update()
             pg.display.update()
             self.clock.tick(self.fps)
+        pg.quit()
 
 def get_image(sheet, x, y, width, height, colorkey, scale):
         image = pg.Surface([width, height])

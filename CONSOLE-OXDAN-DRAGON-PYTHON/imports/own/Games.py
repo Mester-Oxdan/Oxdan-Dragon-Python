@@ -311,16 +311,6 @@ def Games():
 
             imports.own.will_go_to_start.main()
 
-    elif imports.own.will_go_to_start.x.lower() == "math_game": # math_game (+)
-            
-        try:
-
-            math_game_start()
-
-        except:
-
-            imports.own.will_go_to_start.main()
-
     elif imports.own.will_go_to_start.x.lower() == "typing_tutor": # typing_tutor (+)
             
         try:
