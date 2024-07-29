@@ -13,6 +13,11 @@ OR
 
 2)Download from main Oxdan Praduction website https://oxdan.com
 
+(Note):
+
+Please install python before you will open main .exe file, 
+And please don't change folders and files names.
+
 (Bio):
 
 *For social media: ⤵️
