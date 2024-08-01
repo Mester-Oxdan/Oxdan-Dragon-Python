@@ -23,11 +23,11 @@ def energy_start():
 
             if battery.power_plugged == True:
 
-                print(Fore.WHITE + "Power plugged in: " + Fore.GREEN + "yes")
+                print(Fore.WHITE + "Power plugged in: " + Fore.GREEN + "yes" + Fore.WHITE)
 
             if battery.power_plugged == False:
 
-                print(Fore.WHITE + "Power plugged in: " + Fore.RED + "no")
+                print(Fore.WHITE + "Power plugged in: " + Fore.RED + "no" + Fore.WHITE)
   
             # converting seconds to hh:mm:ss
             #print(Fore.WHITE + "Battery left:", convertTime(battery.secsleft))

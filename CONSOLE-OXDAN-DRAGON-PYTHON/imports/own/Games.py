@@ -51,10 +51,11 @@ def Games():
 
     elif imports.own.will_go_to_start.x.lower() == "tic_tac_toe": # tic_tac_toe (+)
 
+        try:
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take654 = tokens[1]
 
-            if take654 == "2" or take654 == "two":
+            if take654 == "2":
 
                 try:
 
@@ -78,12 +79,16 @@ def Games():
                 print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter tic_tac_toe option!)\n" + Fore.WHITE)
                 imports.own.will_go_to_start.main()
 
+        except:
+            print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter tic_tac_toe option!)\n" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
+
     elif imports.own.will_go_to_start.x.lower() == "checkers": # checkers (+)
 
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take = tokens[1]
 
-            if take == "2" or take == "two": # (+)
+            if take == "2": # (+)
 
                 try:
               
@@ -114,7 +119,7 @@ def Games():
             tokens = imports.own.will_go_to_start.writex.split(" ")
             take = tokens[1]
 
-            if take == "2" or take == "two": # (+)
+            if take == "2": # (+)
 
                 try:
               
@@ -196,7 +201,7 @@ def Games():
 
                     imports.own.will_go_to_start.main()
 
-            if take == "2" or take == "two": # (+)
+            if take == "2": # (+)
                     
                 try:
               
@@ -286,7 +291,7 @@ def Games():
 
                     imports.own.will_go_to_start.main()
 
-            if take23 == "2" or take23 == "two":
+            if take23 == "2":
             
                 try:
 

@@ -32,6 +32,8 @@ from imports.own.helpers_start import helpers_start
 from imports.own.donators_start import donators_start
 from imports.own.set_volume_level_start import set_volume_level_start
 import psutil
+from pydub import AudioSegment
+from pydub.playback import play
 
 def Own():
     
@@ -66,6 +68,7 @@ def Own():
 
             except:
 
+                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter color_back option!)" + Fore.WHITE)
                 imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.x.lower() == "shutdown": # shutdown (+)
@@ -186,11 +189,38 @@ def Own():
                         tokens = imports.own.will_go_to_start.writex.split(" ")
                         a = tokens[1]
                         #win32console.SetConsoleTitle(a)
-                        if a.lower() == "sans-battle" or a.lower() == "sans_battle" or a.lower() == "sans battle":
+                        if a.lower() == "sans-battle" or a.lower() == "sansbattle" or a.lower() == "sans_battle":
                             
                             print(" ")
                             print(Fore.YELLOW + "Secret Link:" + Fore.WHITE + " https://jcw87.github.io/c2-sans-fight/")
                             #print(" ")
+                            imports.own.will_go_to_start.main()
+                        if a.lower() == "toby-fox" or a.lower() == "tobyfox" or a.lower() == "toby_fox":
+                            
+                            print(" ")
+                            print("Thanks a lot! You are the hero of my childhood. \n(Big a fan) Thanks for " + Fore.RED + "Undertale" + Fore.WHITE + " game :)")
+                            #print(" ")
+                            # Load the MP3 audio file
+                            audio_file = AudioSegment.from_mp3(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/undertale.mp3'))
+
+                            # Play the audio file
+                            play(audio_file)
+                            imports.own.will_go_to_start.main()
+                        if a.lower() == "scott-cawthon" or a.lower() == "scottcawthon" or a.lower() == "scott_cawthon":
+                            
+                            print(" ")
+                            print("Thanks a lot! You are the one more hero of my childhood. \n(Big a fan) Thanks for " + Fore.YELLOW + "Five Nights at Freddy's" + Fore.WHITE + " game :)")
+                            #print(" ")
+                            # Load the MP3 audio file
+                            audio_file = AudioSegment.from_mp3(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/freddy_nouse.wav'))
+
+                            # Play the audio file
+                            play(audio_file)
+                            # Load the MP3 audio file
+                            audio_file = AudioSegment.from_mp3(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/resources/music/fnaf_beatbox_1.wav'))
+
+                            # Play the audio file
+                            play(audio_file)
                             imports.own.will_go_to_start.main()
                             
                         else:
@@ -202,7 +232,7 @@ def Own():
 
                 except:
 
-                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter name of promo code!)" + Fore.WHITE)
+                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter promo code name!)" + Fore.WHITE)
                     imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "system_info": # system_info (+)
@@ -237,14 +267,16 @@ def Own():
                 print("                                     ")
                 line_y1 += 1
            
-           print("                                     Thanks for wanting to send money but if you");
-           print("                                    haven't changed your mind, here the author's")
-           print("                                  card number, don't exceed the amount ($1 - $200).")
-           print("                                                       Thanks.")
+           print("                                     Thanks for your support! If you haven't changed your");
+           print("                                     mind, here is author's Buy Me A Coffee and Cash App.")
+           print("                                        Please don't exceed limit amount ($1 - $100).")
+           print("                                                           Thanks.")
            print(" ")
-           print("                                           \033[0;33mCard number:\033[0;37m 4403 9352 3234 1307")
+           print("                                                \033[0;33mCash App:\033[0;37m 4403 9352 3234 1307")
            print(" ")
-           print("                                              Press any key to go back.")
+           print("                                     \033[0;33mBuy Me A Coffee:\033[0;37m https://www.buymeacoffee.com/oxdan")
+           print(" ")
+           print("                                                  Press any key to go back.")
            getch()
            print(" ")
            imports.own.will_go_to_start.main()

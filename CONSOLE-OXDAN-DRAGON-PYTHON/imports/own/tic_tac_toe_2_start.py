@@ -107,7 +107,7 @@ def tic_tac_toe_2_start():
 
 
                 window = Tk()
-                window.title("Tic-Tac-Toe")
+                window.title("Tic Tac Toe 2")
                 window.iconbitmap(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],'imports/own/my_dragon_ico.ico'))
                 players = ["o","x"]
                 player = random.choice(players)

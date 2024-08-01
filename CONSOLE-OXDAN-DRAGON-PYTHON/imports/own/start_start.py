@@ -11,6 +11,7 @@ try:
     import winotify 
     import subprocess
     import builtins
+    import pygame
 except ImportError:
 
         os.system("pip install colorama")
@@ -22,6 +23,7 @@ except ImportError:
         os.system("pip install winotify")
         os.system("pip install subprocess")
         os.system("pip install builtins")
+        os.system("pip install pygame")
 
 import msvcrt
 import os

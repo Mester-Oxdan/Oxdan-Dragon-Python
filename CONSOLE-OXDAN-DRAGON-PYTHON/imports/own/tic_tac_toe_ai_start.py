@@ -17,7 +17,8 @@ def tic_tac_toe_ai_start():
 
             def printBoard(board):
                 os.system('cls')
-                print('Welcome to Tic-Tac-Toe ai!')
+                print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
+                print('Welcome to Tic-Tac-Toe Ai!')
                 print('-----------')
                 print('   |   |')
                 print(' ' + board[1] + ' | ' + board[2] + ' | ' + board[3])
@@ -38,8 +39,9 @@ def tic_tac_toe_ai_start():
             def playerMove():
                 run = True
                 while run:
-                    move = input('\nPlease select a position to place for \033[0;33mX\033[0;37m (1-9): ')
+                    move = input(Fore.WHITE + '\nPlease select a position to place for \033[0;33mX\033[0;37m (1-9): ')
                     try:
+                        
                         move = int(move)
                         if move > 0 and move < 10:
                             if spaceIsFree(move):
@@ -142,8 +144,12 @@ def tic_tac_toe_ai_start():
             while True:
 
                 os.system('cls')
-                answer = input('Do you want to play Tic_Tac_Toe? (Y/N) ')
-                if answer.lower() == 'y' or answer.lower() == 'yes':
+                print(" ")
+                print(Fore.RED + "Enter 'esc' (for exit)" + Fore.WHITE)
+                answer = input(Fore.YELLOW + 'Do you want to play Tic_Tac_Toe? (' + Fore.GREEN + 'Y' + Fore.WHITE + '/' + Fore.RED + 'N' + Fore.YELLOW + ')' + Fore.WHITE + ': ')
+                if imports.own.will_go_to_start.remove_098(answer.lower()) == "esc":
+                                imports.own.will_go_to_start.main()
+                elif imports.own.will_go_to_start.remove_098(answer.lower()) == 'y' or imports.own.will_go_to_start.remove_098(answer.lower()) == 'yes':
                     board = [' ' for x in range(10)]
                     print('----------------------------------------')
                     main()

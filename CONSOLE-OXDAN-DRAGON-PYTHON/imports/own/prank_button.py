@@ -39,7 +39,7 @@ def prank_button_no():
        pass
 
     root.geometry('600x600')
-    root.title('Main question!')
+    root.title(enter_question)
     root.resizable(width=False,height=False)
     root['bg'] = 'white'
 
@@ -95,7 +95,7 @@ def prank_button_yes():
        pass
 
     root.geometry('600x600')
-    root.title('Main question!')
+    root.title(enter_question)
     root.resizable(width=False,height=False)
     root['bg'] = 'white'
 

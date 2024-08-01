@@ -113,7 +113,7 @@ def update_program(username, repo, branch, local_dir):
                             print(" ")
                             print("Program updated " + Fore.GREEN + "successfully." + Fore.WHITE + " Please restart program.")
                             print("We try to update all files, but if you still have notification about update,")
-                            print("Please go on my github, delete your old console, and download new one.")
+                            print("Please go on my github or website, delete your old console, and download new one.")
                             print(" ")
                             #time.sleep(5)
                             #quit(0)
@@ -142,7 +142,7 @@ def Main_Commands():
 
         try:
 
-            print("\n" + Fore.YELLOW + " Oxdan" + Fore.RED + " Dragon" + Fore.WHITE + " [ Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS] ] ")
+            print("\n" + Fore.YELLOW + " Oxdan" + Fore.RED + " Dragon" + Fore.WHITE + " [ Version: 1.2025 [ENGLISH] (PYTHON) [WINDOWS] ] ")
             time.sleep(0.01)
             print("(c) Oxdan Praduction. ")
             time.sleep(0.01)
@@ -327,10 +327,10 @@ def Main_Commands():
             async def main():
                 response = await fetch_data()
                 #print (response)
-                if response != "2.2024\n":
+                if response != "1.2025\n":
                     print(" ")
                     print("\033[0;33mYou're right!\033[0;37m")
-                    print("We have a new version for you: 3.2025")
+                    print("We have a new version for you: 2.2026")
                     print("If you want to \033[0;32mdownload\033[0;37m it, just go to our Website or GitHub.")
                     imports.own.will_go_to_start.main()
                 else:
@@ -448,21 +448,22 @@ def Main_Commands():
                 # Execute the pip command
                 #result = subprocess.run(right_command, capture_output=True, text=True)
                 command_list = [
-        "search", "--help", "-help", "help", "-h", "--version", "-version", "version", "-v", "pip", "git", "conda",
-        "cmd", "cls", "clear", "go_to", "dir", "ls", "mkdir", "create", "del", "delete", "install", "update",
-        "injector_dll", "pas_gen", "my_wifi_pas", "cor_desk", "ascii_code", "ip_search", "phone_search", "mimikatz",
-        "john", "nmap", "con_wifi", "wifi_hack", "stealer", "get_ip_website", "auto_clicker", "morse_code_cipher",
-        "caesar_cipher", "ai_chat", "ukraine", "author", "matrix", "login", "registration", "instructions",
-        "del_account", "logout", "tim", "time", "stopwatch", "timer", "calculator", "calendar", "webcam_recorder",
-        "screen_recorder", "cur_conv", "notepad", "translator", "dictaphone", "chat_client", "chat_server", "pacman",
-        "2048", "arkanoid", "flappy_bird", "tetris", "hangman", "car_racing", "guess_number", "math_game",
-        "typing_tutor", "battle_city", "doom", "mario", "snake", "ping_pong", "tic_tac_toe", "checkers", "chess",
-        "space_shooter", "title", "new", "start", "open", "shutdown", "restart", "data", "promo_code", "i_am_here",
-        "&main", "donate", "donators", "helpers", "color_back", "i?", "administrator", "admin", "superuser",
-        "chan_backg", "send_ph_message", "history", "cls_history", "memory", "rules", "commands", "tips", "links",
-        "my_volume_level", "set_volume_level", "set_mute", "ip", "size", "my_location", "system_info",
-        "energy", "power", "prank_button", "melt_screen", "gdi_virus", "exit", "esc", "quit"
-    ] #dragon_helper, color, 
+                "search", "--help", "-help", "help", "-h", "--version", "-version", "version", "-v", "pip", "git", "conda",
+                "cmd", "cls", "clear", "go_to", "dir", "ls", "mkdir", "create", "del", "delete", "install", "update",
+                "injector_dll", "pas_gen", "my_wifi_pas", "cor_desk", "ascii_code", "ip_search", "phone_search", "mimikatz",
+                "john", "nmap", "con_wifi", "wifi_hack", "stealer", "get_ip_website", "auto_clicker", "morse_code_cipher",
+                "caesar_cipher", "ai_chat", "ukraine", "author", "matrix", "login", "registration", "instructions",
+                "del_account", "logout", "tim", "time", "stopwatch", "timer", "calculator", "calendar", "webcam_recorder",
+                "screen_recorder", "cur_conv", "notepad", "translator", "dictaphone", "chat_client", "chat_server", "pacman",
+                "2048", "arkanoid", "flappy_bird", "tetris", "hangman", "car_racing", "guess_number", "math_game",
+                "typing_tutor", "battle_city", "doom", "mario", "snake", "ping_pong", "tic_tac_toe", "checkers", "chess",
+                "space_shooter", "title", "new", "start", "open", "shutdown", "restart", "data", "promo_code", "i_am_here",
+                "&main", "donate", "donators", "helpers", "color_back", "i?", "administrator", "admin", "superuser",
+                "chan_backg", "send_ph_message", "history", "cls_history", "memory", "rules", "commands", "tips", "links",
+                "my_volume_level", "set_volume_level", "set_mute", "ip", "size", "my_location", "system_info",
+                "energy", "power", "prank_button", "melt_screen", "gdi_virus", "exit", "esc", "quit", "file_injector", 
+                "files_convertor", "3d_price_calc"
+                ] #dragon_helper, color, 
 
                 # Take user input
                 #user_input = input("Enter a fruit name: ")
