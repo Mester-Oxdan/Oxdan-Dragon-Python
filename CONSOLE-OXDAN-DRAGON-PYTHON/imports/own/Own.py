@@ -34,6 +34,7 @@ from imports.own.set_volume_level_start import set_volume_level_start
 import psutil
 from pydub import AudioSegment
 from pydub.playback import play
+from decimal import Decimal, ROUND_UP, ROUND_HALF_UP
 
 def Own():
     
@@ -518,6 +519,7 @@ def Own():
                         6: "RAMDISK"
                     }
                     return types.get(drive_type, "UNKNOWN")
+                    #print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Unknown disk type!)\n" + Fore.WHITE)
 
                 # Get disk usage information
                 total, used, free = shutil.disk_usage("/")
@@ -530,16 +532,16 @@ def Own():
                     disk_type = get_disk_type(partition.device + '\\')
                     disk_info[partition.device] = {
                         'file_system': partition.fstype,
-                        'total': usage.total // (2**30),
+                        'total': usage.total // (2**30), #(usage.total // (2**30)).quantize(Decimal('0.001'), ROUND_HALF_UP),
                         'used': usage.used // (2**30),
                         'free': usage.free // (2**30),
                         'type': disk_type
                     }
 
                 # Print disk usage information
-                print(" ")    
+                #print(" ")    
                 for device, info in disk_info.items():
-                    #print(Fore.YELLOW + f"\nDisk Device: {device}")
+                    print(Fore.YELLOW + f"\nDisk Device: {device}")
                     print(Fore.YELLOW + "Total space: " + Fore.WHITE + "%d GB" % info['total'])
                     print(Fore.GREEN + "Free space: " + Fore.WHITE + "%d GB" % info['free'])
                     print(Fore.RED + "Used space: " + Fore.WHITE + "%d GB" % info['used'])

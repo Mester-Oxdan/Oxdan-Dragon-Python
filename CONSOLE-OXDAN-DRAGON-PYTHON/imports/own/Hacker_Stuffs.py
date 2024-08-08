@@ -32,7 +32,6 @@ from phonenumbers.util import u
 import pycountry , phonenumbers
 from phonenumbers.phonenumberutil import region_code_for_number
 from geopy.geocoders import Nominatim
-from uszipcode import SearchEngine
 import os
 
 STD_OUTPUT_HANDLE = -11
@@ -84,7 +83,7 @@ def Hacker_Stuffs():
                 command.remove("john")
                 # Execute the pip command
                 #result = subprocess.run(command, capture_output=True, text=True)
-                result =  os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe " + ''.join(command))
+                result =  os.system('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe" + '"' + '"' + ' ' + ''.join(command))
                 # Print the output of the command
                 #print(result.stdout)
                 #print(result)
@@ -115,10 +114,50 @@ def Hacker_Stuffs():
 
         except:
 
-           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install nmap-7.94-setup!)" + colorama.Fore.WHITE)
+           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install nmap!)" + colorama.Fore.WHITE)
+           imports.own.will_go_to_start.main()
+           
+    if imports.own.will_go_to_start.writex.lower().startswith("hydra"): # hydra (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("hydra")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                result =  os.system('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\hydra_windows\\hydra.exe" + '"' + '"' + ' ' + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                os.system(result)
+
+                """# Remove "hydra" from the command list
+                command = [cmd for cmd in command if cmd != "hydra"]
+
+                # Get environment variable
+                oxdan_dragon_w = os.environ["OXDAN-DRAGON-PYTHON"]
+
+                # Construct the command
+                separator = " "
+                right_command = f"\"{oxdan_dragon_w}\\imports\\own\\imports\\john_the_ripper\\run\\john.exe\""
+                right_command = f"\"{right_command}\""
+
+                # Add remaining commands
+                right_command += separator + separator.join(command)
+
+                # Execute the command
+                subprocess.run(right_command, shell=True)"""
+
+                imports.own.will_go_to_start.main()
+
+        except:
+
+           #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python-3.10.6!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
             
-    if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
+    """if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
 
         try:
 
@@ -166,7 +205,7 @@ def Hacker_Stuffs():
 
         except:
 
-            imports.own.will_go_to_start.main()
+            imports.own.will_go_to_start.main()"""
 
     if imports.own.will_go_to_start.x.lower() == "morse_code_cipher": # morse_code_cipher (+)
 
@@ -201,13 +240,6 @@ def Hacker_Stuffs():
     if imports.own.will_go_to_start.x.lower() == "get_ip_website": # get_ip_website (+)
 
         try:
-
-            try:
-
-                #defret = input(Fore.YELLOW + "\nEnter site name with (.com): " + Fore.WHITE)
-                get_ip_site_start(defret76)
-
-            except:
 
                 #defret = input(Fore.YELLOW + "\nEnter website name with (.com): " + Fore.WHITE)
                 tokens = imports.own.will_go_to_start.writex.split(" ")

@@ -202,7 +202,7 @@ def Main_Commands():
 
         except:
 
-           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python-3.10.6!)" + colorama.Fore.WHITE)
+           print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.writex.lower().startswith("git"): # git (+)
@@ -225,7 +225,7 @@ def Main_Commands():
            print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install git!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
 
-    if imports.own.will_go_to_start.writex.lower().startswith("npm"): # npm (+)
+    """if imports.own.will_go_to_start.writex.lower().startswith("npm"): # npm (+)
 
         try:
                 
@@ -243,7 +243,7 @@ def Main_Commands():
         except:
 
            print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install npm!)" + colorama.Fore.WHITE)
-           imports.own.will_go_to_start.main()
+           imports.own.will_go_to_start.main()"""
 
     if imports.own.will_go_to_start.writex.lower().startswith("conda"): # conda (+)
 
@@ -290,17 +290,6 @@ def Main_Commands():
     elif imports.own.will_go_to_start.x.lower() == "go_to" or imports.own.will_go_to_start.x.lower() == "cd": # go_to (+)
         
         try:
-
-            try:
-
-                #tokens = will_go_to_start.writex.split(" ")
-                #cd = tokens[1]
-
-                os.chdir(cd)
-
-                imports.own.will_go_to_start.main()
-
-            except:
 
                 tokens = imports.own.will_go_to_start.writex.split(" ")
                 cd_45 = tokens[1]
@@ -387,13 +376,6 @@ def Main_Commands():
 
         try:
 
-            try:
-            
-                installs_start(name_578)
-                imports.own.will_go_to_start.main()
-
-            except:
-
                 tokens = imports.own.will_go_to_start.writex.split(" ")
                 name = tokens[1]
             
@@ -450,9 +432,9 @@ def Main_Commands():
                 command_list = [
                 "search", "--help", "-help", "help", "-h", "--version", "-version", "version", "-v", "pip", "git", "conda",
                 "cmd", "cls", "clear", "go_to", "dir", "ls", "mkdir", "create", "del", "delete", "install", "update",
-                "injector_dll", "pas_gen", "my_wifi_pas", "cor_desk", "ascii_code", "ip_search", "phone_search", "mimikatz",
+                "injector_dll", "pas_gen", "my_wifi_pas", "cor_desk", "ascii_code", "ip_search", "mimikatz",
                 "john", "nmap", "con_wifi", "wifi_hack", "stealer", "get_ip_website", "auto_clicker", "morse_code_cipher",
-                "caesar_cipher", "ai_chat", "ukraine", "author", "matrix", "login", "registration", "instructions",
+                "caesar_cipher", "ukraine", "author", "matrix", "login", "registration", "instructions",
                 "del_account", "logout", "tim", "time", "stopwatch", "timer", "calculator", "calendar", "webcam_recorder",
                 "screen_recorder", "cur_conv", "notepad", "translator", "dictaphone", "chat_client", "chat_server", "pacman",
                 "2048", "arkanoid", "flappy_bird", "tetris", "hangman", "car_racing", "guess_number", "math_game",
@@ -463,7 +445,7 @@ def Main_Commands():
                 "my_volume_level", "set_volume_level", "set_mute", "ip", "size", "my_location", "system_info",
                 "energy", "power", "prank_button", "melt_screen", "gdi_virus", "exit", "esc", "quit", "file_injector", 
                 "files_convertor", "3d_price_calc"
-                ] #dragon_helper, color, 
+                ] #dragon_helper, color, ai_chat, phone_search, 
 
                 # Take user input
                 #user_input = input("Enter a fruit name: ")
@@ -487,17 +469,6 @@ def Main_Commands():
     elif imports.own.will_go_to_start.x.lower() == "create": # create (+)
         
         try:
-
-            try:
-
-                #tokens = will_go_to_start.writex.split(" ")
-                #name = tokens[1]
-             
-                finp = builtins.open(name_56, 'w')
-                finp.close()
-                imports.own.will_go_to_start.main()
-
-            except:
 
                 tokens = imports.own.will_go_to_start.writex.split(" ")
                 name = tokens[1]

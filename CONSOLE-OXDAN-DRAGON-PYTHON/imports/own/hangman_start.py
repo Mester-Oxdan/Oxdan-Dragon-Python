@@ -112,10 +112,7 @@ def hangman_start():
 
         # constant no. 3
 
-        WORDS = ("THE GRIND", "HANGMAN", "WHEEL OF FORTUNE",
-                 "AEROPOSTALE", "PYTHON", "CASABLANCA",
-                 "ALASKA", "SILLY GOOSE", "OVERUSED", "OXDAN", 
-                 "PRADUCTION")
+        WORDS = ("monkey","oxdan","praduction", "africa", "apple", "banana", "power", "sad", "life", "death", "true", "lie", "false", "you", "racism", "???", "friend", "sky", "command", "slave", "neighbor", "fnaf", "undertale", "bendy", "fun", "dumb", "mistake", "wrong", "correct", "free", "freedom")
 
         # initialise variables
 
@@ -132,16 +129,16 @@ def hangman_start():
         while wrong < MAX_WRONG and so_far != word:
             print (HANGMAN[wrong])
             print ("\nYou used following letters:\n", used)
-            print(Fore.RED + "\nWrite 'esc' (for exit)")
+            print(Fore.RED + "\nEnter 'esc' (for exit)")
             print ("\033[0;33mYou have guessed:\033[0;37m\t", so_far)
 
             guess = input()
-            if guess == "esc":
+            if imports.own.will_go_to_start.remove_098(guess.lower()) == "esc":
 
                 imports.own.will_go_to_start.main()
 
-            if guess.isalpha():
-                guess = guess.upper()
+            if imports.own.will_go_to_start.remove_098(guess.lower()):
+                guess = imports.own.will_go_to_start.remove_098(guess.lower())
                 #used.remove(guess)
                 if guess in used:
 
@@ -180,7 +177,8 @@ def hangman_start():
 
             else:
 
-                print("\nEnter only letters")
+                #print("\nEnter only letters")
+                print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Only letters!)" + Fore.WHITE)
                 getch()
 
             #used.append(guess)
