@@ -26,7 +26,6 @@ import phonenumbers
 from phonenumbers import timezone
 from phonenumbers import geocoder
 from phonenumbers import carrier
-import folium
 from opencage.geocoder import OpenCageGeocode
 from phonenumbers.util import u
 import pycountry , phonenumbers

@@ -4,20 +4,21 @@ import colorama
 import hashlib
 import builtins
 from colorama import Fore
+import os
 
 def del_account_start():
 
-                print(Fore.RED + "\nWrite 'esc' (for exit)" + Fore.WHITE)
+                print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)
 
                 wrote_stored_email = input(Fore.YELLOW + "Enter account name: " + Fore.WHITE)
 
-                if wrote_stored_email == "esc":
+                if imports.own.will_go_to_start.remove_098(wrote_stored_email.lower()) == "esc":
 
                     imports.own.will_go_to_start.main()
 
                 wrote_stored_pwd = input(Fore.YELLOW + "\nEnter account password: " + Fore.WHITE)
 
-                if wrote_stored_pwd == "esc":
+                if imports.own.will_go_to_start.remove_098(wrote_stored_pwd.lower()) == "esc":
 
                     imports.own.will_go_to_start.main()
 
@@ -26,7 +27,7 @@ def del_account_start():
                 auth = wrote_stored_pwd.encode()
                 wrote_stored_pwd_tran = hashlib.md5(auth).hexdigest()
 
-                with builtins.open("login_data_base.txt", "r") as f:
+                with builtins.open(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own/login_data_base.txt", "r") as f:
 
                     for line in f:
 
@@ -55,12 +56,12 @@ def del_account_start():
 
                               del_account_bool = True
 
-                              with open('login_data_base.txt', 'r') as f:
+                              with open(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own/login_data_base.txt", 'r') as f:
 
                                     text = f.read()
                                     text_without_special_email = re.sub(wrote_stored_email + " " + wrote_stored_pwd_tran, '', text)
 
-                              with open('login_data_base.txt', 'w') as f:
+                              with open(os.environ["OXDAN-DRAGON-PYTHON"] + "/imports/own/login_data_base.txt", 'w') as f:
 
                                     f.write(text_without_special_email)
 
@@ -74,5 +75,5 @@ def del_account_start():
                     imports.own.will_go_to_start.main()
 
                 else:
-
+                    print(colorama.Fore.GREEN + "\n(!SUCCESS!) " + colorama.Fore.WHITE + "=" + colorama.Fore.YELLOW + " (!Account deleted successfully!)\n" + colorama.Fore.WHITE)
                     imports.own.will_go_to_start.main()

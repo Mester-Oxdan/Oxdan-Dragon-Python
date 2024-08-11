@@ -14,6 +14,7 @@ from imports.own.d_price_calc_start import d_price_calc_start
 from imports.own.chat_start import chat_start
 import os
 from googletrans import Translator
+import colorama
 
 def Serious():
 

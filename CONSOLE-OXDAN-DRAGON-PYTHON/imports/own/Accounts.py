@@ -6,10 +6,11 @@ import imports.own.signup
 import imports.own.instructions
 import colorama
 from imports.own.del_account_start import del_account_start
+from imports.own.my_accounts_start import my_accounts_start
 
 def Accounts():
 
-            if imports.own.will_go_to_start.x.lower() == "login" or imports.own.will_go_to_start.x.lower() == "signin": # login (+)
+            if imports.own.will_go_to_start.x.lower() == "login": # login (+)
 
                  try:
 
@@ -19,7 +20,7 @@ def Accounts():
 
                         imports.own.will_go_to_start.main()
 
-            if imports.own.will_go_to_start.x.lower() == "registration" or imports.own.will_go_to_start.x.lower() == "signup": # registration (+)
+            if imports.own.will_go_to_start.x.lower() == "registration": # registration (+)
 
                     try:
 
@@ -48,6 +49,18 @@ def Accounts():
                 except:
 
                     print(colorama.Fore.RED + "\n(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Account did not found!)\n" + colorama.Fore.WHITE)
+                    imports.own.will_go_to_start.main()
+                    
+            if imports.own.will_go_to_start.x.lower() == "my_accounts": # my_accounts (+)
+
+                try:
+
+                    #keyboard.press(72)
+                    #imports.own.start_start.start_start()
+                    my_accounts_start() 
+
+                except:
+
                     imports.own.will_go_to_start.main()
 
             if imports.own.will_go_to_start.x.lower() == "logout": # logout (+)

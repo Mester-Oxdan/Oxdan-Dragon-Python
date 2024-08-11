@@ -72,7 +72,7 @@ def start_start():
     #print(os.path.join(os.environ["OXDAN-DRAGON-PYTHON"],"imports/own/my_dragon_ico.jpg"))
     #msvcrt.getch()
 
-    Menu = ["                                                              REGISTRATION", "                                                              LOGIN", "                                                              INSTRUCTIONS", "                                                              EXIT"]
+    Menu = ["                                                              REGISTRATION", "                                                              LOGIN", "                                                              SKIP", "                                                              INSTRUCTIONS", "                                                              EXIT"]
     active_menu = 0
     keyboard.press(72)
 
@@ -95,7 +95,7 @@ def start_start():
 
         elif key == 80:
 
-            if active_menu < 3:
+            if active_menu < 4:
                 active_menu += 1
             os.system("cls")
 
@@ -103,22 +103,31 @@ def start_start():
 
         elif key == 13:
 
-            if active_menu == 0:
+            if active_menu == 0: # 1
 
                 os.system("cls")
                 imports.own.signup.signup()
 
-            if active_menu == 1:
+            if active_menu == 1: # 2
 
                 os.system("cls")
                 imports.own.login.login()
 
-            if active_menu == 2: ############
+            if active_menu == 2: # 3
+
+                os.system("cls")
+                print(colorama.Fore.YELLOW + "Oxdan" + colorama.Fore.RED + " Dragon" + colorama.Fore.WHITE + " [ Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS] ] ") # intro cmd (+)
+                time.sleep(0.01)
+                print("(p) Oxdan Praduction. ")
+                time.sleep(0.01)
+                imports.own.will_go_to_start.main()
+                
+            if active_menu == 3: # 4
 
                 os.system("cls")
                 imports.own.instructions.instructions()
 
-            if active_menu == 3:
+            if active_menu == 4: # 5
 
                 #os.system("cls")
                 exit(0)
@@ -128,17 +137,26 @@ def start_start():
                 os.system("cls")
                 imports.own.signup.signup()
 
-        elif key == 50:
+        elif key == 50: # 2
 
                 os.system("cls")
                 imports.own.login.login()
+                
+        elif key == 51: # 3
 
-        elif key == 51:
+                os.system("cls")
+                print(colorama.Fore.YELLOW + "Oxdan" + colorama.Fore.RED + " Dragon" + colorama.Fore.WHITE + " [ Version: 2.2024 [ENGLISH] (PYTHON) [WINDOWS] ] ") # intro cmd (+)
+                time.sleep(0.01)
+                print("(p) Oxdan Praduction. ")
+                time.sleep(0.01)
+                imports.own.will_go_to_start.main()
+
+        elif key == 52: # 4
 
                 os.system("cls")
                 imports.own.instructions.instructions()
 
-        elif key == 52:
+        elif key == 53: # 5
 
                 os.system("cls")
                 exit(0)
