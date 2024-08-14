@@ -2,11 +2,14 @@ import os
 
 def installs_start(name):
 
-            if name == "python-3.10.6":
+            if name == "python":
                 os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\installs\\python.exe")
                 
-            if name == "nmap-7.94-setup":
+            if name == "nmap":
                 os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\installs\\nmap.exe")
+
+            if name == "metasploit":
+                os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\installs\\metasploit.exe")
                 
             if name == "git":
                 os.system("start " + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\installs\\git.exe")

@@ -2,8 +2,26 @@
 import pyautogui
 import cv2
 import numpy as np
-from colorama import *
+from colorama import Fore
 import imports.own.will_go_to_start
+import ctypes
+import os 
+
+def set_window_icon(window_name, icon_path):
+    # Get the window handle (HWND) for the OpenCV window
+    hwnd = ctypes.windll.user32.FindWindowW(None, window_name)
+    
+    if hwnd:
+        # Load the icon from the specified path
+        hIcon = ctypes.windll.user32.LoadImageW(None, icon_path, 1, 0, 0, 0x00000010 | 0x00000080)
+        
+        # Set the icon for the window
+        ctypes.windll.user32.SendMessageW(hwnd, 0x0080, 1, hIcon)  # ICON_BIG
+        ctypes.windll.user32.SendMessageW(hwnd, 0x0080, 0, hIcon)  # ICON_SMALL
+    else:
+        #print("Could not find OpenCV window!")
+        print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Could not find OpenCV window!)\n" + Fore.WHITE)
+        imports.own.will_go_to_start.main()
 
 def screen_recorder_start():
 
@@ -16,7 +34,7 @@ def screen_recorder_start():
         codec = cv2.VideoWriter_fourcc(*"XVID")
   
         # Specify name of Output file
-        filename = "output_recorded_screen.avi"
+        filename = "screen_recoring.avi"
   
         # Specify frames rate. We can choose any 
         # value and experiment with it
@@ -26,11 +44,13 @@ def screen_recorder_start():
         out = cv2.VideoWriter(filename, codec, fps, resolution)
   
         # Create an Empty window
-        cv2.namedWindow("Video: ", cv2.WINDOW_NORMAL)
+        cv2.namedWindow("Screen Recorder: ", cv2.WINDOW_NORMAL)
   
         # Resize this window
-        cv2.resizeWindow("Video: ", 480, 270)
-  
+        cv2.resizeWindow("Screen Recorder: ", 480, 270)
+        # Set custom icon for the window
+        icon_path = os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\my_dragon_ico.ico"  # Replace with the correct path to your .ico file
+        set_window_icon("Screen Recorder: ", icon_path)
         refed = True
 
         while refed == True:
@@ -49,7 +69,7 @@ def screen_recorder_start():
                     out.write(frame)
       
                     # Optional: Display the recording screen
-                    cv2.imshow('Video: ', frame)
+                    cv2.imshow('Screen Recorder: ', frame)
       
                     # Stop recording when we press 'q'
                     if cv2.waitKey(27) >= 0:

@@ -71,6 +71,17 @@ def Hacker_Stuffs():
         except:
 
             imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "metasploit": # metasploit (+)
+
+        try:
+
+            os.system('"' + '"' + "C:\metasploit\console.bat" + '"' + '"')
+            imports.own.will_go_to_start.main()
+
+        except:
+            print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install metasploit!)" + colorama.Fore.WHITE)
+            imports.own.will_go_to_start.main()
             
     if imports.own.will_go_to_start.writex.lower().startswith("john"): # john (+)
 
@@ -82,7 +93,7 @@ def Hacker_Stuffs():
                 command.remove("john")
                 # Execute the pip command
                 #result = subprocess.run(command, capture_output=True, text=True)
-                result =  os.system('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe" + '"' + '"' + ' ' + ''.join(command))
+                result = os.system('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\john_the_ripper\\run\\john.exe" + '"' + '"' + ' ' + ''.join(command))
                 # Print the output of the command
                 #print(result.stdout)
                 #print(result)
