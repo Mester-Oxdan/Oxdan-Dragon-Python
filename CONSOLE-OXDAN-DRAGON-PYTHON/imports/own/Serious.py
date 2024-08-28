@@ -72,7 +72,7 @@ def Serious():
 
             imports.own.will_go_to_start.main()
             
-    """if imports.own.will_go_to_start.x.lower() == "chat": # chat (+)
+    if imports.own.will_go_to_start.x.lower() == "chat": # chat (+)
 
         try:
 
@@ -80,7 +80,7 @@ def Serious():
 
         except:
 
-            imports.own.will_go_to_start.main()"""
+            imports.own.will_go_to_start.main()
             
     if imports.own.will_go_to_start.x.lower() == "3d_price_calc": # 3d_price_calc (+)
 
