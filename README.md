@@ -83,27 +83,20 @@ creating this console only because of studying coding in 2023, but then it becam
 
 Photos 2024:
 
-Console_start_menu.
-![screen_console_menu](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/3814fedb-1398-45f1-998b-df9ffb6f0425)
+Console_Start_Menu.
+![Console_Start_Menu](https://github.com/user-attachments/assets/6c976383-159b-44a1-9484-39d853971fcf)
 
-Console_start.
-![screen_console_start](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/18cf470b-f84d-405b-8939-2ca13a740295)
+Console_Start.
+![Console_Start](https://github.com/user-attachments/assets/97d77794-6c8e-472c-a3f7-05e5f461b8a6)
 
-Console_after_entered_command_author.
-![screen_console_author](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/11d6e073-a2ce-4b63-978d-70c75c43f45d)
+Console_Author_Command.
+![Console_Author_Command](https://github.com/user-attachments/assets/231e97c2-68eb-4724-b2c5-695d0d4ecd3e)
 
-Console_rules.
-![screen_console_rules](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/22c66e40-47f1-4c5c-80c9-ce10696fcb28)
+Console_Rules.
+![Console_Rules](https://github.com/user-attachments/assets/2d5bbec4-2c45-4804-870f-7f11c777ad89)
 
-Console_commands.
-![screen_console_commands](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/744c26b6-e868-4185-b373-492f0c752316)
-
-
-Console_rules.
-![screen_console_rules](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/22c66e40-47f1-4c5c-80c9-ce10696fcb28)
-
-Console_commands.
-![screen_console_commands](https://github.com/Mester-Oxdan/Oxdan-Dragon-C/assets/106891875/744c26b6-e868-4185-b373-492f0c752316)
+Console_Commands.
+![Console_Commands](https://github.com/user-attachments/assets/a7611f68-d9b6-4177-88db-54d69e47f83b)
 
 Video 2024:
 
