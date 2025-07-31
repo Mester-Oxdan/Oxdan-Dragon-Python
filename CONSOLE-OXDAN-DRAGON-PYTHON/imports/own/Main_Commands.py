@@ -362,12 +362,33 @@ def Main_Commands():
             async def main():
                 response = await fetch_data()
                 #print (response)
-                if response != "1.2025\n":
+                if response != "2.2024\n":
                     print(" ")
-                    print("\033[0;33mYou're right!\033[0;37m")
-                    print("We have a new version for you: 2.2026")
+                    print("\033[0;33mUpdate Available!\033[0;37m")
+                    time.sleep(0.01)
+                    print("We have a new version for you: " + response)
+                    time.sleep(0.01)
                     print("If you want to \033[0;32mdownload\033[0;37m it, just go to our Website or GitHub.")
-                    imports.own.will_go_to_start.main()
+                    time.sleep(0.01)
+                    print("Github: @Mester-Oxdan /OR/ https://github.com/Mester-Oxdan")
+                    time.sleep(0.01)
+                    print("Website: https://oxdan.com")
+                    time.sleep(0.01)
+                    answer_123 = input("Would you like to update now? y/n: ")
+                    time.sleep(0.01)
+
+                    if answer_123.lower() == "y" or answer_123.lower() == "yes":
+                        #os.system('start "" "..\\update\\update.exe"')
+                        path = os.getcwd()
+                        subprocess.run(['start', '', path + '\\..\\update\\update.exe'], shell=True)
+                        #print(path + '\\..\\update\\update.exe')
+                        #subprocess.run(['start', '', '"C:\Users\bogda\Downloads\(+)my_goods\(+)Oxdan_Praduction\Oxdan-Dragon-Python\update\update.exe"'], shell=True)
+
+                        exit(0)
+                        #print("Current working directory:", os.getcwd())
+                    else:
+
+                        imports.own.will_go_to_start.main()
                 else:
                     print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Program already updated to last version!)" + Fore.WHITE)
                     imports.own.will_go_to_start.main()
