@@ -100,6 +100,7 @@ REQUIRED_PACKAGES = [
     "wmi",
     "SpeechRecognition",
     "pyttsx3",
+    "speedtest-cli",
 
 ]
 

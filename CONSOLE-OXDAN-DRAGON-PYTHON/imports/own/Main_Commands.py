@@ -503,9 +503,9 @@ def Main_Commands():
                         "pip", "git", "conda", "cmd", "cls", "clear",
                         "go_to", "cd", "where", "dir", "ls", "mkdir", "create",
                         "del", "delete", "install", "update",
-                        "dll_injector", "file_injector", "pas_gen",
+                        "dll_injector", "pas_gen",
                         "my_wifi_pas", "cor_desk", "ascii_code",
-                        "ip_search", "mimikatz", "john", "nmap",
+                        "ip_search", "phone_search", "mimikatz", "john", "nmap",
                         "sqlmap", "hydra", "metasploit", "aircrack-ng",
                         "con_wifi", "wifi_hack", "get_ip_website",
                         "auto_clicker", "morse_code_cipher",
@@ -514,7 +514,7 @@ def Main_Commands():
                         "instructions", "del_account", "my_accounts",
                         "logout", "tim", "time", "stopwatch", "timer",
                         "calculator", "calendar", "webcam_recorder",
-                        "screen_recorder", "cur_conv", "notepad",
+                        "screen_recorder", "notepad",
                         "translator", "dictaphone", "chat",
                         "files_convertor", "3d_price_calc", "pacman",
                         "2048", "arkanoid", "flappy_bird", "tetris",
@@ -522,19 +522,19 @@ def Main_Commands():
                         "typing_tutor", "battle_city", "doom", "mario",
                         "snake", "ping_pong", "tic_tac_toe", "checkers",
                         "chess", "space_shooter", "title", "new",
-                        "start", "open", "shutdown", "restart", "date",
+                        "start", "open", "lock", "sleep", "shutdown", "restart", "date",
                         "promo_code", "i_am_here", "&main", "donate",
                         "donators", "helpers", "color", "color_back",
                         "i?", "administrator", "admin", "superuser",
                         "chan_backg", "history", "cls_history", "memory",
                         "rules", "commands", "tips", "links",
                         "dragon_helper", "my_volume_level",
-                        "set_volume_level", "set_mute", "ip", "size",
-                        "my_location", "system_info", "energy", "power",
+                        "set_volume_level", "set_mute", "ip", "speedtest", "size",
+                        "my_location", "system_info", "tasklist", "kill", "energy", "power",
                         "prank_button", "melt_screen", "gdi_virus",
                         "exit", "esc", "quit"
 
-                ] #dragon_helper, color, ai_chat, phone_search, 
+                ] #dragon_helper, color, ai_chat, cur_conv, crypto_conv
 
                 # Take user input
                 #user_input = input("Enter a fruit name: ")

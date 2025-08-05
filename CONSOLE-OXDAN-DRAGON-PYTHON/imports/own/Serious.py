@@ -152,15 +152,15 @@ def Serious():
 
             imports.own.will_go_to_start.main()
 
-    elif imports.own.will_go_to_start.x.lower() == "cur_conv": # cur_conv (+)
+    #elif imports.own.will_go_to_start.x.lower() == "cur_conv": # cur_conv (+)
             
-        try:
+        #try:
 
-            cur_conv_start()
+            #cur_conv_start()
 
-        except:
+        #except:
 
-            imports.own.will_go_to_start.main()
+            #imports.own.will_go_to_start.main()
 
     elif imports.own.will_go_to_start.x.lower() == "notepad": # notepad (+)
             

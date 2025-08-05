@@ -1,4 +1,5 @@
 ﻿from msvcrt import getch
+import threading
 import imports.own.will_go_to_start
 import ctypes
 from colorama import Fore
@@ -19,6 +20,7 @@ from imports.own.color_start import color_start
 from imports.own.color_back_start import color_back_start
 from imports.own.main_start_start import main_start_start
 from imports.own.size_start import size_start
+from imports.own.speedtest_start import speedtest_start
 from imports.own.system_info_start import system_info_start
 from imports.own.my_location_start import my_location_start
 from imports.own.energy_start import energy_start
@@ -36,6 +38,34 @@ from pydub import AudioSegment
 from pydub.playback import play
 from decimal import Decimal, ROUND_UP, ROUND_HALF_UP
 from time import sleep
+
+def is_pid(text):
+    return text.isdigit()
+
+def kill_by_pid(pid):
+    try:
+        proc = psutil.Process(int(pid))
+        proc.terminate()
+        proc.wait(timeout=3)
+        #print(f"✅ Process with PID {pid} terminated.")
+        return True
+        imports.own.will_go_to_start.main()
+    except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.TimeoutExpired) as e:
+        return False
+
+def kill_by_name(name):
+    killed = False
+    for proc in psutil.process_iter(['name', 'pid']):
+        if proc.info['name'] and proc.info['name'].lower() == name.lower():
+            try:
+                proc.terminate()
+                proc.wait(timeout=3)
+                #print(f"✅ Killed {name} (PID: {proc.pid})")
+                killed = True
+                imports.own.will_go_to_start.main()
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.TimeoutExpired):
+                continue
+    return killed
 
 def Own():
     
@@ -73,11 +103,34 @@ def Own():
                 print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter color_back option!)" + Fore.WHITE)
                 imports.own.will_go_to_start.main()
 
+    if imports.own.will_go_to_start.x.lower() == "lock": # lock (+)
+            
+            try:
+
+                ctypes.windll.user32.LockWorkStation()
+                imports.own.will_go_to_start.main()
+
+            except:
+
+                imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "sleep": # sleep (+)
+            
+            try:
+
+                ctypes.windll.powrprof.SetSuspendState(False, True, False)
+                imports.own.will_go_to_start.main()
+
+            except:
+
+                imports.own.will_go_to_start.main()
+
     if imports.own.will_go_to_start.x.lower() == "shutdown": # shutdown (+)
             
             try:
 
                 os.system("shutdown /s")
+                imports.own.will_go_to_start.main()
 
             except:
 
@@ -88,6 +141,7 @@ def Own():
             try:
 
                 os.system("shutdown /r")
+                imports.own.will_go_to_start.main()
 
             except:
 
@@ -247,15 +301,38 @@ def Own():
 
                 imports.own.will_go_to_start.main()
 
-    """if imports.own.will_go_to_start.x.lower() == "send_ph_message": # send_ph_message (+)
+    elif imports.own.will_go_to_start.x.lower() == "tasklist": # tasklist (+)
 
+            try:
+
+                os.system("start taskmgr")
+                imports.own.will_go_to_start.main()
+
+            except:
+
+                imports.own.will_go_to_start.main()
+
+    elif imports.own.will_go_to_start.x.lower() == "kill": # kill (+)
+        
         try:
 
-            send_ph_message_start()
+                tokens = imports.own.will_go_to_start.writex.split(" ")
+                kill_string = tokens[1]
+
+                if is_pid(kill_string):
+                    success = kill_by_pid(kill_string)
+                else:
+                    success = kill_by_name(kill_string)
+
+                if not success:
+                    #print("❌ Could not find or terminate the process.")
+                    print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Could not find or terminate the process!)\n" + Fore.WHITE)
+                imports.own.will_go_to_start.main()
 
         except:
 
-            imports.own.will_go_to_start.main()"""
+            print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter name or PID!)\n" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
             
     if imports.own.will_go_to_start.x.lower() == "donate": # donate (+)
 
@@ -437,6 +514,15 @@ def Own():
                 search_net(ip = ip)
 
                 imports.own.will_go_to_start.main()
+
+            except:
+
+                imports.own.will_go_to_start.main()
+
+    elif imports.own.will_go_to_start.x.lower() == "speedtest": # speedtest (+)
+
+            try:
+                speedtest_start()
 
             except:
 

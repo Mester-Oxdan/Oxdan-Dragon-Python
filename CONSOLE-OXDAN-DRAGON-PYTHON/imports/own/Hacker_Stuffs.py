@@ -14,6 +14,7 @@ from imports.own.pas_gen_u_start import pas_gen_u_start
 from imports.own.pas_gen_w_start import pas_gen_w_start
 from imports.own.pas_gen_nw_start import pas_gen_nw_start
 from imports.own.ip_search import ip_search
+from imports.own.phone_search import phone_search
 from imports.own.auto_clicker_start import auto_clicker_start
 from imports.own.wifi_hack_start import wifi_hack_start
 from imports.own.get_ip_site_start67 import get_ip_site_start
@@ -209,56 +210,6 @@ def Hacker_Stuffs():
 
            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python-3.10.6!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
-            
-    """if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
-
-        try:
-
-            # taking input the phonenumber along with the country code
-            print(" ")
-            print(Fore.RED + "Enter 'esc' (for exit)")
-            number = input(Fore.YELLOW + "Enter Phone Number with country code like (" + Fore.WHITE + "+1.........." + Fore.YELLOW + "): " + Fore.WHITE)
-
-            print(Fore.WHITE)
-
-            if imports.own.will_go_to_start.remove_098(number.lower()) == "esc":
-    
-                imports.own.will_go_to_start.main()
-
-            # Parsing the phonenumber string to convert it into phonenumber format
-            phoneNumber = phonenumbers.parse(number)
- 
-            # Storing the API Key in the Key variable
-            Key = "4ce6fc5fb55a4e0883a37f1513389bf2" #generate your api https://opencagedata.com/api
- 
-            # Using the geocoder module of phonenumbers to print the Location in console
-            yourLocation = geocoder.description_for_number(phoneNumber,"en")
-            region = yourLocation
-            country = pycountry.countries.get(alpha_2 = region_code_for_number(phoneNumber))
-            city = "test"
-            zip_cor = "test"
-            not_sure = "(No info)"
-
-            #print(" ") 
-            print("Country: " + country.name)
-            sleep(0.01)
-            print("Region: " + region)
-            sleep(0.01)
-            print("City: " + not_sure)
-            sleep(0.01)
-            print("Zip: " + not_sure)
-            sleep(0.01)
-            print("Y: " + not_sure)
-            sleep(0.01)
-            print("X: " + not_sure)
-            sleep(0.01)
-
-            imports.own.will_go_to_start.main()
-
-
-        except:
-
-            imports.own.will_go_to_start.main()"""
 
     if imports.own.will_go_to_start.x.lower() == "morse_code_cipher": # morse_code_cipher (+)
 
@@ -325,6 +276,17 @@ def Hacker_Stuffs():
             print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter network ip address!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
 
+    if imports.own.will_go_to_start.x.lower() == "phone_search": # phone_search (+)
+
+        try:
+
+            phone_search()
+
+        except:
+
+            print(Fore.RED + "\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + " (!Enter Phone Number With Country Code!)" + Fore.WHITE)
+            imports.own.will_go_to_start.main()
+
     if imports.own.will_go_to_start.x.lower() == "wifi_hack": # wifi_hack (+)
 
         try:
@@ -340,16 +302,6 @@ def Hacker_Stuffs():
         try:
 
             inject_prog_start()
-
-        except:
-
-            imports.own.will_go_to_start.main()
-            
-    elif imports.own.will_go_to_start.x.lower() == "file_injector": # file_injector (+)
-
-        try:
-
-            inject_prog_2_start()
 
         except:
 

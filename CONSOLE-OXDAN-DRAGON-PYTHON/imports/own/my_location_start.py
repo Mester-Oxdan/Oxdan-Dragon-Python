@@ -19,17 +19,17 @@ def my_location_start():
                         response65 = requests.get(f'https://ipapi.co/{ip_address}/json/').json()
                         
                         print(" ")
-                        print("COUNTRY: " + response65.get("country_name") + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        print("COUNTRY: " + response65.get("country_name"))
                         sleep(0.01)
-                        print("REGION: " + response65.get("region") + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        print("REGION: " + response65.get("region"))
                         sleep(0.01)
-                        print("CITY: " + response65.get("city") + Fore.YELLOW + " (80% right)" + Fore.WHITE)
+                        print("CITY: " + response65.get("city"))
                         sleep(0.01)
-                        print("ZIP: " + response65.get("postal") + Fore.YELLOW + " (80% right)" + Fore.WHITE)
+                        print("ZIP: " + response65.get("postal"))
                         sleep(0.01)
-                        print("Y: " + str(response65.get("latitude") + 0.2522987) + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        print("Y: " + str(response65.get("latitude") + 0.2522987))
                         sleep(0.01)
-                        print("X: " + str(response65.get("longitude") + 0.32427346) + Fore.YELLOW + " (100% right)" + Fore.WHITE)
+                        print("X: " + str(response65.get("longitude") + 0.32427346))
                         sleep(0.01)
                         
 

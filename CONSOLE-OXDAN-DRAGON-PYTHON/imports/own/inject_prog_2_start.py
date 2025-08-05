@@ -1,5 +1,8 @@
 import imports.own.will_go_to_start
 import pymem
+import ctypes
+import os
+import sys
 from colorama import Fore
 
 def get_process_by_pid(pid):
@@ -19,7 +22,19 @@ def read_code_from_file(file_path):
             print(Fore.RED + f"\n(!ERROR!) " + Fore.WHITE + "=" + Fore.GREEN + f" (!Failed to read file at {file_path}!)" + Fore.WHITE)
             imports.own.will_go_to_start.main()
 
+def restart_as_admin():
+    ctypes.windll.user32.MessageBoxW(0, "Admin privileges are required.\nThe program will restart as Administrator.", "Elevation Required", 0x40)
+    path_to_script = os.path.abspath(sys.argv[0])
+    params = '"' + path_to_script + '"'
+    # Relaunch the same script with admin rights
+    ret = ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, params, None, 1)
+    if ret <= 32:
+        print(Fore.RED + "Failed to elevate privileges." + Fore.WHITE)
+        sys.exit(1)
+    sys.exit(0)
+
 def inject_code(mem, code):
+        
         try:
             mem.inject_python_interpreter()  ### Injects the Python interpreter to be able to understand Python code
             #print(Fore.GREEN + "Python interpreter injected successfully." + Fore.WHITE)
@@ -33,7 +48,8 @@ def inject_code(mem, code):
             imports.own.will_go_to_start.main()
             
 def inject_prog_2_start():
-
+    if not ctypes.windll.shell32.IsUserAnAdmin():
+            restart_as_admin()
     # Input PID and file path
     print(Fore.RED + "\nEnter 'esc' (for exit)" + Fore.WHITE)        
     file_path = input(Fore.YELLOW + "Enter path to file: " + Fore.WHITE)
@@ -46,7 +62,7 @@ def inject_prog_2_start():
     
     if imports.own.will_go_to_start.remove_098(str(pid).lower()) == "esc":
         imports.own.will_go_to_start.main()
-
+    
     # Get the process
     mem = get_process_by_pid(pid)
     if mem is None:
