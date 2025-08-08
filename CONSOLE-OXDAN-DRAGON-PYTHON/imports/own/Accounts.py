@@ -7,10 +7,11 @@ import imports.own.instructions
 import colorama
 from imports.own.del_account_start import del_account_start
 from imports.own.my_accounts_start import my_accounts_start
+from imports.own.change_pass_start import change_pass_start
 
 def Accounts():
 
-            if imports.own.will_go_to_start.x.lower() == "login": # login (+)
+            if imports.own.will_go_to_start.x.lower() == "login" or imports.own.will_go_to_start.x.lower() == "signin": # login (+)
 
                  try:
 
@@ -20,7 +21,7 @@ def Accounts():
 
                         imports.own.will_go_to_start.main()
 
-            if imports.own.will_go_to_start.x.lower() == "registration": # registration (+)
+            if imports.own.will_go_to_start.x.lower() == "registration" or imports.own.will_go_to_start.x.lower() == "signup": # registration (+)
 
                     try:
 
@@ -29,6 +30,17 @@ def Accounts():
                     except:
 
                         imports.own.will_go_to_start.main()
+
+            if imports.own.will_go_to_start.x.lower() == "change_pass": # change_pass (+)
+
+                    try:
+
+                       change_pass_start()
+
+                    except:
+
+                        imports.own.will_go_to_start.main()
+
 
             if imports.own.will_go_to_start.x.lower() == "instructions": # instructions (+)
 

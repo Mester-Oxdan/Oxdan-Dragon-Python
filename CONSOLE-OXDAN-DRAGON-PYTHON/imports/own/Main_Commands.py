@@ -506,11 +506,12 @@ def Main_Commands():
                         "dll_injector", "pas_gen",
                         "my_wifi_pas", "cor_desk", "ascii_code",
                         "ip_search", "phone_search", "mimikatz", "john", "nmap",
-                        "sqlmap", "hydra", "metasploit", "aircrack-ng",
+                        "sqlmap", "hydra", "xsstrike", "slowloris", "tbomb", 
+                        "ihulk", "metasploit", "aircrack-ng",
                         "con_wifi", "wifi_hack", "get_ip_website",
                         "auto_clicker", "morse_code_cipher",
                         "caesar_cipher", "ukraine", "author", "matrix",
-                        "login", "signin", "registration", "signup",
+                        "login", "signin", "registration", "signup", "change_pass",
                         "instructions", "del_account", "my_accounts",
                         "logout", "tim", "time", "stopwatch", "timer",
                         "calculator", "calendar", "webcam_recorder",
@@ -534,7 +535,7 @@ def Main_Commands():
                         "prank_button", "melt_screen", "gdi_virus",
                         "exit", "esc", "quit"
 
-                ] #dragon_helper, color, ai_chat, cur_conv, crypto_conv
+                ] #dragon_helper, color, ai_chat, cur_conv, crypto_conv, unit_conv, weather
 
                 # Take user input
                 #user_input = input("Enter a fruit name: ")

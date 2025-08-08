@@ -172,3 +172,14 @@ def Serious():
         except:
 
             imports.own.will_go_to_start.main()
+
+    elif imports.own.will_go_to_start.x.lower() == "weather": # weather (+)
+            
+        try:
+
+            weather_start()
+            imports.own.will_go_to_start.main()
+
+        except:
+
+            imports.own.will_go_to_start.main()

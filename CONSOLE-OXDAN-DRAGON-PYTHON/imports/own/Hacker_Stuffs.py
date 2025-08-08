@@ -116,7 +116,7 @@ def Hacker_Stuffs():
                 # Execute the pip command
                 #result = subprocess.run(command, capture_output=True, text=True)
                 #print('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\sqlmap\\sqlmap.py" + '"' + '"' + ' ' + ''.join(command))
-                os.system('"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\sqlmap\\sqlmap.py" + '"' + '"' + ' ' + ''.join(command))
+                os.system("python " + '"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\sqlmap\\sqlmap.py" + '"' + '"' + ' ' + ''.join(command))
                 # Print the output of the command
                 #print(result.stdout)
                 #print(result)
@@ -210,6 +210,90 @@ def Hacker_Stuffs():
 
            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install python-3.10.6!)" + colorama.Fore.WHITE)
            imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "xsstrike": # xsstrike (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("xsstrike")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                os.system("python " + '"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\XSStrike\\xsstrike.py" + '"' + '"' + ' ' + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                #os.system(result)
+                imports.own.will_go_to_start.main()
+
+        except:
+            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install metasploit!)" + colorama.Fore.WHITE)
+            imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "slowloris": # slowloris (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("slowloris")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                os.system("python " + '"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\slowloris\\slowloris.py" + '"' + '"' + ' ' + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                #os.system(result)
+                imports.own.will_go_to_start.main()
+
+        except:
+            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install metasploit!)" + colorama.Fore.WHITE)
+            imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "tbomb": # tbomb (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("tbomb")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                os.system("python " + '"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\TBomb\\bomber.py" + '"' + '"' + ' ' + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                #os.system(result)
+                imports.own.will_go_to_start.main()
+
+        except:
+            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install metasploit!)" + colorama.Fore.WHITE)
+            imports.own.will_go_to_start.main()
+
+    if imports.own.will_go_to_start.x.lower() == "ihulk": # ihulk (+)
+
+        try:
+
+                print(" ")
+                # Split the input into a list of command-line arguments
+                command = imports.own.will_go_to_start.writex.lower().split()
+                command.remove("ihulk")
+                # Execute the pip command
+                #result = subprocess.run(command, capture_output=True, text=True)
+                os.system("python " + '"' + '"' + os.environ["OXDAN-DRAGON-PYTHON"] + "\\imports\\own\\imports\\ihulk.py\\src\\ihulk.py" + '"' + '"' + ' ' + ''.join(command))
+                # Print the output of the command
+                #print(result.stdout)
+                #print(result)
+                #os.system(result)
+                imports.own.will_go_to_start.main()
+
+        except:
+            #print(colorama.Fore.RED + "(!ERROR!) " + colorama.Fore.WHITE + "=" + colorama.Fore.GREEN + " (!Install metasploit!)" + colorama.Fore.WHITE)
+            imports.own.will_go_to_start.main()
 
     if imports.own.will_go_to_start.x.lower() == "morse_code_cipher": # morse_code_cipher (+)
 
@@ -336,7 +420,7 @@ def Hacker_Stuffs():
                     tokens = imports.own.will_go_to_start.writex.split(" ")
                     name = tokens[1]
 
-                    if name == "w" or name == "W": # pas gen w (+)
+                    if name == "w": # pas gen w (+)
             
                         try:
 
@@ -346,7 +430,7 @@ def Hacker_Stuffs():
 
                             imports.own.will_go_to_start.main()
 
-                    if name == "u" or name == "U": # pas gen u (+) 
+                    if name == "u": # pas gen u (+) 
             
                         try:
 
@@ -356,7 +440,7 @@ def Hacker_Stuffs():
 
                             imports.own.will_go_to_start.main()
 
-                    if name == "n" or name == "N": # pas gen n (+) 
+                    if name == "n": # pas gen n (+) 
             
                         try:
 
