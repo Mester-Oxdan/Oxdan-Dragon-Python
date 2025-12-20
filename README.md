@@ -5,23 +5,29 @@ Python Oxdan Dragon Console - It's own console command line on Python.
 
 PLEASE READ ME FIRST!!!!!!!
 
-(Installation):
+--------
+
+## (Installation):
 
 1)git clone https://github.com/Mester-Oxdan/Oxdan-Dragon-Python.git (should have git commands for it).
 
-OR
+<b>OR</b>
 
 2)Download from main Oxdan Praduction website https://oxdan.com
 
-(Note):
+--------
+
+## (Note):
 
 Please install python before you will open main .exe file, 
 
 And please don't change folders and files names.
 
-(Bio):
+--------
 
-*For social media: ⤵️
+## (Bio):
+
+<b>*For social media: ⤵️</b>
 
 *YouTube: @Oxdan_Praduction /OR/ https://www.youtube.com/@Oxdan_Praduction
 
@@ -35,13 +41,13 @@ And please don't change folders and files names.
 
 *Thingiverse: https://www.thingiverse.com/oxdan_praduction/designs
 
-*For Sponsoring/Donations: ⤵️
+<b>*For Sponsoring/Donations: ⤵️</b>
 
 *Cash App: $BoHladii /OR/ 4403 9352 3234 1307
 
 *Buy Me A Coffee: https://www.buymeacoffee.com/oxdan
 
-*For Shops: ⤵️
+<b>*For Shops: ⤵️</b>
 
 *Etsy: https://oxdanpraduction3dart.etsy.com
 
@@ -51,35 +57,39 @@ And please don't change folders and files names.
 
 *Shopify: https://933791-66.myshopify.com/
 
-*For Other: ⤵️
+<b>*For Other: ⤵️</b>
 
 *Website: https://oxdan.com
 
 *Thanks: 🙏😊
 
-(About):
+--------
 
-!REMEMBER! Author don't care and he is not responsible for your deals in this console. This console was created for learning programing and testing security. You
+## (About):
 
-can find code of this console on Author github (https://github.com/Mester-Oxdan). This console has so many advantages for example 1) so many
+!REMEMBER! Author don't care and he is not responsible for your deals in this console. This console was created for learning coding. 
 
-commands! This console has 9 classes of different command types: MAINS, HACKER_STUFFS, PICTURES, ACCOUNTS, SERIOUS, GAMES, OWNS, PRANKS
+You can find code of this console on Author github (https://github.com/Mester-Oxdan). This console has so many advantages for example 1) so many commands! 
 
-and ELSES. Author advises testing all these utilities just on your devices. If you find some bugs or errors please let Author know. You can send a message on Author
+This console has 9 classes of different command types: MAINS, HACKER_STUFFS, PICTURES, ACCOUNTS, SERIOUS, GAMES, OWNS, PRANKS and ELSES. Author advises testing all these utilities just on your devices. 
 
-email (bogerter4521de@gmail.com). It will be better if you will take some pictures or videos of the problem. Please don't send some bullshit on the Author email.
+If you find some bugs or errors please let Author know. You can send a message on Author email (bogerter4521de@gmail.com). It will be better if you will take some pictures or videos of the problem. 
 
-Because Author respects you and trusts in your help. Author just wants to make this console perfect with your help. If you have ideas it can also be helpful
+Please don't send some bull-sh*t on the Author email. Author respects you and trusts your help. Author wants to make this console perfect with your help. 
 
-for Author. Author will check email 1 time per week. Also your name could be on the leaders board in the lists section. Difference between OXDAN DRAGON C/C++
+If you have ideas it can also be helpful for Author in future. Author will check email 1 time per week. Also your name could be on the leaders board in the lists section. 
 
-and OXDAN DRAGON PYTHON is almost the same but Python better because for Author was easier programing on Python than on C/C++, so Python likely have
+Difference between OXDAN DRAGON C/C++ and OXDAN DRAGON PYTHON is almost the same but Python better because for Author was easier to code on Python than on C/C++
 
-little bit more commands than C/C++. This console was made for Windows! Author still didn't create this console for linux, phones and other systems. Author started
+so Python likely have little bit more commands than C/C++. This console was made for Windows! Author still didn't create this console for linux, phones and other systems. 
 
-creating this console only because of studying coding in 2023, but then it became a project where Author created his first program. Thanks!
+Author started creating this console only because of studying coding in 2023, but then it became a project where Author created his first program. 
 
-Photos 3.2025:
+Thanks! 😊
+
+--------
+
+## Photos 3.2025:
 
 Console_Start_Menu.
 <img width="1920" height="1080" alt="Console_Start_Menu" src="https://github.com/user-attachments/assets/06e40cd0-658a-48db-9e34-cd75875c7027" />
@@ -96,6 +106,8 @@ Console_Rules.
 Console_Commands.
 <img width="1920" height="1080" alt="Console_Commands" src="https://github.com/user-attachments/assets/a3b00919-0f0c-4aa3-85e1-4d074c1cf7c7" />
 
-Video 3.2025:
+--------
+
+## Video 3.2025:
 
 Comming Soon...
