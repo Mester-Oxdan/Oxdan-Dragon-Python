@@ -33,9 +33,11 @@ And please don't change folders and files names.
 
 *Tiktok: @oxdan_praduction /OR/ https://www.tiktok.com/@oxdan_praduction
 
+*Twitch: @oxdan_praduction /OR/ https://www.twitch.tv/oxdan_praduction
+
 *Instagram: @oxdanpraduction /OR/ https://instagram.com/oxdanpraduction
 
-*Facebook: @Mariia Sierova /OR/ https://www.facebook.com/profile.php?id=100087125340188&mibextid=LQQJ4d
+*Facebook: @Mariia Sierova /OR/ https://www.facebook.com/61558180556782/
 
 *Github: @Mester-Oxdan /OR/ https://github.com/Mester-Oxdan
 
@@ -49,11 +51,9 @@ And please don't change folders and files names.
 
 <b>*For Shops: ⤵️</b>
 
-*Etsy: https://oxdanpraduction3dart.etsy.com
+*TikTok Shop: @oxdan_praduction_shop /OR/ https://www.tiktok.com/@oxdan_praduction_shop
 
-*TikTok Shop: @oxdan_praduction_shop /OR/ https://www.tiktok.com/@oxdan_praduction_shop?_t=8p4TNukKU4w&_r=1
-
-*Facebook Shop: https://www.facebook.com/profile.php?id=61558180556782&mibextid=kFxxJD
+*Facebook Shop: https://www.facebook.com/100087125340188/
 
 *Shopify: https://933791-66.myshopify.com/
 
